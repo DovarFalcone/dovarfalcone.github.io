@@ -6,7 +6,7 @@ subtitle: Oh the things I have done
 
 # Work Experience  
 
-## Cargill FSQR Data Coordinator							2020-Present
+## Cargill FSQR Data Coordinator							2021-Present
 
 Drove and implemented the change of going paperless across all protein facilities. 
 
