@@ -24,7 +24,8 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Learn React: "https://reactjs.org/"
+  Author's home: "https://www.psu.edu/"
 
 ################
 # --- Logo --- #
