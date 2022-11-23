@@ -20,7 +20,9 @@ author: Dennis Furtkevic
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: 
+    - Spark Notes: "aboutme"
+    - Resume:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
