@@ -2,9 +2,9 @@
 layout: post
 title: Reactable
 subtitle: Tesing React Site
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/bluebanner.jpg
 thumbnail-img: /assets/img/reactlogo.jpg
-share-img: /assets/img/path.jpg
+share-img: /assets/img/bluebanner.jpg
 tags: [test]
 ---
 
