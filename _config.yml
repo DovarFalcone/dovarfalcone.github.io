@@ -22,7 +22,7 @@ author: Dennis Furtkevic
 navbar-links:
   About Me: 
     - Spark Notes: "aboutme"
-    - Resume:
+    - Resume: "resume"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
