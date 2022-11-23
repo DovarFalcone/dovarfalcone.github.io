@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reactable
-subtitle: Tesing React Site
+subtitle: Testing React Site
 cover-img: /assets/img/bluebanner.jpg
 thumbnail-img: /assets/img/reactlogo.jpg
 share-img: /assets/img/bluebanner.jpg
