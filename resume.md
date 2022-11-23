@@ -4,9 +4,9 @@ title: Resume
 subtitle: Oh the things I have done
 ---
 
-#Work Experience  
+# Work Experience  
 
-##Cargill FSQR Data Coordinator							2020-Present
+## Cargill FSQR Data Coordinator							2020-Present
 
 Drove and implemented the change of going paperless across all protein facilities. 
 
@@ -20,7 +20,7 @@ Created adaptable, custom forms for every plant to replace paper copies. I built
 
  
 
-##Cargill Meat Solutions FSQR Supervisor- Second Shift				2020-2021 
+## Cargill Meat Solutions FSQR Supervisor- Second Shift				2020-2021 
 
 Oversees team of technicians that enforce regulatory and corporate policies. 
 
@@ -32,7 +32,7 @@ Strengthen relationships between the FSQR and Ops team to create a tight, well c
 
  
 
-##Select Breeders Services-Horse Care and Facility Supervisor			2019-2020 
+## Select Breeders Services-Horse Care and Facility Supervisor			2019-2020 
 
 Coordinated all operations of animal welfare, employee scheduling, and inventory management 
 
@@ -45,19 +45,19 @@ Established spreadsheets to aid in the recording of horses in and out of the fac
 Initiated weekly quality checks of all vehicles and facilities.   
 
 
-##Furlyn Farm and Stables, LLC-Facility Manager 	 	 	 	 	 2012-2018  
+## Furlyn Farm and Stables, LLC-Facility Manager 	 	 	 	 	 2012-2018  
 
 Support and manage, family-owned and operated 75-acre horse farm. 
 
 
-##Education  
+## Education  
 
 The Pennsylvania State University, University Park, PA 	 	             	2018 
 
 Major: Animal Science, Business Option GPA: 3.0 
 Minor: Equine Science  
 
-#Skills 
+# Skills 
 
 Proficient in: 
 •	Excel
