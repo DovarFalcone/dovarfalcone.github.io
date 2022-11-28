@@ -810,7 +810,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   font-weight: 800;
   letter-spacing: 1px;
   padding: 0.625rem 0.3125rem;
-  background-color: #FFF;
+  background-color: rgba(0, 0, 0, .8);
   border-radius: 0;
   color: {{ site.text-col | default: "#404040" }};
 }
