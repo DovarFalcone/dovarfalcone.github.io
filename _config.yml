@@ -128,17 +128,17 @@ keywords: "furtekvic,website,dennis,data,datafurtkevic,datadennis,dennis,cargill
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#c3c3c3"
-navbar-text-col: "#191919"
-navbar-border-col: "##b6b6b6"
-page-col: "#d8d8d8"
-text-col: "#191919"
-link-col: "#0061b3"
-hover-col: "#004655"
-footer-col: "#c3c3c3"
-footer-text-col: "#505050"
-footer-link-col: "#191919"
-footer-hover-col: "#004655"
+navbar-col: "#0A0A0A"
+navbar-text-col: "#FFC400"
+navbar-border-col: "#121212"
+page-col: "#0A0A0A"
+text-col: "#616161"
+link-col: "#3cff00"
+hover-col: "#3cff00"
+footer-col: "#0A0A0A"
+footer-text-col: "#FFC400"
+footer-link-col: "#FFC400"
+footer-hover-col: "#3cff00"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
