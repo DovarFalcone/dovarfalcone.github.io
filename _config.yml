@@ -131,14 +131,14 @@ keywords: "furtekvic,website,dennis,data,datafurtkevic,datadennis,dennis,cargill
 navbar-col: "#180c0c"
 navbar-text-col: "#FFC400"
 navbar-border-col: "#888888"
-page-col: "#0A0A0A"
-text-col: "#f4f4f4"
-link-col: "#3b3bff"
-hover-col: "#3b3bff"
+page-col: "#454545"
+text-col: "#c4c4c4"
+link-col: "#0085a1"
+hover-col: "#0085a1"
 footer-col: "#0A0A0A"
 footer-text-col: "#FFC400"
 footer-link-col: "#FFC400"
-footer-hover-col: "##3b3bff"
+footer-hover-col: "#0085a1"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
