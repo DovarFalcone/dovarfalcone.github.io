@@ -76,5 +76,6 @@ Minor: Equine Science
  •	Salesforce
  •	Agile Development
  •	PowerBI
+ • SSRS	
  •	Knime
  •	Change Managment
