@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why you'd want to grab a drink with me
 ---
 
 My name is Dennis Furtkevic. I have the following qualities:
