@@ -6,13 +6,14 @@ subtitle: Oh the things I have done
 
 # Work Experience  
 
-## Cargill FSQR Data Coordinator							2021-Present
+## Cargill FSQR Data Coordinator							
+#### 2021-Present
 
 - Drove and implemented the change of going paperless across all protein facilities. 
 
 - Created a ticketing support model to help maintain and organize incoming requests while the paperless application was being deployed. 
 
-- Built reports from the ground up, utilizing PostgreSQL and PowerBi. 
+- Performed business intelligence engineering tasks by building reports from the ground up, utilizing PostgreSQL and PowerBi. 
 
 - Analyzed and reported in real time the data being collected across all plants. 
 
@@ -20,7 +21,8 @@ subtitle: Oh the things I have done
 
 --- 
 
-## Cargill Meat Solutions FSQR Supervisor- Second Shift				2020-2021 
+## Cargill Meat Solutions FSQR Supervisor- Second Shift				
+#### 2020-2021 
 
 - Oversaw a team of technicians that enforce regulatory and corporate policies. 
 
@@ -32,7 +34,8 @@ subtitle: Oh the things I have done
 
 ---
 
-## Select Breeders Services-Horse Care and Facility Supervisor			2019-2020 
+## Select Breeders Services-Horse Care and Facility Supervisor			
+#### 2019-2020 
 
 - Coordinated all operations of animal welfare, employee scheduling, and inventory management 
 
@@ -46,7 +49,8 @@ subtitle: Oh the things I have done
 
 ---
 
-## Furlyn Farm and Stables, LLC-Facility Manager 	 	 	 	 	 2012-2018  
+## Furlyn Farm and Stables, LLC-Facility Manager 	 	 	 	 	 
+#### 2012-2018  
 
 - Support and manage, family-owned and operated 75-acre horse farm. 
 
