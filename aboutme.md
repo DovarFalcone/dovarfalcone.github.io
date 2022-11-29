@@ -14,4 +14,4 @@ What else do you need?
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just read [a memory](https://sites.psu.edu/appaloosa/author/dwf5235/) and it will answer **none** of your questions.
+To be honest, I'm having some trouble remembering right now, so why don't you just read [a memory](https://sites.psu.edu/appaloosa/author/dwf5235/){:target="_blank"} and it will answer **none** of your questions.
