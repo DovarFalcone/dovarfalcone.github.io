@@ -8,7 +8,7 @@ subtitle: Oh the things I have done
 
 ## Cargill FSQR Data Coordinator							2021-Present
 
-- Drove and implemented the change of going paperlsess across all protein facilities. 
+- Drove and implemented the change of going paperless across all protein facilities. 
 
 - Created a ticketing support model to help maintain and organize incoming requests while the paperless application was being deployed. 
 
