@@ -11,4 +11,4 @@ tags: [test]
 comments: true
 ---
 
-Here is a link to to my reactable [site](https://dovarfalcone.github.io/reactable/). 
+Here is a link to to my reactable [site](https://dovarfalcone.github.io/reactable/){:target="_blank"}. 
