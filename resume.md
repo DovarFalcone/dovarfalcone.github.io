@@ -42,6 +42,8 @@ subtitle: Oh the things I have done
 
 - Managed and supported a 75-acre family-owned horse farm.
 
+---
+
 # Education
 
 The Pennsylvania State University, University Park, PA
@@ -49,6 +51,8 @@ The Pennsylvania State University, University Park, PA
 
 - Major: Animal Science, Business Option
 - Minor: Equine Science
+
+---
 
 # Skills
 
