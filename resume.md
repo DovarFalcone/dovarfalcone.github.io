@@ -5,7 +5,7 @@ subtitle: Oh the things I have done
 ---
 # Summary
 
-Experienced data coordinator with a background in animal science and business. Proficient in a range of technical skills, including SQL, Python, and PowerBI. Demonstrated ability to drive operational efficiencies and cost savings, as well as develop and implement successful project plans. Strong leadership and team management skills, with experience supervising and training staff.
+Experienced data coordinator with a background in animal science and business intelligence. Proficient in a range of technical skills, including SQL, Python, and PowerBI. Demonstrated ability to drive operational efficiencies and cost savings, as well as develop and implement successful project plans. Strong leadership and team management skills, with experience supervising and training staff.
 
 ---
 
