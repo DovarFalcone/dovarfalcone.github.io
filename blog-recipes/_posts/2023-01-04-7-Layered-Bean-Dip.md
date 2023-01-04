@@ -12,8 +12,9 @@ tags: [recipe, dip, favorite, mexican, beans, snack, Grammy]
 > This is a family favorite recipe that makes a great snack for when people come to visit.
 
 ## Ingredients
-| Ingredient | Amount| Notes |
-| :------ |:--- | :---|
+
+| Ingredient | Amount|
+| :------ |:--- |
 | Refried Beans | 1 16 oz Can |
 | Taco Seasoning | 1/2 package | 
 | Mayo | 1/2 Cup |
