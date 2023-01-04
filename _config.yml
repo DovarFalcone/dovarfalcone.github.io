@@ -24,6 +24,7 @@ navbar-links:
     - Spark Notes: "aboutme"
     - Resume: "resume"
   Resources:
+    - Tags: "https://furtkevic.com/tags"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Learn React: "https://reactjs.org/"
