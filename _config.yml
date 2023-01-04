@@ -263,7 +263,15 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""
+      path: "_posts/projects"
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "_posts/recipies"
       type: "posts"
     values:
       layout: "post"
