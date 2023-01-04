@@ -2,6 +2,7 @@
 layout: post
 title: Basic Chocolate Chip Cookies
 subtitle: First Recipe
+category: Recipe
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg

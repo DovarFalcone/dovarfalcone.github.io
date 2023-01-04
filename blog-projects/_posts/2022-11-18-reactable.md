@@ -2,6 +2,7 @@
 layout: post
 title: Reactable
 subtitle: Testing React Site
+category: Project
 cover-img: /assets/img/bluebanner.jpg
 thumbnail-img: /assets/img/reactlogo.jpg
 share-img: /assets/img/bluebanner.jpg
