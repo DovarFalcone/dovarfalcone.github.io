@@ -4,7 +4,7 @@ title: Hot Onion Dip aka Onion Souffle
 subtitle: A fluffy and creamy onion dip. Also known as Onion Soufflé
 category: Recipe
 thumbnail-img: /blog-recipes/assets/images/onionsouffle.jpeg
-tags: [recipe, creamy, vegetables, appetizer, Denise, savory, dip]
+tags: [recipe, creamy, vegetables, appetizer, Denise, savory, dip, snacks]
 ---
 
 # Hot Onion Dip
