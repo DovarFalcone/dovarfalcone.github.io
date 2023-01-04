@@ -14,13 +14,15 @@ tags: [recipe, test, chocolate, cookie]
 > This is an example of a simple chocolate chip cookie recipe provided for the purpose of explaining how to write a recipe in Markdown. Some things that make sense in notes like this one are #hashtags for categorizing recipes and website URLs for pointing to where a recipe came from.
 
 ## Wet Ingredients
+
 | Ingredient | Amount| Notes |
 | :------ |:--- | :---|
 | Butter | 2 sticks | Softened |
-| Brown Sugar | 1 cup | 
-| Sugar | 1/2 cup white | 
+| Brown Sugar | 1 cup | |
+| Sugar | 1/2 cup white | |
 
 Mix together butter and sugar in a large bowl.
+
 | Ingredient | Amount|
 | :------ |:--- |
 | Eggs | 2 | 
@@ -29,6 +31,7 @@ Mix together butter and sugar in a large bowl.
 Mix the other wet ingredients into the butter and sugar mixture.
 
 ## Dry Ingredients
+
 | Ingredient | Amount|
 | :------ |:--- | 
 | Flour | 3 cups | 

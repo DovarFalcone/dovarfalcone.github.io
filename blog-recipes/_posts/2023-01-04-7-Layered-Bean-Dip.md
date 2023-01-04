@@ -4,7 +4,7 @@ title: 7 Layered Bean Dip
 subtitle: A Phyllis Lynch favorite!
 category: Recipe
 thumbnail-img: /blog-recipes/assets/images/beandip.jpeg
-tags: [recipe, dip, favorite, mexican, beans, snack, Grammy]
+tags: [recipe, dip, favorite, mexican, beans, Grammy, appetizer, savory]
 ---
 
 # 7 Layered Bean Dip
