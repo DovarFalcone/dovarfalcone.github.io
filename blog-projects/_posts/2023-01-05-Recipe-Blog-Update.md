@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "New Recipe Update: Family Favorites Now Available"
-subtitle: I am excited to announce a new update to our website - we've just added a ton of delicious, family-made recipes for you to try out at home.
+subtitle: I' just added a ton of delicious, family-made recipes for you to try out at home.
 category: Project
 tags: [Project]
 comments: true
 ---
 
-Hey everyone! I am excited to announce a new update to our website - I've just added a ton of delicious, family-made recipes for you to try out at home. From snacks and appetizers to main dishes and desserts, there's something for everyone to enjoy. All of these recipes have been passed down from generation to generation, and I'm excited to share them with you.
+Hey everyone! I am excited to announce a new update to my website - I've just added a ton of delicious, family-made recipes for you to try out at home. From snacks and appetizers to main dishes and desserts, there's something for everyone to enjoy. All of these recipes have been passed down from generation to generation, and I'm excited to share them with you.
 
 In this update, you'll find a wide variety of recipes to choose from, including:
 
@@ -22,5 +22,7 @@ I hope you enjoy these new recipes as much as I do! I'm always looking for new w
 The recipe section of this site can be found [here](https://dovarfalcone.github.io/blog-recipes/){:target="_blank"}.
 
 Enjoy!
+
+Dennis
 
 > This blog post was written with the assistance of a language model AI called chatGPT. Thank you to OpenAI for helping to create this content.

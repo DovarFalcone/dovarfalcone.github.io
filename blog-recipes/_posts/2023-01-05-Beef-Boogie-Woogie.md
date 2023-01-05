@@ -4,7 +4,7 @@ title: Beef Boogie Woogie
 subtitle: A guaranteed stomach filling meal
 category: Recipe
 thumbnail-img: /blog-recipes/assets/images/beefwoogie.jpeg
-tags: [recipe, savory, main dish, Denise, favorite]
+tags: [recipe, savory, main dish, Denise, favorite, crockpot]
 ---
 
 > A great meal that serves 6
