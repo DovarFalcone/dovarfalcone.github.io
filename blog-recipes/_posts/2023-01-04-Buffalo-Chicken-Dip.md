@@ -26,6 +26,6 @@ Cook and dice the chicken tenders.
 Mix all ingredients in an oven safe container.
 Bake 350F for 20 - 30 mins until 300F throughout.  
 
-> Grap some Tostitos Scoops and watch this plate disapear
+> Grab some Tostitos Scoops and watch this plate disapear
 
 Enjoy!

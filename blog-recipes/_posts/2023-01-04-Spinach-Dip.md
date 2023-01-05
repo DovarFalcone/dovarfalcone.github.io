@@ -17,7 +17,7 @@ tags: [recipe, creamy, vegetables, appetizer, Grammy, savory, dip]
 | Sour Cream | 16oz | 
 | Mayo | 1 Cup |
 | Knorr Veg Soup Mix | 1 Package|
-| Water Chestnust | 1 Can |
+| Water Chestnuts | 1 Can |
 | Scallions | 3 |
 
 

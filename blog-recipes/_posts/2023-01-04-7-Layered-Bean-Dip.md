@@ -19,11 +19,11 @@ tags: [recipe, dip, favorite, mexican, beans, Grammy, appetizer, savory]
 | Taco Seasoning | 1/2 package | 
 | Mayo | 1/2 Cup |
 | Sour Cream | 1/2 Cup|
-| Shreadded Cheese | Lots |
-| Salsa/Chopped Tomateos| 1 Jar|
+| Shredded Cheese | Lots |
+| Salsa/Chopped Tomatoes| 1 Jar|
 | Onions | 1 | 
 | Black Olives | 1 Jar |
-| Jalepeno Slices | 1 Jalepeno|
+| Jalapeno Slices | 1 Jalapeno|
 
 ## Instructions
 
@@ -33,9 +33,9 @@ Mix the mayo and sour cream together.
 
 Spread the sour cream and mayo mixture over the beans in the pie plate.
 
-Top with cheese, tomatoes/salsa, onions, olives and jalepenos.
+Top with cheese, tomatoes/salsa, onions, olives and jalapeños.
 
-> This is the best order for optimal scooping perfomance
+> This is the best order for optimal scooping performance
 
 Break out the Tostitos Scoops and you are ready to dip.
 

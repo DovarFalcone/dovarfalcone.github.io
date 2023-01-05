@@ -16,7 +16,7 @@ tags: [recipe, creamy, vegetables, appetizer, Denise, savory, dip, snacks]
 | Ingredient | Amount|
 | :------ |:--- |
 | Cream cheese | 3 Packages |
-| Parmesean Cheese | 1 Cup | 
+| Parmesan Cheese | 1 Cup | 
 | Mayo | 1/2 Cup |
 | Frozen Chopped Onions | 10oz Package|
 

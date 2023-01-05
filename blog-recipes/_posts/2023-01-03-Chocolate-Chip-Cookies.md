@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Chocolate Chip Cookies
-subtitle: The first recepie I have created for this site.
+subtitle: The first recipe I have created for this site.
 category: Recipe
 cover-img: /blog-recipes/assets/images/cookiebanner.jpeg
 thumbnail-img: /blog-recipes/assets/images/stockcookie.jpeg

@@ -21,7 +21,7 @@ tags: [recipe, meat, pork, appetizer, Grammy, savory]
 
 ## Instructions
 
-Spread softened cream shese mixed with horseradish on hamslices.
+Spread softened cream cheese mixed with horseradish on ham slices.
 
 Layer in a pickle slice or relish.
 
