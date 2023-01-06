@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "New Recipe Update: Family Favorites Now Available"
-subtitle: I' just added a ton of delicious, family-made recipes for you to try out at home.
+subtitle: I've just added a ton of delicious, family-made recipes for you to try out at home.
 category: Project
 tags: [Project]
 comments: true
