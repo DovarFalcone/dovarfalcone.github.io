@@ -23,8 +23,8 @@ navbar-links:
   About Me: 
     - Spark Notes: "aboutme"
     - Resume: "resume"
-  Projects: "https://furtkevic.com/blog-projects"
-  Recipes: "https://furtkevic.com/blog-recipes"
+  Projects: "https://furtkevic.com/projects"
+  Recipes: "https://furtkevic.com/recipes"
   Tags: "https://furtkevic.com/tags"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
