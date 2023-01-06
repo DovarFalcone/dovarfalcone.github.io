@@ -7,7 +7,7 @@ thumbnail-img: /recipes/assets/images/buffalochickendip.jpeg
 tags: [recipe, savory, chicken, snacks, Marisa Tipton, dip]
 ---
 
-# Buf Chick Dip
+# BufF Chick Dip
 
 > Use Franks Red Hot for the perfect spice level
 

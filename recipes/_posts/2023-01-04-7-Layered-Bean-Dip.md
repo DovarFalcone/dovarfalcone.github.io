@@ -7,7 +7,6 @@ thumbnail-img: /recipes/assets/images/beandip.jpeg
 tags: [recipe, dip, favorite, mexican, beans, Grammy, appetizer, savory]
 ---
 
-# 7 Layered Bean Dip
 
 > This is a family favorite recipe that makes a great snack for when people come to visit.
 

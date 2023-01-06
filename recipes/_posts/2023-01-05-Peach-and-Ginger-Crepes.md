@@ -7,7 +7,6 @@ thumbnail-img: /recipes/assets/images/peachcrepe.jpeg
 tags: [recipe, fruit, snacks, Denise, sweet]
 ---
 
-# Peach and Ginger Crepes
 > A favorite kid breakfast, but be warned, they will want to eat five of them
 
 ## Ingredients

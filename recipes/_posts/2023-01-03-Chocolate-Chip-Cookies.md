@@ -9,8 +9,6 @@ share-img: /recipes/assets/images/stockcookie.jpeg
 tags: [recipe, test, chocolate, cookie]
 ---
 
-# Chocolate Chip Cookies
-
 > This is an example of a simple chocolate chip cookie recipe provided for the purpose of explaining how to write a recipe in Markdown. Some things that make sense in notes like this one are #hashtags for categorizing recipes and website URLs for pointing to where a recipe came from.
 
 ## Wet Ingredients

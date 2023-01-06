@@ -7,8 +7,6 @@ thumbnail-img: /recipes/assets/images/spinachdip.jpeg
 tags: [recipe, creamy, vegetables, appetizer, Grammy, savory, dip]
 ---
 
-# Spinach Dip
-
 ## Ingredients
 
 | Ingredient | Amount|

@@ -1,13 +1,12 @@
 ---
 layout: post
-title: Cream of Broccoli
+title: Cream of Broccoli Soup
 subtitle: Hearty broccoli soup
 category: Recipe
 thumbnail-img: /recipes/assets/images/creamofbroccoli.jpeg
 tags: [recipe, vegetables, savory, soup, Grammy]
 ---
 
-# Cream of Broccoli Soup
 > A creamy vegetable soup
 
 ## Ingredients

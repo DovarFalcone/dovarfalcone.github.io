@@ -7,8 +7,6 @@ thumbnail-img: /recipes/assets/images/onionsouffle.jpeg
 tags: [recipe, creamy, vegetables, appetizer, Denise, savory, dip, snacks]
 ---
 
-# Hot Onion Dip
-
 > Take a lactaid 
 
 ## Ingredients

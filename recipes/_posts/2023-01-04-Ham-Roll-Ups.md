@@ -7,8 +7,6 @@ thumbnail-img: /recipes/assets/images/hamrollup.jpeg
 tags: [recipe, meat, pork, appetizer, Grammy, savory]
 ---
 
-# Ham Rollups
-
 ## Ingredients
 
 | Ingredient | Amount|
