@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Furtkevic Pie Crust
-subtitle: "Heirloom Pie Crust: A Family Secret Recipe for the Perfectly flaky crust"
+subtitle: Heirloom Pie Crust A Family Secret Recipe for the Perfectly flaky crust
 category: Recipe
 thumbnail-img: /recipes/assets/images/furtkeviccrust.jpeg
 tags: [Deserts, Bill, favorite]

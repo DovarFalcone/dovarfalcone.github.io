@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sausage Stuffing
-subtitle: "Sausage-licious Stuffing: A Delicious and Savory Twist on a Classic Thanksgiving Dish"
+subtitle: Sausagelicious Stuffing A Delicious and Savory Twist on a Classic Thanksgiving Dish
 category: Recipe
 thumbnail-img: /recipes/assets/images/sausagestuffing.jpeg
 tags: [recipe, Grammy, side]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Macaroni Salad
-subtitle: 'Peppered Up Macaroni Salad: A Flavorful Twist on a Classic Side Dish'
+subtitle: Peppered Up Macaroni Salad A Flavorful Twist on a Classic Side Dish
 category: Recipe
 thumbnail-img: /recipes/assets/images/macsalad.jpeg
 tags: [recipe, pasta, Denise, salad, favorite]
