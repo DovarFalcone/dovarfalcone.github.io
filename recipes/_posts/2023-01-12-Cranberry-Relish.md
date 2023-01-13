@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cranberry Relish
-subtitle: 'Cran-tastic Relish: The Perfect Addition to Your Thanksgiving Spread'
+subtitle: Crantastic Relish The Perfect Addition to Your Thanksgiving Spread
 category: Recipe
 thumbnail-img: /recipes/assets/images/cranrelish.jpeg
 tags: [recipe, fruit, Denise, salad]

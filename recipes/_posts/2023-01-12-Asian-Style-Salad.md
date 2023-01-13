@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Asian Style Salad
-subtitle: 'Asian Fusion Salad: A Fresh and Flavorful Blend of Eastern and Western Ingredients'
+subtitle: Asian Fusion Salad A Fresh and Flavorful Blend of Eastern and Western Ingredients
 category: Recipe
 thumbnail-img: /recipes/assets/images/asiansalad.jpeg
 tags: [recipe, Asian, Denise, salad, vegetables]
