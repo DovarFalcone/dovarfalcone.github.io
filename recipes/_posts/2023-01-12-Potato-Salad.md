@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Potato Salad
-subtitle: 'Potato-licious Salad: A Classic Side Dish That's Always a Crowd-Pleaser'
+subtitle: "Potato-licious Salad: A Classic Side Dish That's Always a Crowd-Pleaser"
 category: Recipe
 thumbnail-img: /recipes/assets/images/potatosalad.jpeg
 tags: [recipe, Denise, salad, vegetables, favorite]
