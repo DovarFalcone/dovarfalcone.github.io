@@ -28,10 +28,10 @@ tags: [Deserts, Bill, favorite]
 
 3. Then add liquid to flour mixture and kneed with your hands.  Add flour as needed so that the dough sticks to itself only and releases from your hands and bowl.  
 
-3. Refrigerate the dough for at least an hour   This makes it easier to roll. 
+4. Refrigerate the dough for at least an hour   This makes it easier to roll. 
 
-4. Roll dough for pies. 
+5. Roll dough for pies. 
 
-5. Finish with egg wash before baking. 
+6. Finish with egg wash before baking. 
 
 Enjoy!
