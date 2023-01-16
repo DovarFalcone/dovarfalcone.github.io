@@ -25,8 +25,8 @@ navbar-links:
     - Resume: "resume"
   Projects: "https://furtkevic.com/projects"
   Recipes: "https://furtkevic.com/recipes"
-  Tags: "https://furtkevic.com/tags"
   Resources:
+    - Tags: "https://furtkevic.com/tags"
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Learn React: "https://reactjs.org/"
@@ -274,7 +274,7 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "_posts/recipies"
+      path: "_posts/recipes"
       type: "posts"
     values:
       layout: "post"
