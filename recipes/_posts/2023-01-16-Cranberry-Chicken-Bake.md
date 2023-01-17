@@ -7,7 +7,9 @@ thumbnail-img: /recipes/assets/images/cranchick.jpeg
 tags: [recipe, savory, sweet, chicken, Aunt Connie, Main Dish]
 ---
 
-> Serves 4
+{: .box-note}
+**Serves:** 4
+
 
 ## Ingredients
 

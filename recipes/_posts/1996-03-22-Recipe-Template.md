@@ -7,7 +7,8 @@ thumbnail-img: /recipes/assets/images/template.jpeg
 tags: [test]
 ---
 
-> Cook Time: 
+{: .box-note}
+**Serves:** 
 
 ## Ingredients
 
