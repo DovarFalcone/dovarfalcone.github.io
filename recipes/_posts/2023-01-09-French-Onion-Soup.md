@@ -27,17 +27,19 @@ tags: [recipe, vegetables, savory, soup, crockpot]
 
 ## Instructions
 
-1. Slice onions thinly.
+1. Slice the onions thinly and add them to a crockpot.
 
-2. Cook onions, butter, salt and pepper, bay leaves, and brown sugar in the crockpot on low for 12 hours.
+2. Add the butter, salt, pepper, bay leaves, and brown sugar to the crockpot. Stir everything together.
 
-3. Add broth and sherry.
+3. Cook the onion mixture on low for 12 hours.
 
-4. Stir and cook on low 6 - 8 more hours.
+4. After 12 hours, add the beef broth and sherry to the crockpot. Stir everything together.
 
-5. Place a thick slice of Gruyere cheese on top of the soup once portioned in a bowl and let it melt.
+5. Let the soup cook on low for an additional 6-8 hours.
 
-6. Serve with French bread.
+6. Once the soup is cooked, ladle it into individual bowls. Place a thick slice of Gruyere cheese on top of the soup in each bowl, and let it melt.
+
+7. Serve the soup with French bread.
 
 > Makes a great winter time side dish
 

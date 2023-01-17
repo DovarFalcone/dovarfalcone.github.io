@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Furtkevic Pie Crust
-subtitle: Heirloom Pie Crust A Family Secret Recipe for the Perfectly flaky crust
+subtitle: "Heirloom Pie Crust: A Family Secret Recipe for the Perfectly flaky crust"
 category: Recipe
 thumbnail-img: /recipes/assets/images/furtkeviccrust.jpeg
 tags: [Deserts, Bill, favorite]
@@ -22,16 +22,16 @@ tags: [Deserts, Bill, favorite]
 
 ## Instructions
 
-1. Mix liquid ingredients together. Blend these together in a bowl with your fingers by rubbing your hands together to make it kind of seedy. 
+1. In a mixing bowl, blend together the liquid ingredients with your fingers by rubbing your hands together to create a seedy texture.
 
-2. In a separate bowl beat one egg well then add one teaspoon of white vinegar and 1/2 Cup Cold Water. Mix these well. 
+2. In a separate bowl, beat one egg well. Then, add one teaspoon of white vinegar and 1/2 cup of cold water. Mix these ingredients well.
 
-3. Then add liquid to flour mixture and kneed with your hands.  Add flour as needed so that the dough sticks to itself only and releases from your hands and bowl.  
+3. Slowly add the liquid mixture to the flour mixture, and kneed with your hands. Keep adding flour as needed until the dough sticks to itself only and releases from your hands and the bowl.
 
-4. Refrigerate the dough for at least an hour   This makes it easier to roll. 
+4. Cover the dough and refrigerate for at least one hour. This will make it easier to roll.
 
-5. Roll dough for pies. 
+5. Remove the dough from the refrigerator and roll it out on a floured surface for your desired size of pies.
 
-6. Finish with egg wash before baking. 
+6. Before baking, brush the top of the pies with an egg wash for a golden brown finish.
 
 Enjoy!

@@ -9,6 +9,7 @@ tags: [recipe, fruit, Denise, salad]
 
 > A simple, sweet relish even the most cranberry adverse will love
 
+
 ## Ingredients
 
 | Ingredient | Amount|
@@ -20,11 +21,14 @@ tags: [recipe, fruit, Denise, salad]
 
 ## Instructions
 
-1. In a food processor, chop cranberries and apple.
+1. In a food processor, chop the cranberries and small apple until they are finely chopped.
 
-2. Transfer to a bowl, add and mix remaining ingredients
+2. Transfer the chopped cranberries and apple to a mixing bowl.
 
-> Best served chilled
+3. Add the mashed banana and crushed pineapple to the bowl. Mix everything together until well combined.
 
+4. Cover the bowl and refrigerate the relish for at least an hour to allow the flavors to meld together.
+
+5. Best served chilled, enjoy your homemade Cranberry Relish as a perfect addition to your Thanksgiving spread or any other occasion.
 
 Enjoy!

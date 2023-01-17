@@ -23,8 +23,12 @@ tags: [recipe, favorite, Main Dish]
 
 ## Instructions
 
-1. Mix and pout into greased 13x9 baking dish
+1. In a mixing bowl, combine the stovetop stuffing, milk, cubed ham, eggs, shredded cheese and salt. Mix well.
 
-2. bake at 350F for 45 - 50 minutes
+2. Drain and rinse the cubed potatoes, then add to the mixture and mix well.
+
+3. Grease a 13x9 inch baking dish and pour the mixture into it.
+
+4. Bake the casserole in the preheated oven at 350F for 45-50 minutes, or until the top is golden brown and the center is cooked through.
 
 Enjoy!

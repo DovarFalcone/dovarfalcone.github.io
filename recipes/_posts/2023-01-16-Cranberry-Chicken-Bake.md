@@ -22,12 +22,14 @@ tags: [recipe, savory, sweet, chicken, Aunt Connie, Main Dish]
 
 ## Instructions
 
-1. Mix cranberry sauce, onion soup packet, and french dressing.
+1. In a mixing bowl, combine the cranberry sauce, French dressing, and Lipton onion soup mix. Mix well.
 
-2. Place chicken in a casserole dish.
+2. Place the chicken breasts in a casserole dish.
 
-3. Pour sauce over chicken.
+3. Pour the sauce mixture over the chicken. Spread it out evenly to coat all the chicken.
 
-4. Bake 350F for 50 - 60 minutes.
+4. Bake in the oven at 350F for 50-60 minutes, or until the chicken is cooked through and the sauce is bubbly.
+
+5. Let it cool for 5 minutes before serving.
 
 Enjoy!

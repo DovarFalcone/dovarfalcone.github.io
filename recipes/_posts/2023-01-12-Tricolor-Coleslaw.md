@@ -26,11 +26,15 @@ tags: [recipe, Denise, salad, vegetables]
 
 ## Instructions
 
-1. In a large bowl, combine mayonnaise, yogurt, mustard, vinegar, sugar and caraway seed.
+1. In a large mixing bowl, combine the mayonnaise, yogurt, Dijon mustard, cider vinegar, sugar, and caraway seeds. Mix well.
 
-2. Season with salt and pepper.
+2. Season with salt and pepper to taste.
 
-3. Add red and green cabbage and carrots and toss well
+3. Add the shredded red cabbage, shredded green cabbage, and grated carrots to the bowl. Toss well to ensure that all the vegetables are evenly coated with the dressing.
+
+4. Cover the bowl and refrigerate for at least an hour to allow the flavors to meld together.
+
+5. Before serving, give the coleslaw a final toss, and adjust the seasoning if needed.
 
 
 Enjoy!

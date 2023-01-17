@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Green Bean and Mozzarella Salad
-subtitle: Green Bean-y Goodness A Salad That Will Leave You Mozztivated to Eat Your Veggies
+subtitle: "Green Bean-y Goodness: A Salad That Will Leave You Mozztivated to Eat Your Veggies"
 category: Recipe
 thumbnail-img: /recipes/assets/images/greenbeanmozz.jpeg
 tags: [recipe, vegetables, Denise, salad]
@@ -22,14 +22,19 @@ tags: [recipe, vegetables, Denise, salad]
 
 ## Instructions
 
-1. Cook and drain the green beans.
 
-2. Cut mozzarella into 1/2 inch cubes.
+1. Cook the green beans according to your preference. Once they are cooked, drain them and let them cool.
+
+2. Cut the mozzarella cheese into 1/2 inch cubes.
 
 3. Slice the plum tomatoes.
 
-4. Mix all ingredients.
+4. In a large mixing bowl, combine the cooled green beans, mozzarella cheese cubes, Italian dressing, sliced tomatoes, chopped basil and pepper. Mix well.
 
-5. Cover and let sit in refrigerator for 1 hour.
+5. Cover the bowl and refrigerate the salad for at least 1 hour to allow the flavors to meld together.
+
+6. Before serving, give the salad a final toss, and adjust the seasoning if needed.
+
+7. Serve chilled.
 
 Enjoy!

@@ -27,12 +27,16 @@ tags: [recipe, pasta, savory, Main Dish, Stephen, favorite]
 
 ## Instructions
 
-1. Preheat oven to 350F, and spray 4 quart dish with nonstick spray.
+1. Preheat your oven to 350F and prepare a 4-quart baking dish by spraying it with nonstick spray.
 
-2. Cook macaroni following directions on package. Drain, then transfer to bowl. Stir in sour cream.
+2. Cook macaroni according to the package instructions, then drain and transfer it to a large mixing bowl. Stir in the sour cream.
 
-3. Heat milk in a saucepan at medium heat. Tiny bubbles (*no boil*). Lower heat and whisk in cheddar. Cook for 2 minutes while whisking. Take away heat. Add mustard, salt, pepper, and nutmeg. Add milk mixture. Stir. 
+3. In a saucepan, heat the milk over medium heat until tiny bubbles form (do not boil). Lower the heat and whisk in the shredded cheddar cheese. Cook for 2 minutes while whisking constantly. Remove the saucepan from heat and add the mustard, salt, pepper, and nutmeg. Mix well.
 
-4. Move to baking dish. Combine bread crumbs and parmesan cheese. Sprinkle over casserole. Bake for 30 minutes.
+4. Pour the milk mixture over the macaroni and sour cream, and stir well to combine. 
+
+5. Transfer the mixture to the prepared baking dish. In a small bowl, mix together the bread crumbs and grated Parmesan cheese. Sprinkle the mixture over the casserole.
+
+6. Bake the casserole for 30 minutes, or until the cheese is melted and the bread crumbs are golden brown. Let it cool for a few minutes before serving and enjoy your delicious casserole!
 
 Enjoy!

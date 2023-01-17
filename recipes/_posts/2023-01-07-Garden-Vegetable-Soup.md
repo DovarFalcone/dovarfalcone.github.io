@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Garden Vegetable Soup
-subtitle: A chicken broth based vegetable soup
+subtitle: "A delicious and healthy chicken broth-based vegetable soup that's perfect for any season"
 category: Recipe
 thumbnail-img: /recipes/assets/images/vegetablesoup.jpeg
 tags: [recipe, vegetables, savory, soup, easy]
 ---
 
-> A basic vegetable soup
+> A hearty and healthy vegetable soup that's easy to make
 
 ## Ingredients
 
@@ -27,16 +27,16 @@ tags: [recipe, vegetables, savory, soup, easy]
 
 ## Instructions
 
-1. In a large saucepan, saute carrots, onion, and garlic until soft
+1. In a large saucepan, sauté the carrots, onion, and garlic until they are soft and fragrant. 
 
-2. Add broth, vegetables (*except zucchini*), and bring to a boil.
+2. Add the chicken broth, green cabbage, green beans, tomato paste, dried basil, dried oregano, and salt to the pan. Bring the mixture to a boil.
 
-3. Lower heat and simmer for 15 minutes.
+3. Reduce the heat to low and let the soup simmer for 15 minutes, or until the vegetables are tender.
 
-4. Add all remaining ingredients.
+4. Stir in the diced zucchini and heat through.
 
-5. Stir in Zucchini and heat through
+5. Serve hot and garnish with fresh herbs or grated cheese if desired.
 
-> Zucchini can be omitted
+> Zucchini can be omitted for a different variation.
 
 Enjoy!

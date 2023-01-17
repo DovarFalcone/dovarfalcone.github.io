@@ -27,17 +27,22 @@ tags: [recipe, pasta, Denise, salad, favorite]
 
 ## Instructions
 
-1. Cook the macaroni according to package directions.
+1. Cook the elbow macaroni according to the package directions.
 
-2. Drain and rinse under cold running water.
+2. Drain and rinse the cooked macaroni under cold running water.
 
-3. Combine the mayo, sour cream, pickle relish, salt, and pepper in a large bowl. 
+3. In a large mixing bowl, combine the mayo, sour cream, sweet pickle relish, salt, and pepper. Mix well to make the dressing.
 
-4. Add macaroni, bell peppers, carrot and onion; toss to combine.
+4. Add the cooled macaroni, diced red and green bell peppers, diced carrot, and minced red onion to the bowl. 
 
-5. Cover and refrigerate until cold, at least 1 hour.
+5. Toss everything together with the dressing to ensure that all the ingredients are evenly coated.
 
-> Best served chilled
+6. Cover the bowl and refrigerate the macaroni salad for at least 1 hour to allow the flavors to meld together.
+
+7. Before serving, give the macaroni salad a final toss.
+
+{: .box-note}
+**Note:** Best served chilled
 
 
 Enjoy!

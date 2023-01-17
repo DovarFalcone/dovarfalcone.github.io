@@ -9,6 +9,7 @@ tags: [recipe, Asian, Denise, salad, vegetables]
 
 > Serves 4
 
+
 ## Ingredients
 
 | Ingredient | Amount|
@@ -20,17 +21,18 @@ tags: [recipe, Asian, Denise, salad, vegetables]
 | Torn Boston Lettuce | 1 Small Head |
 | Cucumber | 1 |
 | Sliced Radishes | 4 |
-| Ginger | 1/2 tbsp |
+| Grated Fresh Ginger | 1/2 tbsp |
 
 ## Instructions
 
-1. Whisk together lime juice, honey, sesame oil, ginger and hoisin sauce in a small bowl.
+1. In a small mixing bowl, whisk together the lime juice, honey, sesame oil, grated ginger, and hoisin sauce. 
 
-2. Combine remaining ingredients in a serving bowl.
+2. In a large serving bowl, combine the torn Boston lettuce, sliced cucumber and radishes.
 
-3. Drizzle the dressing over and toss to coat evenly.
+3. Drizzle the dressing over the salad and toss to coat everything evenly.
 
-> Best served with hoisin burgers.
+{: .box-note}
+**Note:** Best served with hoisin burgers.
 
 
 Enjoy!
