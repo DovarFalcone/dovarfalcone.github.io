@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Easy Chicken Pot Pie
-subtitle: Subtitle
+subtitle: A comforting and delicious main dish that's perfect for a cozy weeknight dinner
 category: Recipe
 thumbnail-img: /recipes/assets/images/chickpotpie.jpeg
 tags: [recipe, savory, chicken, Denise, Main Dish]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Crunchy Chicken Roll-Up
-subtitle: Subtitle
+subtitle: A classic recipe for a flavorful and satisfying main dish
 category: Recipe
 thumbnail-img: /recipes/assets/images/crunchychick.jpeg
 tags: [recipe, chicken, Denise, Main Dish]
