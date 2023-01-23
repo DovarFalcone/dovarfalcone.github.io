@@ -61,7 +61,7 @@ foo(3)
 {% endhighlight %}
 
 ## Boxes
-You can add notification, warning and error boxes like this:
+You can add notification, warning, error and success boxes like this:
 
 ### Notification
 
