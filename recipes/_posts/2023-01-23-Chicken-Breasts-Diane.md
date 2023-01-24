@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chicken Breasts Diane
-subtitle: Subtitle
+subtitle: In Progress
 category: Recipe
 thumbnail-img: /recipes/assets/images/chickdiane.jpeg
 tags: [test]
