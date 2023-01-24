@@ -68,7 +68,7 @@ You can add notification, warning, error and success boxes like this:
 {: .box-note}
 **Note:** This is a notification box.
 
-### Warning!
+### Warning
 
 {: .box-warning}
 **Warning:** This is a warning box.
