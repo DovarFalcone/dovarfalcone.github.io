@@ -2,7 +2,7 @@
 layout: post
 title: "Exploring Sleep Data: Part 2"
 subtitle: Bringing in Outside Data
-cover-img: /projects/assets/images/darkbanner.jpeg
+cover-img: /projects/assets/images/bannernightsky.jpeg
 thumbnail-img: /projects/assets/images/googlelocation.jpeg
 gh-repo: dovarfalcone/google-takeout-location-parser
 gh-badge: [star, fork, follow]
@@ -45,7 +45,7 @@ To use the Python script, follow these steps:
 
 I then use my `csvtable.py` script to upload this location data into my `CPAP` database.
 
-*Read on in [Part 3!](/2023-02-10-Exploring-Sleep-Data-Part-3/)*
+*Read on in [Part 3!](/2023-02-07-Exploring-Sleep-Data-Part-3/)*
 ---
 
 ---
