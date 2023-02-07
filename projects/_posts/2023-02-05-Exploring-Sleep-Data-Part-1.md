@@ -88,7 +88,8 @@ ALTER COLUMN "Flow" SET DATA TYPE numeric USING "Flow"::numeric;
 Once these steps were completed, the data extraction and loading process was successful. I was now able to work with my sleep data and start analyzing it. The data provided a lot of valuable insights, and I was excited to dive deeper into it
 
 
-*Read on in [Part 2!](/2023-02-10-Exploring-Sleep-Data-Part-2.md/)*
+*Read on in [Part 2!](/2023-02-06-Exploring-Sleep-Data-Part-2.md/)*
+---
 
 ---
 
