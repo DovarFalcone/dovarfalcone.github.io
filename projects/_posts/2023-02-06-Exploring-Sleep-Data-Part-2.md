@@ -10,7 +10,7 @@ category: Project
 tags: [Project, sleep]
 ---
 
-*Read [Part 1!](/2023-02-05-Exploring-Sleep-Data-Part-1.md/)*
+*Read [Part 1!](/2023-02-05-Exploring-Sleep-Data-Part-1/)*
 
 Analyzing Sleep with Google Location Data
 {: style="color:white; font-size: 200%; text-align: center;"}
@@ -45,9 +45,7 @@ To use the Python script, follow these steps:
 
 I then use my `csvtable.py` script to upload this location data into my `CPAP` database.
 
-*Read on in [Part 3!](/2023-02-10-Exploring-Sleep-Data-Part-3.md/)*
+*Read on in [Part 3!](/2023-02-10-Exploring-Sleep-Data-Part-3/)*
 ---
 
 ---
-
-> This blog post was written with the assistance of a language model AI called chatGPT. Thank you to OpenAI for helping to create this content.
