@@ -45,6 +45,10 @@ To use the Python script, follow these steps:
 
 I then use my `csvtable.py` script to upload this location data into my `CPAP` database.
 
+Visualizing the Data
+{: style="color:white; font-size: 200%; text-align: center;"}
+---
+
 Using the location data I was able to perform a quick analysis to see how many places I visited in a given day that I traveled. 
 
 ![Places Visited:](/projects/assets/images/placesvisited.png){: .mx-auto.d-block :}
