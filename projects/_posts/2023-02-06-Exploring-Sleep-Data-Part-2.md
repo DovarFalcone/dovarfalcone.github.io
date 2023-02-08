@@ -45,6 +45,16 @@ To use the Python script, follow these steps:
 
 I then use my `csvtable.py` script to upload this location data into my `CPAP` database.
 
+Using the location data I was able to perform a quick analysis to see how many places I visited in a given day that I traveled. 
+
+![Places Visited:](/projects/assets/images/placesvisited.png){: .mx-auto.d-block :}
+> Places Visited 
+
+I also found it fun to create a heat map of my travels. 
+
+![Places Visited:](/projects/assets/images/geomap.png){: .mx-auto.d-block :}
+> Places Visited Heat Map
+
 *Read on in [Part 3!](/2023-02-07-Exploring-Sleep-Data-Part-3/)*
 ---
 
