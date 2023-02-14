@@ -16,7 +16,6 @@ tags: [recipe, dip, favorite, mexican, beans, Grammy, appetizer, savory]
 | :------ |:--- |
 | Refried Beans | 1 16 oz Can |
 | Taco Seasoning | 1/2 package | 
-| Mayo | 1/2 Cup |
 | Sour Cream | 1/2 Cup|
 | Shredded Cheese | Lots |
 | Salsa/Chopped Tomatoes| 1 Jar|
@@ -28,14 +27,15 @@ tags: [recipe, dip, favorite, mexican, beans, Grammy, appetizer, savory]
 
 Heat, mix, and spread refried beans and taco seasoning in a pie plate.
 
-Mix the mayo and sour cream together.
-
-Spread the sour cream and mayo mixture over the beans in the pie plate.
+Spread the sour cream over the beans in the pie plate.
 
 Top with cheese, tomatoes/salsa, onions, olives and jalapeños.
 
 > This is the best order for optimal scooping performance
 
 Break out the Tostitos Scoops and you are ready to dip.
+
+{: .box-warning}
+**NEVER ADD MAYO**
 
 Enjoy!
