@@ -13,6 +13,14 @@ This is a demo post to show you how to write blog posts with markdown.  I strong
 
 **Here is some bold text**
 
+- Here is a link to an html file
+<a href="/assets/html/drinks.html">Click here to view the drinks page</a>
+
+- Here is the html file in an iframe
+<iframe src="/assets/html/drinks.html" width="100%" height="600" allow-same-origin></iframe>
+
+
+
 ## Here is a secondary heading
 
 Here's a useless table:
