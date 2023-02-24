@@ -85,7 +85,11 @@ ALTER TABLE "be_waveFlowTable"
 ALTER COLUMN "Flow" SET DATA TYPE numeric USING "Flow"::numeric;
 ~~~
 
-Once these steps were completed, the data extraction and loading process was successful. I was now able to work with my sleep data and start analyzing it. The data provided a lot of valuable insights, and I was excited to dive deeper into it
+Once these steps were completed, the data extraction and loading process was successful. I was now able to work with my sleep data and start analyzing it. The data provided a lot of valuable insights, and I was excited to dive deeper.
+
+Having the data on the server allowed for me to start making insightful graphs like the one below. This GIF shows my breathing flow as I use the machine each night.
+
+![](/assets/gif/flow_20220830_20230201_10fps.gif)
 
 
 *Read on in [Part 2!](/2023-02-06-Exploring-Sleep-Data-Part-2/)*
