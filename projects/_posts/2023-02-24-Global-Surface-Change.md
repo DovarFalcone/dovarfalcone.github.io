@@ -4,7 +4,7 @@ title: "Animated Map of Global Temperature Changes from 1970 to 2021"
 cover-img: /projects/assets/images/darkbanner.jpeg
 thumbnail-img: /projects/assets/images/globe.png
 gh-repo: dovarfalcone/global-temp-change-animation
-gh-badge: [star, fork, follow]
+gh-badge: [follow]
 category: Project
 tags: [Project]
 ---
