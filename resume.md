@@ -5,58 +5,44 @@ subtitle: Oh the things I have done
 ---
 # Summary
 
-Experienced data coordinator with a background in animal science and business intelligence. Proficient in a range of technical skills, including SQL, Python, and PowerBI. Demonstrated ability to drive operational efficiencies and cost savings, as well as develop and implement successful project plans. Strong leadership and team management skills, with experience supervising and training staff.
+As an experienced data coordinator with a background in animal science and business intelligence, I'm skilled in using SQL, Python, R, and PowerBI. I have a track record of driving operational efficiencies, cost savings, and successfully executing project plans. My strong leadership and team management skills make me an asset to any organization, having supervised and trained staff in my previous roles.
 
+## Work Experience
 ---
+### Cargill FSQR Data Coordinator
+#### _2021-Present:_
 
-# Work Experience
+- In my time at Cargill, I saw an opportunity to streamline our paper-based processes and bring our protein facilities into the digital age. In this role, I implemented a paperless system across all facilities, driving significant operational efficiencies and cost savings. I designed custom forms for each plant to replace paper copies, ensuring clean data collection with minimal future maintenance requirements. 
+- To manage the influx of requests during the transition, I created a ticketing support model, ensuring that everyone's concerns were addressed in a timely and efficient manner. 
+- Finally, I utilized my business intelligence engineering skills to build reports from scratch using PostgreSQL and PowerBi. This allowed me to analyze and report on real-time data collected from all plants, giving the leadership team insight into our operations' performance.
 
-## Cargill FSQR Data Coordinator
-#### 2021-Present
+### Cargill FSQR Supervisor
+#### _2020-2021:_
 
-- Implemented a paperless system across all protein facilities, driving significant operational efficiencies and cost savings.
-- Developed a ticketing support model to manage incoming requests during the paperless application deployment.
-- Performed business intelligence engineering tasks, building reports from scratch using PostgreSQL and PowerBi.
-- Analyzed and reported on data collected from all plants in real-time.
-- Created custom forms for each plant to replace paper copies, ensuring clean data collection with minimal future maintenance requirements.
+- As an FSQR supervisor at Cargill Meat Solutions, I oversaw a team of technicians responsible for enforcing regulatory and corporate policies. Recognizing that our daily data entry tasks were inefficient and labor-intensive, I developed and implemented automated spreadsheets and Microsoft products, reducing our workload while improving our accuracy. 
+- To cut costs, I implemented a water sampling program that reduced testing, supply, and labor expenses by $30,000 annually.
+- Additionally, I strengthened relationships between the FSQR and Ops teams, creating a highly functioning group.
 
-## Cargill Meat Solutions FSQR Supervisor - Second Shift
-#### 2020-2021
+### Select Breeders Services - Horse Care and Facility Supervisor
+#### _2019-2020:_
 
-- Oversaw a team of technicians responsible for enforcing regulatory and corporate policies.
-- Improved daily data entry tasks using automated spreadsheets and Microsoft products.
-- Implemented a cost savings program that reduced the amount of daily water sampling, resulting in savings of $30,000 in testing, supplies, and labor.
-- Strengthened relationships between the FSQR and Ops teams to create a highly-functioning group.
+- At Select Breeders Services, I coordinated all aspects of animal welfare, employee scheduling, and inventory management for a horse breeding facility. I supervised and trained a team of up to 10 employees, including H2A Visa workers. 
+- After identifying an underutilized arena, I developed and executed a project plan to add additional stalls, generating an estimated $10,000 per month in revenue. 
+- I also created spreadsheets to track the movement of horses in and out of the facility and implemented weekly quality checks of all vehicles and facilities.
 
-## Select Breeders Services - Horse Care and Facility Supervisor
-#### 2019-2020
+### Furlyn Farm and Stables, LLC - Facility Manager
+#### _2012-2018:_
 
-- Coordinated all aspects of animal welfare, employee scheduling, and inventory management for a horse breeding facility.
-- Supervised and trained a team of up to 10 employees, including H2A Visa workers.
-- Developed and executed a project plan to add additional stalls to an unused arena, generating an estimated $10,000 per month in revenue.
-- Created spreadsheets to track the movement of horses in and out of the facility.
-- Implemented weekly quality checks of all vehicles and facilities.
+- As a facility manager at Furlyn Farm and Stables, I managed and supported a 75-acre family-owned horse farm. I oversaw all aspects of the farm's operations, from maintenance and repairs to staffing and customer service. My leadership and problem-solving skills ensured that the farm ran smoothly.
 
-## Furlyn Farm and Stables, LLC - Facility Manager
-#### 2012-2018
-
-- Managed and supported a 75-acre family-owned horse farm.
-
+## Education
 ---
+- The Pennsylvania State University, University Park, PA, 2018:
+  - Major: Animal Science, Business Option
+  - Minor: Equine Science
 
-# Education
-
-The Pennsylvania State University, University Park, PA
-2018
-
-- Major: Animal Science, Business Option
-- Minor: Equine Science
-
+## Skills
 ---
-
-# Skills
-
-## Proficient in:
 - Excel
 - SQL
 - Python
