@@ -5,7 +5,11 @@ subtitle: Oh the things I have done
 ---
 # Summary
 
-As an experienced data coordinator with a background in animal science and business intelligence, I'm skilled in using SQL, Python, R, and PowerBI. I have a track record of driving operational efficiencies, cost savings, and successfully executing project plans. My strong leadership and team management skills make me an asset to any organization, having supervised and trained staff in my previous roles.
+As an experienced data coordinator with a background in animal science and business intelligence, I bring a unique blend of technical expertise and strong communication skills to the table. Proficient in SQL, Python, R, and PowerBI, I have successfully utilized these tools to drive operational efficiencies, achieve cost savings, and execute project plans with precision. 
+
+In addition to my technical expertise, I bring exceptional skills in stakeholder communication and team leadership to the table. Throughout my career, I have collaborated seamlessly with diverse teams, guiding them towards shared goals and fostering a cohesive and motivated work environment. In previous roles, I successfully supervised and trained staff, leveraging my strong leadership and team management abilities to drive outstanding results.
+
+With a proven track record of delivering results and a passion for leveraging data to drive informed decision-making, I am confident in my ability to make a meaningful impact in any organization. I am eager to contribute my skills and expertise to drive innovation and success. 
 
 ## Work Experience
 ---
