@@ -12,9 +12,11 @@ As an experienced data coordinator with a background in animal science and busin
 ### Cargill FSQR Data Coordinator
 #### _2021-Present:_
 
-- In my time at Cargill, I saw an opportunity to streamline our paper-based processes and bring our protein facilities into the digital age. In this role, I implemented a paperless system across all facilities, driving significant operational efficiencies and cost savings. I designed custom forms for each plant to replace paper copies, ensuring clean data collection with minimal future maintenance requirements. 
-- To manage the influx of requests during the transition, I created a ticketing support model, ensuring that everyone's concerns were addressed in a timely and efficient manner. 
-- Finally, I utilized my business intelligence engineering skills to build reports from scratch using PostgreSQL and PowerBi. This allowed me to analyze and report on real-time data collected from all plants, giving the leadership team insight into our operations' performance.
+- At Cargill, I embarked on a transformative journey to modernize our protein facilities by transitioning from paper-based processes to a digital ecosystem. By implementing a paperless system and designing customized forms for each plant, I successfully drove significant operational efficiencies and cost savings while ensuring clean data collection with minimal maintenance requirements. 
+- Recognizing the importance of effective communication and timely support during the transition, I created a ticketing support model that addressed everyone's concerns efficiently. This collaborative approach fostered seamless teamwork and ensured a smooth transition for all stakeholders.
+- Leveraging my expertise in business intelligence engineering, I developed compelling reports from scratch using PostgreSQL and PowerBI. These reports empowered the leadership team with real-time insights into our operations' performance. Notably, I built a raw material quality audit report that delivered key performance indicators (KPIs), promoting communication and collaboration between different segments. Through cross-team collaboration, I standardized data collection processes, enabling us to leverage PowerBI's capabilities effectively.
+- Additionally, I crafted a real-time paginated SSRS report, providing user-friendly access to accurate data during audits. This report showcased my technical prowess and attention to detail, ensuring that stakeholders could easily navigate and extract the information they needed.
+- Another notable achievement was developing an advanced report using R, which generated Statistical Process Control (SPC) X-Bar and R charts. This data-driven approach enhanced our ability to monitor and optimize processes, further solidifying my expertise in data analysis and visualization.
 
 ### Cargill FSQR Supervisor
 #### _2020-2021:_
