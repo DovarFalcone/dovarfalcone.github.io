@@ -16,4 +16,4 @@ What else do you need?
 
 To be honest, I'm having some trouble remembering right now, so why don't you just read [a memory](https://sites.psu.edu/appaloosa/author/dwf5235/){:target="_blank"} and it will answer **none** of your questions.
 
-Check out my [Resume](https://furtkevic.com/resume/){:target="_blank"} while your here.
+Check out my [Resume](https://furtkevic.com/resume/){:target="_blank"} while you're here.
