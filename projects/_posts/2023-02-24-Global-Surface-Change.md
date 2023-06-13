@@ -11,7 +11,7 @@ tags: [Project]
 
 ![](/assets/gif/temperature_change_FINAL_1.75fps.gif)
 
-There is also [Slow Mode](https://cdn.discordapp.com/attachments/1068483651463028766/1078675620806004796/temperature_change_FINAL_0.75fps.gif) and [Ludicrous Speed](https://cdn.discordapp.com/attachments/1068483651463028766/1078675703165358140/temperature_change_FINAL_5fps.gif)
+There is also [Slow Mode](/assets/gif/temperature_change_FINAL_0.75fps.gif) and [Ludicrous Speed](/assets/gif/temperature_change_FINAL_5fps.gif)
 
 Data Sourced from [Kaggle](https://www.kaggle.com/datasets/mdazizulkabirlovlu/all-countries-temperature-statistics-1970-2021)
 
