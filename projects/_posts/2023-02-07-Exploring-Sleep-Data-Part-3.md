@@ -17,7 +17,7 @@ Analyzing Sleep with Google Location Data
 
 ---
 
-With my location data collected in the previous part, it was time to find the weather for the places where I slept each day. I discovered a free API called [Meteostat](https://rapidapi.com/meteostat/api/meteostat/tutorials/an-introduction-to-meteostat) that provided weather data for specific locations and times, so I signed up for an API key and tested it with a few of my Google location data samples.
+With my location data collected in the previous part, it was time to find the weather for the places where I slept each day. I discovered a free API called [Meteostat](https://rapidapi.com/meteostat/api/meteostat/tutorials/an-introduction-to-meteostat){:target="_blank"} that provided weather data for specific locations and times, so I signed up for an API key and tested it with a few of my Google location data samples.
 
 With my Google location data and the API key in hand, I started writing a Python script to extract the weather data for each location and time. 
 

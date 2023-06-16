@@ -11,16 +11,14 @@ comments: true
 
 BeautifulCharts is a web app that allows you to visualize data using different types of charts. It is built using Python and Streamlit, and uses Plotly Express for creating the charts.
 
-_Check it out here on Streamlit! <a href="https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/">Beautiful Charts</a>_
+_Check it out here on Streamlit!\
+ [BeautifulCharts](https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/){:target="_blank"}_
 
-### Installation
+### Install steps to run locally
 
-1. Clone the repository: `git clone https://github.com/yourusername/beautifulcharts.git`
+1. Clone the repository: `git clone https://github.com/DovarFalcone/beautifulcharts`
 2. Navigate to the project directory: `cd beautifulcharts`
 3. Install the dependencies: `pip install -r requirements.txt`
-
-### Usage
-
 1. Start the app: `streamlit run app.py`
 2. Upload your data in CSV format using the "Upload CSV" button
 3. Choose the type of chart you want to create using the dropdown menu
@@ -38,4 +36,4 @@ _Check it out here on Streamlit! <a href="https://dovarfalcone-beautifulcharts-a
 
 
 {: .box-error}
-**Note:** See the details on GitHub, [beautifulcharts](https://github.com/DovarFalcone/beautifulcharts).
+**Note:** See the details on GitHub, [beautifulcharts](https://github.com/DovarFalcone/beautifulcharts){:target="_blank"}.
