@@ -17,11 +17,11 @@ tags: [Project, Data, Charts]
 
 Artwork Description:
 
-Vibrant Connections is an intriguing artwork that seamlessly fuses the realms of data and art, created through the innovative dART (data art) technique. The artwork is an exploration of the interconnectedness and beauty that lies within diverse datasets.
+Vibrant Connections is an intriguing artwork that seamlessly fuses the realms of data and art. I created dART (data art) technique and have started to experiment with different datasets and visuals. The artwork is an exploration of the interconnectedness and beauty that lies within diverse datasets.
 
 The piece manifests as a visual symphony of colors and shapes, forming an abstract composition that captivates the viewer. Random combinations of data points from various dimensions intertwine, giving rise to a vibrant tapestry of visual elements. Each data point acts as a brushstroke, contributing to the intricate and dynamic arrangement.
 
-Colors burst forth in a kaleidoscope of hues, evoking a sense of energy and vitality. The palette, derived from random RGB values, harmoniously blends vibrant tones that dance across the canvas. From vivid reds to deep blues and vibrant greens, the colors pulse with life, captivating the viewer's gaze.
+Colors burst forth in a kaleidoscope of hues, evoking a sense of energy and vitality. The palette, derived from random RGB values, harmoniously blends vibrant tones that dance across the canvas. From vivid teals to deep purples and vibrant indigo, the colors pulse with life, captivating the viewer's gaze.
 
 The shapes within the artwork are an embodiment of groovy rhythms, formed by a collection of markers that include circles, squares, diamonds, and triangles. These dynamic shapes interact with one another, expressing a sense of movement and fluidity. Lines gracefully connect the data points, creating a delicate web of connectivity that symbolizes the hidden relationships within the dataset.
 
