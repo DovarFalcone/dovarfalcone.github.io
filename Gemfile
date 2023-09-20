@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 gemspec
 
+gem 'jekyll-redirect-from'
+
 # gems below only necessary on windows device
 gem "webrick", "~> 1.7"
 
