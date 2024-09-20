@@ -6,7 +6,7 @@ subtitle: Why you'd want to grab a drink with me
 
 My name is Dennis Furtkevic. I have the following qualities:
 
-- I rock a great goatee
+- I can do Yo-Yo tricks
 - I'm extremely loyal to my family
 - I'm thick skinned but my mind is a sponge
 
