@@ -18,7 +18,7 @@ With a proven track record of delivering results and a passion for leveraging da
 ## Work Experience
 ---
 
-### Cargill Analytics Data Proces Analyst
+### Cargill Analytics Data Process Analyst
 #### _2023-Present:_
 
 - Data-Driven Insights: Utilize data analysis to provide strategic insights, enabling informed decision-making by business leaders. Leverage internal data platforms through the creation of ETL pipelines and scalable solutions.
