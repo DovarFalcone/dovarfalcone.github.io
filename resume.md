@@ -11,7 +11,7 @@ Innovative data professional with 4+ years of experience in **data analysis, bus
 # PROFESSIONAL EXPERIENCE  
 
 ## Cargill Food and Bio – AMCAS Data & Analytics (Wayzata, MN)  
-**Senior Analytics Data Process Analyst** (Remote)  
+**Senior Analytics & Data Process Analyst** (Remote)  
 **October 2023 – Present**  
 - Analyzed operational datasets from **SAP** and **Hadoop Data Lake** to generate insights through **Power BI dashboards** and scalable data warehousing solutions.  
 - Led **end-to-end data pipeline development**, including **data ingestion, UAT validation, and dashboard creation**, improving forecasting accuracy and reducing manual effort.  
@@ -24,7 +24,7 @@ Innovative data professional with 4+ years of experience in **data analysis, bus
 ---
 
 ## Cargill Protein – North America Corporate FSQR Data Systems (Wichita, KS)  
-**Food Safety and Quality Data Coordinator** (Remote)  
+**Product Owner, Data Analyst** (Remote)  
 **October 2021 – October 2023**  
 - Created **custom SQL queries and Power BI reports** to extract real-time insights from **PostgreSQL databases** for food safety monitoring.  
 - Implemented **SPC charts using R** within Power BI to meet customer compliance requirements.  
