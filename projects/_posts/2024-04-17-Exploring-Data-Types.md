@@ -32,7 +32,7 @@ Understanding data is a fundamental skill in today's data-driven world, and this
 ## Try It Yourself
 ### [Beautiful Charts - Data Visualization](https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/)
 
-<iframe src="https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/" width="100%" height="600px" style="border:none;"></iframe>
+<a href="https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/" target="_blank" class="button">Open Live Demo</a>
 
 ## Features
 - **Dynamic Sidebar Controls**
