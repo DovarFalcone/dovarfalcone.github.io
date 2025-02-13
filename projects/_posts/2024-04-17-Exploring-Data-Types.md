@@ -29,6 +29,13 @@ Understanding data is a fundamental skill in today's data-driven world, and this
 4. **Explore the Data**: View a brief summary and interactive visualization.
 5. **Refresh Data**: Generate a new dataset at any time.
 
+## Try It Yourself
+### [Beautiful Charts - Data Visualization](https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/)
+
+<div class="video-container">
+<iframe src="https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/" width="100%" height="600px" style="border:none;"></iframe>
+</div>
+
 ## Features
 - **Dynamic Sidebar Controls**
   - Toggle sidebar state for better user experience
