@@ -30,9 +30,7 @@ Understanding data is a fundamental skill in today's data-driven world, and this
 5. **Refresh Data**: Generate a new dataset at any time.
 
 ## Try It Yourself
-### [Beautiful Charts - Data Visualization](https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/)
-
-<a href="https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/" target="_blank" class="button">Open Live Demo</a>
+### <a href="https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/" target="_blank" class="button">Open Live Demo</a>
 
 ## Features
 - **Dynamic Sidebar Controls**
