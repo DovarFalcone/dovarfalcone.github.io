@@ -14,6 +14,6 @@ What else do you need?
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just read [a memory](https://sites.psu.edu/appaloosa/author/dwf5235/){:target="_blank"} and it will answer **none** of your questions.
+Welcome! I’m Dennis Furtkevic, and I’m fascinated by how data can help us better understand the world around us—whether that’s through analyzing patterns in data, tracking sleeping trends, or figuring out how to get the perfect cup of espresso. With expertise in Power BI, data pipelines, and systems like SAP and PostgreSQL, I love turning raw data into meaningful insights that drive business success. Outside of work, you can find me enjoying the company of my dogs or diving into my next tech project. If you’re looking to turn data into something extraordinary, I’d love to help make it happen!
 
 Check out my [Resume](https://furtkevic.com/resume/){:target="_blank"} while you're here.
