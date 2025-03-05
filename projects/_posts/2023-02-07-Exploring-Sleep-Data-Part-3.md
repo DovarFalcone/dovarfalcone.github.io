@@ -39,9 +39,6 @@ Here is a line chart of the temperatures I experienced, generated using the data
 
 I then used my CSV to table script to upload the "weather_data.csv" file into my PostgreSQL database.
 
-With the weather data now in the database, the fun part can begin: analysis and visualization!
-
-*Read on in [Part 4!](/2023-02-10-Exploring-Sleep-Data-Part-4/)*
 ---
 
 ---
