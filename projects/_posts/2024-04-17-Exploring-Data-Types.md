@@ -14,6 +14,8 @@ comments: true
 ## Overview
 Understanding data is a fundamental skill in today's data-driven world, and this Streamlit app is designed to make learning and exploring data distributions both intuitive and engaging. Whether you're a student, data enthusiast, or professional, this app allows you to generate, visualize, and experiment with different statistical distributions in an interactive way. By leveraging Streamlit, Plotly, and NumPy, this app transforms abstract statistical concepts into visual insights, making learning both accessible and fun.
 
+![DataVisOverview](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/projects/assets/images/DataVisOverview.png)
+
 ![App Screenshot](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/projects/assets/images/normal-histogram.png)
 
 ## Why Use This App?
@@ -21,6 +23,8 @@ Understanding data is a fundamental skill in today's data-driven world, and this
 - **Enhance Data Literacy**: Visualizing data in various forms allows users to recognize patterns and anomalies quickly.
 - **Bridge Theory and Application**: Students and professionals can use this tool to reinforce theoretical knowledge with real-time visualization.
 - **Quick Prototyping**: Analysts and data scientists can generate and visualize distributions instantly without writing complex scripts.
+
+![DataVisWhy](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/projects/assets/images/DataVisWhy.png)
 
 ## How It Works
 1. **Select a Data Type**: Choose from a range of statistical distributions.
