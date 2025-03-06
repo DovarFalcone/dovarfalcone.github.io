@@ -18,4 +18,4 @@ Welcome! I’m Dennis Furtkevic, and I’m fascinated by how data can help us be
 
 Check out my [Resume](https://furtkevic.com/resume/){:target="_blank"} while you're here.
 
-[Brain](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/assets/img/BrainVis.png)
+![Brain](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/assets/img/BrainVis.png)
