@@ -10,16 +10,22 @@ Innovative data professional with 4+ years of experience in **data analysis, bus
 
 # PROFESSIONAL EXPERIENCE  
 
-## Cargill Food and Bio – AMCAS Data & Analytics (Wayzata, MN)  
+## Cargill Food and Bio – Americas Data & Analytics (Wayzata, MN)  
+**Senior Consultant, Data Analytics & Reporting** (Remote)  
+**January 2025 – Present**  
+- Utilized the OpenAI API to implement an Agentic-RAG architecture. Training the AI on our code base to facilitate data analysis.
+- Migrated exiting reporting databases to Snowflake. Preforming App analysis to determine priority, and effort required. 
+- Built a Power BI model and report to monitor order health, providing insights never before available to customer service reps, reducing 95,000 emails, and saving 6,630 hours annually.
+
 **Senior Analytics & Data Process Analyst** (Remote)  
-**October 2023 – Present**  
-- Analyzed operational datasets from **SAP** and **Hadoop Data Lake** to generate insights through **Power BI dashboards** and scalable data warehousing solutions.  
-- Led **end-to-end data pipeline development**, including **data ingestion, UAT validation, and dashboard creation**, improving forecasting accuracy and reducing manual effort.  
-- Managed **Power BI deployment pipelines** to support self-service analytics and parallel report development workflows.  
-- **Key Projects**:  
-  - **Inventory Change Monitoring**: Automated inventory reporting, saving ~500 hours annually by eliminating manual data extracts.  
-  - **Demand Plan Forecasting**: Developed a data pipeline for **SAP IBP** to measure forecast accuracy and planning bias, ensuring data-driven demand planning.  
-  - **Customer Service IDEX**: Built a **Power BI data model** to monitor order health, saving 6,630 hours annually and reducing 95,000 emails, enhancing customer satisfaction.
+**October 2023 – January 2025**  
+- Gathered Business Requirements into technical solutions, ensuring user adoption and data-driven decisions.
+- Created process playbooks for the product development lifecycle and guided Junior developers on best practices.
+- Analyzed operational data from SAP to generate insights through Power BI dashboards and scalable warehousing solutions.
+- Using MFT, Shell Scripts, Orchestration tools, and SQL, led end-to-end data pipeline development, including data ingestion, UAT validation, and dashboard creation, improving forecasting accuracy visibility and reducing manual effort.
+- Managed Power BI deployment pipelines to support self-service analytics and parallel report development workflows.
+- Automated Americas Inventory Financial reporting, saving ~500 hours annually through data pipeline integration and Power BI.
+- Enhanced demand planning by developing an SAP IBP data pipeline, improving demand forecast accuracy and visibility.
 
 ---
 
