@@ -1,0 +1,370 @@
+/* --- Custom Stylesheet for Softer Dark Mode Theme --- */
+
+:root {
+  --bg-primary: #1A1D24;
+  --bg-secondary: #12151B;
+  --bg-tertiary: #1E222B;
+  --border-color: #2A2F3B;
+  --text-main: #E2E8F0;
+  --text-muted: #94A3B8;
+  --text-dark: #64748B;
+  --accent-yellow: #FACC15;
+  --accent-blue: #38BDF8;
+  --accent-blue-hover: #60A5FA;
+}
+
+/* Global body modifications */
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  line-height: 1.75 !important;
+  background-color: var(--bg-primary) !important;
+  color: var(--text-main) !important;
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent-yellow) !important;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* Link treatments */
+a {
+  color: var(--accent-blue);
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--accent-blue-hover);
+  text-decoration: none;
+}
+
+/* Intro Header */
+.intro-header .page-heading h1, 
+.intro-header .post-heading h1 {
+  font-size: 3.5rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.intro-header .page-heading .page-subheading,
+.intro-header .post-heading .post-subheading {
+  color: var(--text-main) !important;
+  font-size: 1.35rem !important;
+  font-weight: 300 !important;
+  opacity: 0.9;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Navbar Customizations */
+.navbar-custom {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 12px 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 800 !important;
+  letter-spacing: -0.01em;
+  color: var(--accent-yellow) !important;
+  transition: color 0.2s ease !important;
+  margin-left: 1.5rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.navbar-custom .navbar-collapse {
+  margin-right: 1.5rem !important;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: var(--accent-blue) !important;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  font-weight: 600 !important;
+  color: var(--text-main) !important;
+  transition: color 0.2s ease !important;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: var(--accent-blue) !important;
+  background-color: transparent !important;
+}
+
+/* Submenu dropdown styles */
+.navbar-custom .dropdown-menu {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-custom .dropdown-menu > li > a {
+  color: var(--text-main) !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+  border-radius: 4px;
+}
+
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+  color: var(--accent-blue) !important;
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* Portfolio Post Card Layouts */
+.post-preview {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  padding: 24px 30px !important;
+  margin-bottom: 30px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease !important;
+}
+
+.post-preview:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  border-color: var(--accent-blue) !important;
+}
+
+.post-preview a:hover {
+  text-decoration: none !important;
+}
+
+.post-preview .post-title {
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  color: var(--accent-yellow) !important;
+  transition: color 0.2s ease !important;
+}
+
+.post-preview:hover .post-title {
+  color: var(--accent-blue) !important;
+}
+
+.post-preview .post-subtitle {
+  color: var(--text-muted) !important;
+  font-size: 1.15rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 12px !important;
+}
+
+.post-preview .post-meta {
+  color: var(--text-dark) !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 15px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.post-preview .post-entry {
+  color: var(--text-main) !important;
+  font-size: 0.98rem !important;
+  line-height: 1.65 !important;
+  margin-bottom: 20px !important;
+}
+
+.post-preview .post-read-more {
+  color: var(--accent-blue) !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+.post-preview .post-read-more:hover {
+  color: var(--accent-blue-hover) !important;
+}
+
+/* Tag overrides for list & tag cloud */
+.blog-tags {
+  margin-top: 20px !important;
+  font-size: 0.9rem !important;
+  color: var(--text-muted) !important;
+}
+
+.blog-tags span {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.blog-tags a, .blog-tags .list-inline-item a {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--accent-blue) !important;
+  border: 1px solid var(--border-color) !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+  font-size: 0.8rem !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  display: inline-block;
+  margin: 2px 2px 6px 2px !important;
+}
+
+.blog-tags a:hover, .blog-tags .list-inline-item a:hover {
+  background-color: var(--accent-blue) !important;
+  color: var(--bg-secondary) !important;
+  border-color: var(--accent-blue) !important;
+}
+
+/* Interactive elements / Buttons */
+.btn-primary {
+  background-color: var(--accent-blue) !important;
+  border-color: var(--accent-blue) !important;
+  color: var(--bg-secondary) !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--accent-blue-hover) !important;
+  border-color: var(--accent-blue-hover) !important;
+  color: var(--bg-secondary) !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4) !important;
+}
+
+.tag-btn {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--accent-blue) !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.tag-btn:hover, .tag-btn:focus {
+  background-color: var(--accent-blue) !important;
+  border-color: var(--accent-blue) !important;
+  color: var(--bg-secondary) !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3) !important;
+}
+
+/* Search icon spacing override */
+#nav-search-icon {
+  margin-right: 8px !important;
+}
+
+/* Nav search box styles */
+#nav-search-input {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-size: 1.5rem !important;
+  height: auto !important;
+  transition: all 0.25s ease !important;
+}
+
+#nav-search-input:focus {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--accent-blue) !important;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.25) !important;
+}
+
+#nav-search-input::placeholder {
+  color: var(--text-dark) !important;
+}
+
+#nav-search-exit {
+  color: var(--text-muted) !important;
+  transition: color 0.2s ease !important;
+}
+
+#nav-search-exit:hover {
+  color: var(--accent-yellow) !important;
+}
+
+#search-results-container {
+  color: var(--text-main) !important;
+}
+
+#search-results-container a {
+  color: var(--accent-blue) !important;
+  text-decoration: none !important;
+}
+
+#search-results-container a:hover {
+  color: var(--accent-yellow) !important;
+}
+
+/* Clean code blocks & pre elements */
+.highlight {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+}
+
+pre {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-main) !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+
+code {
+  background-color: var(--bg-secondary) !important;
+  color: var(--accent-blue) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-size: 90% !important;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--accent-blue) !important;
+  background-color: var(--bg-secondary) !important;
+  padding: 16px 20px !important;
+  border-radius: 0 8px 8px 0 !important;
+  color: var(--text-muted) !important;
+  font-style: italic !important;
+  margin: 20px 0 !important;
+}
+
+/* Table refinements (e.g. recipe/resume layouts) */
+table {
+  width: 100%;
+  margin: 24px 0 !important;
+  color: var(--text-main) !important;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 2px solid var(--border-color) !important;
+  padding: 14px !important;
+  font-weight: 700;
+  text-align: left;
+}
+
+table td {
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 14px !important;
+}
+
+table tr:hover {
+  background-color: rgba(56, 189, 248, 0.04) !important;
+}
+
+/* Pagination container */
+.pagination.main-pager .page-item a {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--accent-blue) !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  transition: all 0.2s ease !important;
+}
+
+.pagination.main-pager .page-item a:hover {
+  background-color: var(--accent-blue) !important;
+  color: var(--bg-secondary) !important;
+  border-color: var(--accent-blue) !important;
+}
