@@ -7,6 +7,9 @@ gemspec
 gem 'jekyll-redirect-from'
 
 # gems below only necessary on windows device
+gem "base64"
+gem "bigdecimal"
+gem "erb"
 gem "webrick", "~> 1.7"
 
 gem "tzinfo", "~> 2.0"
