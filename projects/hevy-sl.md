@@ -1,0 +1,39 @@
+---
+layout: page
+title: "Hevy - Weightlifting Analytics"
+subtitle: "Powerful, research-driven analytics for your Hevy workouts"
+permalink: /projects/hevy-sl/
+---
+
+[Hevy-SL](https://hevy-sl.streamlit.app/) is a streamlit app designed to analyze your Hevy workout export. It transforms raw CSV logs into an actionable strength and hypertrophy dashboard. Built for lifters who want data-driven progress tracking.
+
+## How It Works: The Math Behind the Metrics
+
+Hevy-SL processes your workout CSV using scientifically validated performance metrics:
+
+### 1. Strength Modeling
+Uses the **Epley Formula** to estimate one-rep maxes (1RM):
+$$1RM = weight \times (1 + \frac{reps}{30})$$
+This normalizes different rep ranges to compare strength across sets.
+
+### 2. Hypertrophy Stimulus
+Calculates **Training Volume**:
+$$Volume = weight \times reps$$
+Aggregates volume by muscle group (Chest, Back, Legs, etc.) to track growth potential.
+
+### 3. Progress Smoothing
+Applies **Exponentially Weighted Moving Average (EWMA)** to raw E1RM data:
+$$\text{Smooth}(x)_t = \alpha \cdot x_t + (1-\alpha) \cdot \text{Smooth}(x)_{t-1}$$
+Filters out outliers to reveal true strength trends.
+
+## Key Analytic Features
+
+* **📊 Workout Dashboard**: Weekly volume heatmaps, muscle distribution charts, and set efficiency metrics.
+*   **🏅 Hall of Records**: Tracks personal bests across all exercises with PR timelines.
+*   **🔍 Data View**: Advanced filtering by workout, set type, or muscle group with export capability.
+
+## Built For Strength Scientists
+
+The engine handles messy CSV exports by normalizing date formats, handling missing data, and applying rigorous data validation. Every statistic is calculated on a per-workout basis to preserve context.
+
+[Explore the live demo](https://hevy-sl.streamlit.app/?utm_source=embed){:target="_blank"}
