@@ -3,6 +3,10 @@ _site
 .sass-cache
 .vagrant
 
+# local bundler artifacts (installed gems)
+.bundle
+vendor
+
 # general
 .DS_Store
 Thumbs.db

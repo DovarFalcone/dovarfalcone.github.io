@@ -533,3 +533,228 @@ body .footer .navbar-nav li a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--border-color);
 }
+
+/* ============================================================
+   Recipes — cookbook layout (Furtkevic family recipes)
+   Two-column on wide screens, single column below lg.
+   ============================================================ */
+
+/* --- Two-column grid (ingredients | instructions) --- */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* --- Ingredients card --- */
+.recipe-ingredients {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  position: sticky;
+  top: 88px;               /* clears the fixed-top navbar */
+}
+
+.recipe-ingredients h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+/* Ingredient table as a clean list: name left, amount right.
+   Themed panel: blue left accent, blue-tinted dividers, yellow amounts. */
+.recipe-ingredients table {
+  margin: 0;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: inset 3px 0 0 0 var(--accent-blue); /* left accent line */
+}
+
+.recipe-ingredients table th {
+  display: none;                 /* "Ingredient | Amount" header is implied */
+}
+
+.recipe-ingredients table tr {
+  background-color: transparent;   /* clear BJ default #181818 / zebra #313131 */
+  border-top: none;
+}
+
+.recipe-ingredients table td {
+  border: none;                    /* clear BJ default 1px #636363 borders */
+  border-bottom: 1px solid rgba(56, 189, 248, 0.10); /* blue-tinted dividers */
+  padding: 12px 14px;
+  vertical-align: top;
+  transition: background-color var(--transition-fast);
+}
+
+.recipe-ingredients table tr:last-child td {
+  border-bottom: none;
+}
+
+.recipe-ingredients table tr:hover td {
+  background-color: rgba(250, 204, 21, 0.06); /* warm yellow hover */
+}
+
+/* Ingredient name: crisp white, semibold; amount: theme yellow, right */
+.recipe-ingredients table td:first-child {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.recipe-ingredients table td:last-child {
+  color: var(--accent-yellow);
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+  padding-left: var(--space-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Optional "Notes" column keeps left alignment */
+.recipe-ingredients table td:nth-child(3) {
+  text-align: left;
+  white-space: normal;
+  font-size: 0.9em;
+  color: var(--text-muted);
+}
+
+/* --- Instructions column --- */
+.recipe-instructions h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.recipe-instructions ol {
+  counter-reset: recipe-step;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.recipe-instructions ol > li {
+  counter-increment: recipe-step;
+  position: relative;
+  padding-left: 52px;
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.recipe-instructions ol > li::before {
+  content: counter(recipe-step);
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  color: var(--accent-yellow);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Callouts: Serves badge --- */
+.recipe-post .box-note {
+  display: inline-block;
+  background-color: rgba(250, 204, 21, 0.08);
+  border: 1px solid rgba(250, 204, 21, 0.35);
+  color: var(--accent-yellow);
+  border-radius: var(--radius-md);
+  padding: var(--space-xs) var(--space-sm);
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.recipe-post .box-note strong {
+  font-weight: 700;
+}
+
+/* --- Callouts: warning panel (e.g. NEVER ADD MAYO) --- */
+.recipe-post .box-warning {
+  background-color: rgba(245, 158, 11, 0.10);
+  border: 1px solid rgba(245, 158, 11, 0.40);
+  border-left: 4px solid #F59E0B;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: #FBBF24;
+  font-style: normal;
+  font-weight: 600;
+  padding: var(--space-sm) 20px;
+  margin-top: var(--space-sm);
+}
+
+/* --- Single-column fallback (multi-section recipes) --- */
+.recipe-single table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: inset 3px 0 0 0 var(--accent-blue);
+}
+
+.recipe-single table tr {
+  background-color: transparent;   /* clear BJ default #181818 / zebra #313131 */
+  border-top: none;
+}
+
+.recipe-single table th {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  padding: 10px 14px;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recipe-single table td {
+  border: none;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.10);
+  padding: 10px 14px;
+}
+
+.recipe-single table tr:hover td {
+  background-color: rgba(250, 204, 21, 0.06);
+}
+
+.recipe-single table td:last-child {
+  color: var(--accent-yellow);
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Stack on small screens --- */
+@media (max-width: 991.98px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+  .recipe-ingredients {
+    position: static;
+  }
+}
