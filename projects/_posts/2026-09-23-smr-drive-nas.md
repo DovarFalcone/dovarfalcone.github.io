@@ -66,6 +66,20 @@ That chart is the non-correcting verify run on September 21 — each of the six 
 
 SMR isn't bad hardware. It's *cheap hardware for a narrow job*, and the job I'm giving it is the job it's worst at.
 
+## Keeping it in the array anyway
+
+So why is the drive still there? Because it isn't broken. Its media is clean, it passes every SMART test, and it's 4 TB of parity-protected capacity. Pulling a drive out of an array costs a rebuild and a smaller array; the drive being *slow* doesn't justify either. Instead I took it out of the paths where it does damage — four changes, all cheap:
+
+**1. Took it out of the write path.** The array's shares used the default high-water allocator, which sends new files to whichever disk has the most free space. A freshly added drive is, by definition, that disk — which is how a desktop-class SMR drive ended up as the destination for backups, container app-data and VM disks. Ten of the array's shares are now explicitly **excluded** from it, and the container app-data share is pinned to a CMR disk instead. New files can no longer be allocated onto it, so the cache-to-array mover bursts and the scattered container writes that hurt it land somewhere else.
+
+**2. Emptied it.** It now holds 27 GB out of 3.7 TB — about 1 %. It still contributes its capacity and its read bandwidth behind parity, but it is no longer the destination for anything that matters. (Not every share is excluded — a handful can still allocate to it. The write-heavy ones can't, and that's the distinction that counts.)
+
+**3. Removed the trigger, not just the symptom.** The stall wasn't spontaneous. On 17 September a scheduled cache-to-array move for a torrent client pushed a 4 GiB write onto that drive: it accepted 531 MiB and then stopped, leaving ~3.8 GB of dirty pages stuck in memory — which blocked reads too, because the array's stripe had to wait on it. With those shares excluded from the drive, the mover has nowhere on it to send that data in the first place.
+
+**4. Gave myself a warning system.** Per-disk per-operation latency is now part of the telemetry I keep, with the retention window widened to 180 days — the metric that would have caught this stall twelve days before I noticed it. Alongside it: a rule that any new interface-level error, or a CRC count crossing 10, gets physical attention, and periodic non-correcting parity verifies to prove the array's parity is actually sound rather than assumed.
+
+**What none of that fixes:** a rebuild. If that drive ever has to be reconstructed — or has to help reconstruct another member — every disk in the array gets read end to end for hours, and no share setting changes that. The exclusions cut the odds of another multi-day stall; they don't make the drive the right tool for the job. It's also worth saying plainly that I didn't swap it because SMART never gave me grounds for a warranty claim, and the drive stopped misbehaving on its own on 18 September.
+
 ## Incident two: the disk that really wasn't broken
 
 In the same week, a different drive set off alarms. The **correcting parity check on September 17–18 found and fixed 1,019 errors** on one array member — the kind of number that makes you start pricing replacement drives.
@@ -100,6 +114,7 @@ Six drives, all "healthy", all cool, zero bad sectors — and one of them was ta
 - **Check the model number before buying, every time.** Both Seagate and WD publish CMR/SMR lists, and the community lists are better maintained than the marketing pages. A 4 TB drive is not a 4 TB drive.
 - **Buy NAS-class CMR for anything that lives in a parity array.** The price gap is far smaller than the cost of a rebuild that crawls; the failure mode here is a server that works fine until it suddenly doesn't.
 - **Measure latency, not just throughput.** During its worst week the BarraCuda still streamed 175 MB/s when the parity check asked for a long sequential read — because sequential streaming is the one thing SMR does well. Interactive workloads died behind it anyway. Throughput charts would have shown nothing wrong.
+- **If an SMR drive is already in your array, take it out of the write path.** Share-level exclusions cost nothing and are reversible; they let the drive keep contributing capacity without letting it become the destination for the writes it handles worst.
 - **Keep more telemetry history than you think you need.** I only saw the twelve-day stall because the data went back far enough. It doesn't any more by default — which is why the retention window for this telemetry is now 180 days instead of 30.
 
 ## The honest verdict
