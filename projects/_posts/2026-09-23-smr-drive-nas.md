@@ -100,7 +100,7 @@ Six drives, all "healthy", all cool, zero bad sectors — and one of them was ta
 - **Check the model number before buying, every time.** Both Seagate and WD publish CMR/SMR lists, and the community lists are better maintained than the marketing pages. A 4 TB drive is not a 4 TB drive.
 - **Buy NAS-class CMR for anything that lives in a parity array.** The price gap is far smaller than the cost of a rebuild that crawls; the failure mode here is a server that works fine until it suddenly doesn't.
 - **Measure latency, not just throughput.** During its worst week the BarraCuda still streamed 175 MB/s when the parity check asked for a long sequential read — because sequential streaming is the one thing SMR does well. Interactive workloads died behind it anyway. Throughput charts would have shown nothing wrong.
-- **Keep more telemetry history than you think you need.** I only saw the twelve-day stall because the data went back far enough. It doesn't any more by default — which is exactly why the window got widened from 30 days to 180 after I'd finished writing this.
+- **Keep more telemetry history than you think you need.** I only saw the twelve-day stall because the data went back far enough. It doesn't any more by default — which is why the retention window for this telemetry is now 180 days instead of 30.
 
 ## The honest verdict
 
