@@ -46,9 +46,9 @@ Five profiles carry work right now. Four of them are specialists; the fifth is t
 | **Navani** | `coder` | Implementation | Code, builds, tests, deployments |
 | **Orchestrator** | `default` | Coordination | Triage, decomposition, routing, review |
 
-Each has a distinct voice and a deliberately narrow toolset. Kaladin gets `terminal` and an Unraid integration but never touches the vault. Shallan gets vault and search tools but no shell. Jasnah gets `web` and nothing that can write to a production system. Navani gets the full engineering set — shell, browser, image generation, delegation — because implementation genuinely needs it.
+Each has a distinct voice. All four run with a shell and file access too — that turned out to be unavoidable for agents that fetch feeds, run scripts, and touch files, so pretending a specialist could do its job without one would just be theatre. What actually differs is the **integrations** each one is wired to. Kaladin holds the Unraid integration and never touches the vault. Shallan holds the Obsidian vault and the semantic-search index, and nothing that can reach the server. Jasnah holds neither — the open web and citations are her whole world. Navani gets the full engineering set — browser, image generation, delegation — because implementation genuinely needs it.
 
-**Least privilege is the point.** A research bot that can't run shell commands can't break anything when a web page it reads tries to talk it into something. The toolsets are the blast radius.
+**Least privilege is real, but a missing shell isn't what enforces it.** Every specialist has one, so a research bot that reads a hostile page could in principle act on it. What limits the blast radius is the structure around the work: one narrow domain per bot, one assignee per card, and a review gate nothing clears without a second pass. A worker's report is a claim; review is where it meets the artifact.
 
 ## Routing by domain
 
@@ -117,7 +117,7 @@ The tell is simple: **if I can't finish it in the next few moments, it becomes a
 Three things, in order of how much I care:
 
 1. **Review is structural, not aspirational.** Because the handoff is a real state change, an unreviewed change is a card in the wrong lane — visible on the board, not lost in a transcript.
-2. **Specialisation is enforceable.** Toolsets are per-profile, so least privilege isn't a policy I have to remember; it's what the profile physically has.
+2. **Specialisation is enforceable.** Toolsets and integrations are per-profile, so least privilege isn't a policy I have to remember; it's what the profile is actually wired to.
 3. **Nothing important lives only in a chat log.** The chat is where I *decide*; the board is where work *happens*. A stalled card sits there in the open, and a blocked one asks for exactly the thing it's missing.
 
 It's not a swarm and it isn't autonomous in any grand sense — it's five narrow agents, one board, and a rule that says the person who does the work isn't the person who signs it off. That's the whole trick.
