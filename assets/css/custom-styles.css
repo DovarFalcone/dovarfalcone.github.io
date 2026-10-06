@@ -341,7 +341,19 @@ body .btn-primary:active {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: var(--space-sm);
+  padding: 0;
+}
+
+/* Beautiful Jekyll ships light-theme code chrome: `.highlight pre` paints the
+   <pre> whitesmoke and `.highlight > pre` adds a light gradient + left bar.
+   Both are higher specificity than the plain `pre` rule below, so neutralise
+   them here or the block renders as a white slab on the dark surface. */
+.highlight pre,
+.highlight > pre {
+  background: transparent;
+  background-image: none;
+  border: none;
+  margin: 0;
 }
 
 pre {
@@ -349,6 +361,16 @@ pre {
   color: var(--text-main);
   border: none;
   margin-bottom: 0;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  padding: 14px 16px;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
 }
 
 code {
@@ -357,6 +379,99 @@ code {
   padding: 2px 6px;
   border-radius: 4px;
   font-size: var(--fs-code);
+}
+
+/* --- Code Block Tokens (rouge) ---
+   The imported pygment_highlights.css palette is built for a light
+   background, so its tokens were being painted on --bg-secondary (#12151B).
+   Every colour below is >= 4.5:1 against #12151B (WCAG AA, small text);
+   see scripts/check-code-contrast.py in this repo. */
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+  color: #8B98A9;
+  font-style: italic;
+}
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #C792EA;
+}
+
+.highlight .o,
+.highlight .ow {
+  color: #89DDFF;
+}
+
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s1,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .ss {
+  color: #A3BE8C;
+}
+
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #F78C6C;
+}
+
+.highlight .nf,
+.highlight .fm,
+.highlight .nb,
+.highlight .bp,
+.highlight .nc,
+.highlight .nd {
+  color: #6CB6FF;
+}
+
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .na,
+.highlight .no {
+  color: #56B6C2;
+}
+
+.highlight .w {
+  color: inherit;
+}
+
+/* `.err` renders as a light pink slab (#e3d2d2) under the light palette. */
+.highlight .err {
+  background: transparent;
+  color: inherit;
+}
+
+.highlight .gd,
+.highlight .gd .x,
+.highlight .gi,
+.highlight .gi .x {
+  background: transparent;
 }
 
 /* --- Blockquotes --- */

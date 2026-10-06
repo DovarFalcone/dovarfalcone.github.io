@@ -46,6 +46,8 @@ Five profiles carry work right now. Four of them are specialists; the fifth is t
 | **Navani** | `coder` | Implementation | Code, builds, tests, deployments |
 | **Orchestrator** | `default` | Coordination | Triage, decomposition, routing, review |
 
+![The fleet hierarchy: one orchestrator, four domain specialists, and the board between them](/projects/assets/images/agent-fleet-hierarchy.png){: .mx-auto.d-block :}
+
 Each has a distinct voice. All four run with a shell and file access too — that turned out to be unavoidable for agents that fetch feeds, run scripts, and touch files, so pretending a specialist could do its job without one would just be theatre. What actually differs is the **integrations** each one is wired to. Kaladin holds the Unraid integration and never touches the vault. Shallan holds the Obsidian vault and the semantic-search index, and nothing that can reach the server. Jasnah holds neither — the open web and citations are her whole world. Navani gets the full engineering set — browser, image generation, delegation — because implementation genuinely needs it.
 
 **Least privilege is real, but a missing shell isn't what enforces it.** Every specialist has one, so a research bot that reads a hostile page could in principle act on it. What limits the blast radius is the structure around the work: one narrow domain per bot, one assignee per card, and a review gate nothing clears without a second pass. A worker's report is a claim; review is where it meets the artifact.
@@ -74,7 +76,6 @@ So there is exactly one gateway, the bots are addressed by profile rather than b
 
 This is the part I'd want someone else to copy. Work doesn't hop between agents by luck — it moves over a board, and every transition is a recorded state change.
 
-```
 1. A card lands in the backlog or triage lane
 2. The orchestrator wakes, reads the card, and checks who's available
 3. It decomposes the work into minimal child cards, each with ONE assignee
@@ -82,7 +83,6 @@ This is the part I'd want someone else to copy. Work doesn't hop between agents 
 5. The assigned worker does the work and reports back with evidence
 6. The worker hands off to review (reviewer = the orchestrator profile)
 7. Review approves, or returns specific, cited changes
-```
 
 A few properties fall out of that design:
 
