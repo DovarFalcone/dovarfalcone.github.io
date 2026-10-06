@@ -77,4 +77,4 @@ Two stores, one boundary rule, and an honest admission that the automatic part i
 
 ---
 
-*Counts in this post are a snapshot from the day it was published; the store grows daily. The memory layer, the vault, and their schedules are exactly as described, and infrastructure specifics are deliberately left out.*
+*Counts in this post are a snapshot from the day it was published; the store grows daily. The memory layer, the vault, and their schedules are exactly as described — the diagrams name the tools and show the file paths, but no credentials, hostnames, or network addresses appear.*
