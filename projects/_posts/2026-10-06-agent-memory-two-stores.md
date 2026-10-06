@@ -6,6 +6,7 @@ category: Project
 tags: [AI, Agents, Memory, Obsidian, SQLite, Hermes]
 comments: true
 thumbnail-img: /projects/assets/images/memory-01-layer-map.png
+redirect_from: /2026-10-06-2026-10-06-agent-memory-two-stores/
 ---
 
 # Two Stores and One Rule — How My Agents Actually Remember Things
