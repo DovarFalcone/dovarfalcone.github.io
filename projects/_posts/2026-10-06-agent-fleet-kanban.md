@@ -38,7 +38,7 @@ That single idea — profile-as-identity — is what makes the rest of the syste
 
 ## The roster
 
-Five profiles carry work right now. Four of them are specialists; the fifth is the orchestrator, which is also the dispatcher. Navani is the engineering profile, with Kaladin alongside her on infrastructure.
+Five profiles carry work right now. Four of them are specialists; the fifth is the orchestrator, which is also the dispatcher. Navani is the engineering profile, with Kaladin alongside on infrastructure.
 
 | Bot | Profile | Domain | What it owns |
 |---|---|---|---|
@@ -85,10 +85,10 @@ This is the part I'd want someone else to copy. Work doesn't hop between agents 
 3. It decomposes the work into minimal child cards, each with ONE assignee
 4. The dispatcher fans out — it spawns `hermes -p <assignee>` per child
 5. The assigned worker does the work and reports back with evidence
-6. The worker hands off to review (for engineering work and everything else, the reviewer is the orchestrator profile)
+6. The worker hands off to review (the reviewer is the orchestrator profile)
 7. Review approves, or returns specific, cited changes
 
-Engineering work takes a **light path** by default: when a change touches one repo and carries no production migration, scraper or ingest change, auth or secrets change, or deploy plumbing, it is one card, one implementation pass, one orchestrator review, and done. The orchestrator is not a second gate in that case. The full chain, with several child cards, an integration card and an orchestrator final review, is reserved for the risky changes.
+Engineering work takes a **light path** by default: when a change touches one repo and carries no production migration, scraper or ingest change, auth or secrets change, or deploy plumbing, it is one card, one implementation pass, one orchestrator review, and done. The orchestrator's review is the only gate in that case. The full chain, with several child cards, an integration card and an orchestrator final review, is reserved for the risky changes.
 
 A few properties fall out of that design:
 
@@ -104,7 +104,7 @@ This is the rule I'd defend hardest.
 
 Any worker can hit a wall: a missing credential, a decision only a human should make, a dependency on another card. When that happens it **blocks the card with a reason and stops.** It does not guess, and it cannot clear its own block.
 
-Only the orchestrator can clear it. That asymmetry is deliberate. If a worker could unblock itself, "blocked" would decay into "retry until something gives," and a genuine missing-credential wall would look identical to a flaky run. Keeping the unblock authority with the orchestrator, the profile that planned the work, means a blocked card is always a real signal that reaches someone who can act on it.
+Only the orchestrator can clear it. That asymmetry is deliberate. If a worker could unblock itself, "blocked" would decay into "retry until something gives," and a genuine missing-credential wall would look identical to a flaky run. Keeping the unblock authority with the orchestrator, and never with the worker, means a blocked card is always a real signal that reaches someone who can act on it.
 
 The same discipline applies to retries: a transient failure can be re-queued, but a card that keeps getting unblocked and re-blocked for the same reason escalates rather than loops.
 
@@ -130,4 +130,4 @@ It's not a swarm and it isn't autonomous in any grand sense — it's five narrow
 
 ---
 
-*The fleet runs on Hermes Agent, with specialist profiles cloned from a base profile and routed through a shared Kanban board. The orchestrator and the specialists run on hosted models through the local router, with the orchestrator on DeepSeek Flash and a local model as the last fallback. Board mechanics and profile commands are exactly as described; provider and infrastructure specifics are deliberately left out.*
+*The fleet runs on Hermes Agent, with specialist profiles cloned from a base profile and routed through a shared Kanban board. The orchestrator and the specialists run on hosted models through a local router, with a local model as the last fallback. Board mechanics and profile commands are exactly as described; other provider and infrastructure specifics are deliberately left out.*
