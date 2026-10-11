@@ -19,7 +19,7 @@ I run AI agents on my own workstation — coding, infrastructure, research, writ
 
 The design is deliberately boring: **two places to keep things, and a rule that says which one a given piece of knowledge belongs in.**
 
-![Memory layer map: two stores, their access paths, and the harnesses that reach them](/projects/assets/images/memory-01-layer-map.png){: .mx-auto.d-block :}
+![Memory layer map: two stores, their access paths, and the three harnesses that reach them](/projects/assets/images/memory-01-layer-map.png){: .mx-auto.d-block :}
 
 **Store A — the agent's own memory.** A local SQLite database, one file, private to the machine. It holds the small, durable stuff: facts, preferences, corrections, and a compressed record of past sessions. As of the day I wrote this, that file contains **1,324 working memories, 332 episodic summaries, 456 extracted facts, 124 standing instructions, 59 preferences, and 3 permanent persona rules.** It's written by the agent, not by hand, and it grows while I do other things.
 
@@ -33,13 +33,15 @@ That's it. A date that a drive failed on, a preference about how I like summarie
 
 The reason the boundary matters is that the two stores fail differently. The database is good at *finding a needle* — "what's my preference for X" — and bad at being read end to end. The vault is the opposite: it's the thing a human reads, that grows into structure, and that survives on its own if the agents all disappeared tomorrow. Mixing them produces a database full of essays and a vault full of crumbs.
 
-## Same two stores, both harnesses
+## Same two stores, three harnesses
 
-I don't use one agent tool. So the constraint was that both harnesses had to reach the same memory, rather than each keeping its own private one.
+*Updated 2026-10-10: this section said two harnesses; there are now three (Hermes, OpenCode and Claude Code), and the layer-map diagram is redrawn to match. Nothing else in the post changed.*
 
-The memory database is the native provider for my main harness, and it's also exposed over MCP, so the second harness reads and writes the exact same file. The vault is reached the same way in both: one MCP server for reading and writing notes, a second for semantic and keyword search. Neither harness gets a copy. There is one database and one vault.
+I don't use one agent tool. So the constraint was that every harness had to reach the same memory, rather than each keeping its own private one.
 
-That's the whole trick — no sync protocol, no export step, no reconciliation. The only reason it works is that the memory store was already a single local file, so "shared memory" is just "both processes open the same path."
+The memory database is the native provider for my main harness, and it's also exposed over MCP, so the other two harnesses read and write the exact same file. The vault is reached the same way in all three: one MCP server for reading and writing notes, a second for semantic and keyword search. No harness gets a copy. There is one database and one vault.
+
+That's the whole trick — no sync protocol, no export step, no reconciliation. The only reason it works is that the memory store was already a single local file, so "shared memory" is just "every process opens the same path."
 
 ## What actually happens in a session
 
