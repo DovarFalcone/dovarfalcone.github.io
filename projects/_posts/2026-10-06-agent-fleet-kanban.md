@@ -9,7 +9,7 @@ comments: true
 
 # One Bot Per Domain — How My Agent Fleet Runs on a Kanban Board
 
-*Updated 2026-10-11: Dalinar, the engineering lead added on 2026-10-07, was merged into Navani on 2026-10-10, so engineering is now a single profile. The orchestrator moved off Claude onto DeepSeek Flash, and the front-door and model-stack notes are corrected. The hierarchy diagram still shows the old structure.*
+*Updated 2026-10-11: Dalinar, the engineering lead added on 2026-10-07, was merged into Navani on 2026-10-10, so engineering is now a single profile. The orchestrator moved off Claude onto DeepSeek Flash, and the front-door and model-stack notes are corrected. The hierarchy diagram is redrawn to match.*
 
 I run a small fleet of AI agents on a single workstation. The interesting part isn't the models — it's the *structure*: each agent is a separate profile with its own personality, tools, and permissions, and the only way work moves between them is a Kanban board.
 
