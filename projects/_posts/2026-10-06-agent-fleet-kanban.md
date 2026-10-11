@@ -48,7 +48,7 @@ Five profiles carry work right now. Four of them are specialists; the fifth is t
 | **Jasnah** | `jasnah` | Research | RSS and market-data lookups, grounded and cited answers, on demand only |
 | **Orchestrator** | `default` | Coordination | Triage, decomposition, routing, and the final gate on risky changes; runs on DeepSeek Flash |
 
-![The fleet hierarchy: one orchestrator over Navani, Kaladin, Shallan and Jasnah, with the board as the shared work queue](/projects/assets/images/agent-fleet-hierarchy.png){: .mx-auto.d-block :}
+![The fleet hierarchy: Dennis reaches the orchestrator through Claude Code or chat; the orchestrator fans cards out over the board to Navani, Kaladin, Shallan and Jasnah, and Navani consults Claude only for hard cases](/projects/assets/images/agent-fleet-hierarchy.png){: .mx-auto.d-block :}
 
 The `default` profile is also my general-purpose agent: I talk to it directly in chat, and Claude Code, which is my main point of contact, talks to it for me. Quick questions go over a one-shot command; anything that needs tracking becomes a card on the board.
 
