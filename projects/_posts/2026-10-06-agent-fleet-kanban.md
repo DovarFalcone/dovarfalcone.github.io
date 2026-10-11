@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One Bot Per Domain — How My Agent Fleet Runs on a Kanban Board 🗂️
-subtitle: Five specialist profiles, a dispatcher, and a review gate that nothing ships without
+subtitle: Four specialist profiles, an orchestrator, a dispatcher, and a review gate that nothing ships without
 category: Project
 tags: [AI, Agents, Hermes, Kanban, Automation, Workflow]
 comments: true
@@ -9,7 +9,7 @@ comments: true
 
 # One Bot Per Domain — How My Agent Fleet Runs on a Kanban Board
 
-*Updated 2026-10-10: the fleet gained an engineering team lead, Dalinar, so routing, review and unblocking changed; Jasnah is now on-demand only; and the front-door and model-stack notes are corrected. The diagram is redrawn to match.*
+*Updated 2026-10-11: Dalinar, the engineering lead added on 2026-10-07, was merged into Navani on 2026-10-10, so engineering is now a single profile. The orchestrator moved off Claude onto DeepSeek Flash, and the front-door and model-stack notes are corrected. The hierarchy diagram still shows the old structure.*
 
 I run a small fleet of AI agents on a single workstation. The interesting part isn't the models — it's the *structure*: each agent is a separate profile with its own personality, tools, and permissions, and the only way work moves between them is a Kanban board.
 
@@ -38,18 +38,17 @@ That single idea — profile-as-identity — is what makes the rest of the syste
 
 ## The roster
 
-Six profiles carry work right now. Five of them are specialists; the sixth is the dispatcher. Engineering is a small sub-team: Dalinar leads it, and Navani and Kaladin report to him.
+Five profiles carry work right now. Four of them are specialists; the fifth is the orchestrator, which is also the dispatcher. Navani is the engineering profile, with Kaladin alongside her on infrastructure.
 
 | Bot | Profile | Domain | What it owns |
 |---|---|---|---|
-| **Dalinar** | `dalinar` | Engineering lead | Plans and decomposes engineering cards, hands them to Navani and Kaladin, does the first-pass review |
-| **Navani** | `coder` | Implementation | Code, builds, tests, deployments |
+| **Navani** | `coder` | Engineering | Plans and decomposes engineering cards, implements and verifies; hard cases go through Claude |
 | **Kaladin** | `kaladin` | Infrastructure | Unraid array health, disk temperatures, parity, Docker, the little Pi sensor |
 | **Shallan** | `shallan` | Knowledge base | The Obsidian vault, note links, semantic search index health |
 | **Jasnah** | `jasnah` | Research | RSS and market-data lookups, grounded and cited answers, on demand only |
-| **Orchestrator** | `default` | Coordination | Triage, decomposition, routing, and the final gate on risky changes |
+| **Orchestrator** | `default` | Coordination | Triage, decomposition, routing, and the final gate on risky changes; runs on DeepSeek Flash |
 
-![The fleet hierarchy: one orchestrator, the board, Shallan and Jasnah as standalone specialists, and an engineering sub-team of Dalinar over Navani and Kaladin](/projects/assets/images/agent-fleet-hierarchy.png){: .mx-auto.d-block :}
+![The fleet hierarchy: one orchestrator over Navani, Kaladin, Shallan and Jasnah, with the board as the shared work queue](/projects/assets/images/agent-fleet-hierarchy.png){: .mx-auto.d-block :}
 
 The `default` profile is also my general-purpose agent: I talk to it directly in chat, and Claude Code, which is my main point of contact, talks to it for me. Quick questions go over a one-shot command; anything that needs tracking becomes a card on the board.
 
@@ -64,7 +63,7 @@ When a request comes in, the first question is *which domain does this belong to
 - Something is wrong with the server → **kaladin**.
 - A note needs finding or linking → **shallan**.
 - A question needs the open web and citations → **jasnah**.
-- A repo needs changing → **dalinar**, who plans it, hands the work to Navani (or Kaladin for infrastructure pieces), and reviews what comes back.
+- A repo needs changing → **coder** (Navani), who plans it, implements it, and hands it back for review; Kaladin takes infrastructure pieces.
 - It spans several of those, or it's unclear → **default**, which decomposes it.
 
 That last case matters. A vague, multi-domain ask doesn't get one agent guessing across several specialties — it gets broken into child cards, each addressed to exactly one specialist.
@@ -86,15 +85,15 @@ This is the part I'd want someone else to copy. Work doesn't hop between agents 
 3. It decomposes the work into minimal child cards, each with ONE assignee
 4. The dispatcher fans out — it spawns `hermes -p <assignee>` per child
 5. The assigned worker does the work and reports back with evidence
-6. The worker hands off to review (for engineering work the reviewer is Dalinar; for everything else it is the orchestrator profile)
+6. The worker hands off to review (for engineering work and everything else, the reviewer is the orchestrator profile)
 7. Review approves, or returns specific, cited changes
 
-Engineering work takes a **light path** by default: when a change touches one repo and carries no production migration, scraper or ingest change, auth or secrets change, or deploy plumbing, it is one card, one implementation pass, one Dalinar review, and done. The orchestrator is not a second gate in that case. The full chain, with several child cards, an integration card and an orchestrator final review, is reserved for the risky changes.
+Engineering work takes a **light path** by default: when a change touches one repo and carries no production migration, scraper or ingest change, auth or secrets change, or deploy plumbing, it is one card, one implementation pass, one orchestrator review, and done. The orchestrator is not a second gate in that case. The full chain, with several child cards, an integration card and an orchestrator final review, is reserved for the risky changes.
 
 A few properties fall out of that design:
 
 - **One assignee per card.** There's no committee. If two specialists both need to act, that's two cards with a dependency edge, not one ambiguous card.
-- **The worker doesn't grade its own homework.** The handoff to review is a distinct step. Review runs on a different profile (Dalinar for engineering, the orchestrator otherwise) with a review rubric loaded, and it looks for scope match, correctness, verification, and simplicity — not just "does it seem fine."
+- **The worker doesn't grade its own homework.** The handoff to review is a distinct step. Review runs on the orchestrator profile, a different profile from the worker, with a review rubric loaded, and it looks for scope match, correctness, verification, and simplicity — not just "does it seem fine."
 - **Claims are evidence, not authority.** When a worker says "deployed and verified," that's a self-report. The review step is where it gets checked against the actual artifact, the real command output, or the live URL.
 
 The board is also just a database. There's a desktop view for it, but the command line drives it directly, which means the whole fleet is scriptable and every state change is auditable after the fact.
@@ -105,7 +104,7 @@ This is the rule I'd defend hardest.
 
 Any worker can hit a wall: a missing credential, a decision only a human should make, a dependency on another card. When that happens it **blocks the card with a reason and stops.** It does not guess, and it cannot clear its own block.
 
-Only a profile with unblock authority can clear it: the orchestrator, and, for a narrow slice, Dalinar. He may unblock Navani's and Kaladin's cards that descend from his own cards, once the blocker is actually resolved, and never a card that is waiting on a decision from me. That asymmetry is deliberate. If a worker could unblock itself, "blocked" would decay into "retry until something gives," and a genuine missing-credential wall would look identical to a flaky run. Keeping the unblock authority with the profile that planned the work, or with the orchestrator, means a blocked card is always a real signal that reaches someone who can act on it.
+Only the orchestrator can clear it. That asymmetry is deliberate. If a worker could unblock itself, "blocked" would decay into "retry until something gives," and a genuine missing-credential wall would look identical to a flaky run. Keeping the unblock authority with the orchestrator, the profile that planned the work, means a blocked card is always a real signal that reaches someone who can act on it.
 
 The same discipline applies to retries: a transient failure can be re-queued, but a card that keeps getting unblocked and re-blocked for the same reason escalates rather than loops.
 
@@ -127,8 +126,8 @@ Three things, in order of how much I care:
 2. **Specialisation is enforceable.** Toolsets and integrations are per-profile, so least privilege isn't a policy I have to remember; it's what the profile is actually wired to.
 3. **Nothing important lives only in a chat log.** The chat is where I *decide*; the board is where work *happens*. A stalled card sits there in the open, and a blocked one asks for exactly the thing it's missing.
 
-It's not a swarm and it isn't autonomous in any grand sense — it's six narrow agents, one board, and a rule that says the person who does the work isn't the person who signs it off. That's the whole trick.
+It's not a swarm and it isn't autonomous in any grand sense — it's five narrow agents, one board, and a rule that says the person who does the work isn't the person who signs it off. That's the whole trick.
 
 ---
 
-*The fleet runs on Hermes Agent, with specialist profiles cloned from a base profile and routed through a shared Kanban board. The orchestrator runs on Claude and the specialists on hosted models through a router, with a local model as the last fallback. Board mechanics and profile commands are exactly as described; provider and infrastructure specifics are deliberately left out.*
+*The fleet runs on Hermes Agent, with specialist profiles cloned from a base profile and routed through a shared Kanban board. The orchestrator and the specialists run on hosted models through the local router, with the orchestrator on DeepSeek Flash and a local model as the last fallback. Board mechanics and profile commands are exactly as described; provider and infrastructure specifics are deliberately left out.*

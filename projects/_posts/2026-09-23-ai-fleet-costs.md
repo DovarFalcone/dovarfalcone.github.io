@@ -142,7 +142,7 @@ The peak was 4 October (UTC days): 2,060 DeepSeek requests that day, $2.54 at li
 
 ### Subscriptions are outside the metered log
 
-Since 7 October my Orchestrator, the agent I talk to directly, runs on a Claude plan. Hermes prices those rows at API rates, which comes to about $32 since 24 September, all of it from 7 to 10 October. That is a value estimate, not cash: the plan is flat. My provider notes record OpenCode Go at $10 a month; I have no price on file for the Claude plan, so I will not quote one.
+Since 7 October my Orchestrator, the agent I talk to directly, ran on a Claude plan. Hermes prices those rows at API rates, which comes to about $32 since 24 September, all of it from 7 to 10 October. That is a value estimate, not cash: the plan is flat. My provider notes record OpenCode Go at $10 a month; I have no price on file for the Claude plan, so I will not quote one. From 2026-10-10 the Orchestrator runs on DeepSeek Flash through the local router, and the Claude plan is now used mainly by Claude Code and fallbacks.
 
 So metered spend is no longer the whole bill. My stated goal is to pay for two things only, Claude Pro and OpenCode Go, with metered overflow as close to zero as I can get it. That goal is a design target, not a result.
 
@@ -167,7 +167,7 @@ I can't yet credit these changes with a result. DeepSeek-direct requests peaked 
 
 ### The setup today
 
-- The **Orchestrator** runs on a Claude plan.
+- The **Orchestrator** runs on a Claude plan (as of 23 September; DeepSeek Flash since 2026-10-10).
 - The **bots** use the ordered `DEEPSEEK-FLASH` combo: prepaid credit, then OpenCode Go, then a free lane, then DeepSeek direct.
 - The **coding agent** uses a paid-only combo of OpenCode Go and DeepSeek.
 - **`FREE`** is a late fallback, and local Ollama still handles email classification and session titles.

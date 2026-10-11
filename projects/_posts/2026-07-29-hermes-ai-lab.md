@@ -52,9 +52,8 @@ Each agent also has its own fallback chain behind the router: the combo first, t
 ### 4. The agents: a fleet, not a single bot
 The July version had one Hermes Agent. Today **Hermes** is the framework behind a small fleet of specialist agents, each its own profile with its own personality, tools and permissions:
 
-- An **Orchestrator**, the general agent I talk to directly, which routes work and reviews results. It runs on Claude.
-- **Dalinar**, the engineering lead, who plans and reviews.
-- **Navani**, the coding lane.
+- An **Orchestrator**, the general agent I talk to directly, which routes work and reviews results. It runs on DeepSeek Flash through the local router.
+- **Navani**, the engineering profile, who plans, implements and verifies (Dalinar, the earlier engineering lead, was merged into this lane on 2026-10-10).
 - **Kaladin**, who watches the infrastructure.
 - **Shallan**, who looks after the notes vault.
 - **Jasnah**, who does research.
