@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does the Draw Order Decide Horse Show Placings? 🐴
+title: Does the Draw Order Decide Horse Show Placings?
 subtitle: 1,748 classes of AQHA results — with twice the data, the pooled draw effect has faded into noise, but the first-draw advantage is still there
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]

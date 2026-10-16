@@ -23,7 +23,7 @@
     {%- endif -%}
   {% endcapture %}
 
-  <title>{{ title }}</title>
+  <title>{{ title }}{% if site.title and title != site.title %} | {{ site.title | strip_html | xml_escape }}{% endif %}</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" href="https://furtkevic.com/favicon.ico"/>

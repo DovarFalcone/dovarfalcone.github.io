@@ -1,5 +1,3 @@
-<!-- TODO this file has become a mess, refactor it -->
-
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
 {% if page.cover-img or page.title %}
@@ -20,76 +18,48 @@
   ></div>
 {% endif %}
 
-<header class="header-section {% if page.cover-img %}has-img{% endif %}">
-{% if page.cover-img %}
-<div class="big-img intro-header">
-  <div class="container-md">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
-          {% if page.subtitle %}
-            {% if include.type == "page" %}
-              <hr class="small">
-              <span class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</span>
-            {% else %}
-              <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
+<header class="header-section page-header{% if page.cover-img %} has-img{% endif %}">
+  {% if page.cover-img %}
+  {%- comment -%} Cover image is a banner strip; beautifuljekyll.js sets its background and rotates multiple images. {%- endcomment -%}
+  <div class="big-img intro-header" role="img" aria-label="{{ page.title | strip_html | escape }} cover image">
+    <span class="img-desc"></span>
+  </div>
+  {% endif %}
+  <div class="page-header-body">
+    <div class="container-md">
+      <div class="row">
+        <div class="{% if include.type == 'post' and page.category == 'Recipe' %}col-xl-10 offset-xl-1 col-lg-10 offset-lg-1{% else %}col-xl-8 offset-xl-2 col-lg-10 offset-lg-1{% endif %}">
+          <div class="{{ include.type }}-heading">
+            <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
+            {% if page.subtitle %}
+              <p class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</p>
             {% endif %}
-          {% endif %}
 
-          {% if include.type == "post" %}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
-            {% if page.last-updated %}
-              <span class="post-meta">
-                <span class="d-none d-md-inline middot">&middot;</span>
-                Last updated {{ page.last-updated | date: date_format }}
-              </span>
+            {% if include.type == "post" %}
+              <div class="post-meta-line">
+                <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time></span>
+                {% if page.category == 'Project' %}
+                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> <a href="{{ '/projects' | relative_url }}">Projects</a></span>
+                {% elsif page.category == 'Recipe' %}
+                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> <a href="{{ '/recipes' | relative_url }}">Recipes</a></span>
+                {% endif %}
+                {% if page.last-updated %}
+                  <span class="post-meta">
+                    <span class="middot" aria-hidden="true">&middot;</span>
+                    Updated {{ page.last-updated | date: date_format }}
+                  </span>
+                {% endif %}
+                {% if page.readtime %}
+                  {% include readtime.html %}
+                {% endif %}
+              </div>
             {% endif %}
-            {% if page.readtime %}
-              {% include readtime.html %}
-            {% endif %}
-          {% endif %}
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <span class='img-desc'></span>
-</div>
-{% endif %}
-<div class="intro-header no-img">
-  <div class="container-md">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
-          {% if page.subtitle %}
-            {% if include.type == "page" %}
-              <hr class="small">
-              <span class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</span>
-            {% else %}
-              <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
-            {% endif %}
-          {% endif %}
-
-          {% if include.type == "post" %}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
-            {% if page.last-updated %}
-              <span class="post-meta">
-                <span class="d-none d-md-inline middot">&middot;</span>
-                Last updated {{ page.last-updated | date: date_format }}
-              </span>
-            {% endif %}
-            {% if page.readtime %}
-              {% include readtime.html %}
-            {% endif %}
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 </header>
-
 
 {% else %}
 <div class="intro-header"></div>

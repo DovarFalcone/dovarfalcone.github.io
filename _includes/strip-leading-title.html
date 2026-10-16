@@ -1,0 +1,17 @@
+{%- comment -%}
+  Many posts open with "# <same text as the title>", which the page header already
+  shows. Drop that first <h1> when its text is part of the post title; keep it otherwise.
+  Usage: {% include strip-leading-title.html content=content title=page.title %}
+{%- endcomment -%}
+{%- assign _slt_content = include.content | strip -%}
+{%- assign _slt_out = _slt_content -%}
+{%- assign _slt_head = _slt_content | slice: 0, 3 -%}
+{%- if _slt_head == '<h1' -%}
+  {%- assign _slt_h1 = _slt_content | split: '</h1>' | first -%}
+  {%- assign _slt_text = _slt_h1 | append: '</h1>' | strip_html | strip | replace: '&rsquo;', "'" | replace: '’', "'" | replace: '&amp;', '&' -%}
+  {%- assign _slt_title = include.title | strip_html | replace: '’', "'" -%}
+  {%- if _slt_text != '' and _slt_title contains _slt_text -%}
+    {%- assign _slt_out = _slt_content | remove_first: _slt_h1 | remove_first: '</h1>' -%}
+  {%- endif -%}
+{%- endif -%}
+{{- _slt_out -}}

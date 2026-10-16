@@ -20,18 +20,29 @@ author: Dennis Furtkevic
 ###############################################
 
 navbar-links:
-  About Me: 
-    - Spark Notes: "aboutme"
+  Projects: "projects"
+  Recipes: "recipes"
+  About:
+    - About me: "aboutme"
     - Resume: "resume"
-  Blogs:
+  Tags: "tags"
+
+# Extra link groups shown in the footer
+footer-links:
+  Site:
     - Projects: "projects"
     - Recipes: "recipes"
+    - About me: "aboutme"
+    - Resume: "resume"
+    - Tags: "tags"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - Learn React: "https://reactjs.org/"
-    - Tags: "tags"
-  Author's home: "https://www.psu.edu/"
+    - Author's home: "https://www.psu.edu/"
+
+# One line under the site name in the footer
+footer-tagline: "Data projects, home-lab notes, and family recipes by Dennis Furtkevic."
 
 ################
 # --- Logo --- #
@@ -86,7 +97,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Data projects, home-lab notes, and family recipes by Dennis Furtkevic.
 
 ###########################
 # --- General options --- #
@@ -152,7 +163,7 @@ footer-hover-col: "#38BDF8"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-mobile-theme-col: "#0085A1"
+mobile-theme-col: "#12151B"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 site-css:

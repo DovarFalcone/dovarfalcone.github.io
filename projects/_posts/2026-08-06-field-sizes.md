@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Deepest Classes and Average Field Sizes 📏
+title: The Deepest Classes and Average Field Sizes
 subtitle: Where a placing means beating the most horses — and how big each discipline's fields really run
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]

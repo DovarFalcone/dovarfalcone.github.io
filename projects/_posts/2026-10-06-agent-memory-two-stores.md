@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Two Stores and One Rule — How My Agents Actually Remember Things 🧠"
+title: "Two Stores and One Rule — How My Agents Actually Remember Things"
 subtitle: "A local SQLite memory, a 153-note Obsidian vault, and the honest part: recall is a deliberate step, not a background miracle"
 category: Project
 tags: [AI, Agents, Memory, Obsidian, SQLite, Hermes]
