@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Does the Draw Order Decide Horse Show Placings?
-subtitle: 1,748 classes of AQHA results — with twice the data, the pooled draw effect has faded into noise, but the first-draw advantage is still there
+subtitle: 751 real draw sheets, 28,882 drawn riders — the earlier version measured the wrong column, and the honest effect is small but not zero
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]
 comments: true
@@ -9,86 +9,72 @@ comments: true
 
 # Does the Draw Order Decide Horse Show Placings?
 
-Every exhibitor knows the feeling: you draw late in a big class and wonder if the judge has already made up their mind. I've now got enough results in the equine-data database to actually test that question properly.
+Every exhibitor knows the feeling: you draw late in a big class and wonder if the judge has already made up their mind. I've now got enough results in the equine-data database to actually test that question properly — and, as of this cut, the **published draw sheets** themselves, rather than a column I'd been assuming was the draw.
 
-Across **1,748 classes and 191,605 placings**, horses drawn later place marginally better on average — but the pooled effect is now small enough that it can't be separated from zero. Class-to-class variation swamps it. Draw order is, at most, a tie-breaker, not a deciding factor.
+Across **751 draw sheets and 28,882 drawn riders**, horses drawn later do place marginally better on average. The effect is small — about **2.7 percentile points** from the first third of the draw to the last — but on the corrected data it is **consistent and measurable**, and it is strongest in the biggest classes.
 
-The pooled weighted Spearman rho between draw order and placing is **−0.005** (95% CI −0.018…+0.007), and only **50.3%** of classes show any negative association at all. Here's the honest picture.
+The pooled size-weighted Spearman rho between draw order and placing is **−0.047** (95% CI **−0.068 … −0.023**), with **54.4%** of draw sheets showing a negative association. Here's the honest picture.
 
-*Based on 191,605 placings · analysis refreshed 27 Sept 2026.*
+*Based on 28,882 drawn riders and 9,015 recorded placings · analysis refreshed 16 October 2026.*
 
-> **Updated 27 September 2026.** This post was first published in August 2026 on 934 classes and 86,281 placings, where the pooled rho was −0.019 with an interval entirely below zero. The dataset has since more than doubled, and **the headline got weaker, not stronger**: mean rho drifted from −0.019 to −0.005 and the confidence interval now straddles zero, while the median class rho went from −0.028 to −0.004. The first-draw win-rate edge also eased from 1.45× to 1.25×. The last-vs-first draw tercile contrast is the one number that held its ground (−0.019 → −0.018, interval still below zero). Numbers below are the current ones; the August figures are noted where they differ.
+> **Updated 16 October 2026 — this analysis was measuring the wrong column, and the code that computed it had a real defect.** Two separate things were wrong with the earlier cuts of this page.
+>
+> The first: they used `class_placing.draw_no` as the draw order. It is not — in **88% of classes its maximum value exceeds the number of riders in the class**, because that field carries back-number-like values and composite ids, not a starting order. The database now ingests the **published draw sheets** (`class_draw` / `class_draw_rider`), where `draw_no` runs 1…N across the full field, so this cut is the first built on an actual draw.
+>
+> The second: the tercile chart was produced by code that divided **all three terciles by one shared total** instead of each tercile by its own rider count. Those buckets do not hold equal rider counts once classes of different sizes are pooled — on this corpus they hold **55,038 / 51,406 / 48,764** riders — so the last tercile was shrunk hardest. The defect did not merely rescale the chart; it manufactured a result. Run exactly as deployed, that chart reported a last-minus-first difference of **−0.0204** with a 95% interval of **−0.0218…−0.0190** — an apparently significant late-draw advantage. Run with each tercile divided by its own rider count, the same data gives **−0.0019**, interval **−0.0060…+0.0022**: a difference indistinguishable from zero. The pooling defect is fixed in the project's analysis code (in review as this update publishes), and the deployed method's own headline statistic on today's full corpus is rho **−0.0002** (95% CI **−0.0056…+0.0053**) — a number with no direction at all.
+>
+> That is the clearest sign the old column was measuring noise rather than drawing, and it is why this page's findings rest on the draw sheets instead. The earlier headline "the effect faded into noise" was about that column, not about draws.
 
 ---
 
-## Per-class correlation distribution
+## Per-sheet correlation distribution
 
-For each class with at least 10 riders I computed the rank correlation (Spearman's rho) between draw order and placing. Negative rho means later draws placed better; positive means earlier draws did. The histogram below is the real spread across all 1,748 classes — not just the pooled average:
+For each draw sheet with at least 5 recorded placings I computed the rank correlation (Spearman's rho) between draw position and place percentile, where the percentile is normalised against the sheet's **own field size** — not against the number of placings recorded, which is capped at 15 by the scrape.
 
-<svg viewBox="0 0 560 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spearman rho per class histogram, 1748 classes">
+<svg viewBox="0 0 560 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Spearman rho per draw sheet histogram, 662 sheets">
   <line x1="12" y1="196" x2="548" y2="196" stroke="#888" stroke-width="1"/>
-  <line x1="276" y1="16" x2="276" y2="196" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="276" y="212" text-anchor="middle" fill="#777" font-size="12">0</text>
-  <rect x="16" y="196" width="24" height="0" rx="2" fill="#6a9e78"/>
-  <rect x="42" y="195" width="24" height="1" rx="2" fill="#6a9e78"/>
-  <rect x="68" y="191" width="24" height="5" rx="2" fill="#6a9e78"/>
-  <rect x="94" y="181" width="24" height="15" rx="2" fill="#6a9e78"/>
-  <rect x="120" y="170" width="24" height="26" rx="2" fill="#6a9e78"/>
-  <text x="132" y="164" fill="#777" font-size="11" text-anchor="middle">39</text>
-  <rect x="146" y="155" width="24" height="41" rx="2" fill="#6a9e78"/>
-  <text x="158" y="149" fill="#777" font-size="11" text-anchor="middle">62</text>
-  <rect x="172" y="119" width="24" height="77" rx="2" fill="#6a9e78"/>
-  <text x="184" y="113" fill="#777" font-size="11" text-anchor="middle">115</text>
-  <rect x="198" y="74" width="24" height="122" rx="2" fill="#6a9e78"/>
-  <text x="210" y="68" fill="#777" font-size="11" text-anchor="middle">183</text>
-  <rect x="224" y="53" width="24" height="143" rx="2" fill="#6a9e78"/>
-  <text x="236" y="47" fill="#777" font-size="11" text-anchor="middle">213</text>
-  <rect x="250" y="29" width="24" height="167" rx="2" fill="#6a9e78"/>
-  <text x="262" y="23" fill="#777" font-size="11" text-anchor="middle">250</text>
-  <rect x="276" y="26" width="24" height="170" rx="2" fill="#d0a65e"/>
-  <text x="288" y="20" fill="#777" font-size="11" text-anchor="middle">254</text>
-  <rect x="302" y="67" width="24" height="129" rx="2" fill="#d0a65e"/>
-  <text x="314" y="61" fill="#777" font-size="11" text-anchor="middle">193</text>
-  <rect x="328" y="82" width="24" height="114" rx="2" fill="#d0a65e"/>
-  <text x="340" y="76" fill="#777" font-size="11" text-anchor="middle">171</text>
-  <rect x="354" y="122" width="24" height="74" rx="2" fill="#d0a65e"/>
-  <text x="366" y="116" fill="#777" font-size="11" text-anchor="middle">110</text>
-  <rect x="380" y="156" width="24" height="40" rx="2" fill="#d0a65e"/>
-  <text x="392" y="150" fill="#777" font-size="11" text-anchor="middle">60</text>
-  <rect x="406" y="169" width="24" height="27" rx="2" fill="#d0a65e"/>
-  <text x="418" y="163" fill="#777" font-size="11" text-anchor="middle">41</text>
-  <rect x="432" y="181" width="24" height="15" rx="2" fill="#d0a65e"/>
-  <rect x="458" y="189" width="24" height="7" rx="2" fill="#d0a65e"/>
-  <rect x="484" y="196" width="24" height="0" rx="2" fill="#d0a65e"/>
-  <rect x="510" y="196" width="24" height="0" rx="2" fill="#d0a65e"/>
+  <line x1="280" y1="16" x2="280" y2="196" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="280" y="212" text-anchor="middle" fill="#777" font-size="12">0</text>
+  <rect x="46" y="196" width="72" height="0" rx="2" fill="#6a9e78"/>
+  <rect x="130" y="116" width="72" height="80" rx="2" fill="#6a9e78"/>
+  <text x="166" y="110" fill="#777" font-size="11" text-anchor="middle">125</text>
+  <rect x="214" y="96" width="72" height="100" rx="2" fill="#6a9e78"/>
+  <text x="250" y="90" fill="#777" font-size="11" text-anchor="middle">156</text>
+  <rect x="298" y="93" width="72" height="103" rx="2" fill="#d0a65e"/>
+  <text x="334" y="87" fill="#777" font-size="11" text-anchor="middle">160</text>
+  <rect x="382" y="138" width="72" height="58" rx="2" fill="#d0a65e"/>
+  <text x="418" y="132" fill="#777" font-size="11" text-anchor="middle">91</text>
+  <rect x="466" y="163" width="72" height="33" rx="2" fill="#d0a65e"/>
+  <text x="502" y="157" fill="#777" font-size="11" text-anchor="middle">51</text>
+  <rect x="46" y="145" width="72" height="20" rx="2" fill="#6a9e78"/>
+  <text x="82" y="139" fill="#777" font-size="11" text-anchor="middle">79</text>
   <g fill="#777" font-size="10" text-anchor="middle">
-    <text x="38" y="224">−1.0</text>
-    <text x="104" y="224">−0.4</text>
-    <text x="170" y="224">−0.2</text>
-    <text x="276" y="224">0</text>
-    <text x="382" y="224">0.2</text>
-    <text x="448" y="224">0.4</text>
-    <text x="514" y="224">1.0</text>
+    <text x="82" y="224">−0.8</text>
+    <text x="166" y="224">−0.4</text>
+    <text x="250" y="224">−0.1</text>
+    <text x="334" y="224">0.1</text>
+    <text x="418" y="224">0.3</text>
+    <text x="502" y="224">0.6</text>
   </g>
-  <text x="12" y="10" fill="#555" font-size="12">Spearman rho per class (1,748 classes, n ≥ 10)</text>
+  <text x="12" y="10" fill="#555" font-size="12">Spearman rho per draw sheet (662 sheets, ≥ 5 recorded placings)</text>
 </svg>
 
-Green bins are classes where later draws placed better (negative rho); tan bins are the reverse. The distribution is a bell sitting almost exactly on zero — the tallest single bin is actually the **first positive** one (254 classes between 0.0 and +0.1) against 250 classes in the −0.1…0.0 bin beside it. **Median rho −0.004**, **50.3%** of classes negative, and the full range still runs from −0.80 to +0.80. One pooled number hides all of that spread, and this histogram is the honest picture.
+Green bins are sheets where later draws placed better (negative rho); tan bins are the reverse. The mass sits left of zero — **median rho −0.047**, **54.4%** of sheets negative — but the spread is enormous: the 10th percentile is **−0.43** and the 90th is **+0.36**, so plenty of sheets run strongly the other way. One pooled number hides all of that, and this histogram is the honest picture.
 
 ---
 
 ## Draw terciles
 
-Within each class I split riders into three equal groups by draw rank and averaged their place percentile (0.0 = win, 1.0 = last; lower is better). Pooled across all classes:
+Within each draw sheet I split the field into three equal groups by draw position and averaged their place percentile (0.0 = win, 1.0 = last; lower is better). Each tercile is pooled as its own total place percentile divided by its **own rider count** — the groups are equal *within* a sheet, but not once sheets of different sizes are combined, which is exactly the normalisation the old code got wrong. Pooled across all sheets:
 
 <svg viewBox="0 0 420 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mean place percentile by draw third">
   <line x1="40" y1="160" x2="400" y2="160" stroke="#888" stroke-width="1"/>
-  <rect x="70" y="49" width="60" height="111" rx="2" fill="#6a9e78"/>
-  <text x="100" y="41" fill="#444" font-size="12" text-anchor="middle">0.175</text>
+  <rect x="70" y="50" width="60" height="110" rx="2" fill="#6a9e78"/>
+  <text x="100" y="42" fill="#444" font-size="12" text-anchor="middle">0.250</text>
   <rect x="180" y="56" width="60" height="104" rx="2" fill="#6a9e78"/>
-  <text x="210" y="48" fill="#444" font-size="12" text-anchor="middle">0.165</text>
-  <rect x="290" y="60" width="60" height="100" rx="2" fill="#6a9e78"/>
-  <text x="320" y="52" fill="#444" font-size="12" text-anchor="middle">0.158</text>
+  <text x="210" y="48" fill="#444" font-size="12" text-anchor="middle">0.237</text>
+  <rect x="290" y="62" width="60" height="98" rx="2" fill="#6a9e78"/>
+  <text x="320" y="54" fill="#444" font-size="12" text-anchor="middle">0.223</text>
   <g fill="#555" font-size="11" text-anchor="middle">
     <text x="100" y="178">1st third</text>
     <text x="210" y="178">2nd third</text>
@@ -100,99 +86,82 @@ Within each class I split riders into three equal groups by draw rank and averag
   <text x="40" y="12" fill="#555" font-size="12">Mean place percentile by draw third (pooled; lower = better)</text>
 </svg>
 
-Later draws average **−0.018** percentile points better than early draws across the whole range — the interval below is the bootstrap 95% CI on that difference:
+The gradient is monotone: **0.250 → 0.237 → 0.223**, a last-minus-first difference of **−0.027** percentile points. On the scale of a 20-horse class that is roughly **half a placing** — real, consistent, and far smaller than the noise between two runs of the same class.
 
-<svg viewBox="0 0 420 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Last vs first tercile difference with 95 percent confidence interval">
-  <line x1="20" y1="24" x2="400" y2="24" stroke="#999" stroke-width="1"/>
-  <line x1="60" y1="24" x2="360" y2="24" stroke="#d0a65e" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="189" cy="24" r="5" fill="#c0392b"/>
-  <text x="60" y="42" text-anchor="middle" fill="#777" font-size="11">−0.021</text>
-  <text x="189" y="42" text-anchor="middle" fill="#444" font-size="11">−0.018</text>
-  <text x="360" y="42" text-anchor="middle" fill="#777" font-size="11">−0.014</text>
-  <text x="20" y="14" fill="#777" font-size="11">95% CI on last-vs-first difference</text></svg>
+---
 
-The whole interval sits below zero, so this contrast is real — but it is **−0.018 percentile points across the entire draw range**, and it is the *only* pooled measurement here that still clears zero. That's far smaller than typical class-to-class variation, and it is not the same statement as "drawing late helps".
+## The strongest test: does drawing late make you more likely to place at all?
+
+Every measure above uses only riders who *received a placing*, which the scrape caps at 15 per class — so in a 224-horse barrel race, 209 riders are invisible to it. The draw sheets cover the **whole field**, so they let me ask a cleaner question: among everyone who drew, what share recorded a placing? That answer cannot be distorted by the 15-row ceiling.
+
+| Field size | First third | Middle third | Last third | Spread |
+|---|---|---|---|---|
+| All sheets (≥ 10) | 30.87% | 30.92% | 31.62% | +0.75 pt |
+| More than 15 | 27.59% | 28.19% | 28.96% | +1.36 pt |
+| 50 or more | 17.62% | 17.84% | **19.53%** | **+1.91 pt** |
+
+In small classes the draw makes no difference to whether you place. In the largest classes — the ones where the draw actually matters to an exhibitor — the last third places **1.9 percentage points** more often than the first third, on a base rate of 18%. That is a **10% relative** improvement, and it is the same direction as the correlation and the tercile gradient, from three independent measurements.
 
 ---
 
 ## Does going first matter?
 
-The most striking single number on this page is actually about the **first** draw, not the last. Among the 718 classes of 10+ riders where the first-drawn rider posted a numeric result (1,239 more classes are excluded because their first draw scratched or never placed), first-goers won **8.5%** of their classes — against **6.8%** expected if the draw carried no advantage (the mean of 1/n across the same classes). That's a **1.25×** win rate.
+The first draw is its own story. Among the **330 sheets** where the first-drawn rider recorded a placing, first-goers won **41 classes — 12.4%** — against **9.2%** expected if the draw carried no advantage (the mean of 1 divided by the number of placings recorded in those same sheets, which is the right benchmark, since a rider who places is competing against the other placed riders, not the whole field). That's a **1.35×** win rate, rising to **1.48×** in fields of more than 15.
 
-| Class size | First-goers | Won | Expected | Ratio |
+| Group | Sheets | First-goers won | Expected | Ratio |
 |---|---|---|---|---|
-| all classes (n ≥ 5) | 1,334 | 12.2% | 10.7% | 1.14× |
-| 10+ riders | 719 | 8.5% | 6.8% | **1.25×** |
+| All sheets | 330 | 12.4% | 9.2% | 1.35× |
+| Fields > 15 riders | 219 | 11.4% | 7.7% | **1.48×** |
 
-The direction survives larger fields but the gap has narrowed since the August cut (1.45× on 355 classes then, 1.25× on 719 now) — exactly what you'd expect if part of the earlier number was the small sample being flattering.
-
-Broken out by discipline, the first-draw edge is concentrated in the western pattern and hunter classes:
-
-| Discipline | Classes | First-goers won | Expected | Ratio |
-|---|---|---|---|---|
-| Showmanship | 122 | 23.0% | 9.5% | 2.42× |
-| Hunter Hack | 20 | 25.0% | 13.0% | 1.92× |
-| Roping | 28 | 14.3% | 9.3% | 1.54× |
-| Hunter Under Saddle | 51 | 17.6% | 11.9% | 1.48× |
-| Western Riding | 66 | 15.2% | 10.7% | 1.42× |
-| Working Hunter | 35 | 14.3% | 10.7% | 1.34× |
-
-The average placing is a quieter story: first-goers sit **−0.035** percentile points from the rest of the field (95% CI −0.058…−0.012) — an interval entirely on the better side of zero, though far smaller than the win-rate gap.
-
-**Caveats.** There's only one first-goer per class, so this compares classes against each other, not riders within a class. The disciplines above have modest n's and no correction for multiple comparisons across ~20 disciplines — with draws like these, one or two will look strong by chance. A higher-than-odds win rate is associative, not causal: the draw is a schedule artifact, and classes that draw first may differ in other ways.
+**Caveats.** There is only one first-goer per sheet, so this compares sheets against each other, not riders within a sheet, and 330 sheets is a modest sample. A higher-than-odds win rate is associative, not causal: the draw is a schedule artefact, and what draws first may differ in other ways — a trainer with two entries may pick the slot, and scratches can move the first position.
 
 ---
 
 ## By discipline
 
-Pooled weighted rho per discipline for every discipline with at least 10 classes. Negative = later draws placed better; positive = earlier draws did.
+Pooled size-weighted rho per discipline, for every discipline with at least 15 draw sheets. Negative = later draws placed better; positive = earlier draws did.
 
-| Discipline | Classes | Weighted rho |
+| Discipline | Draw sheets | Weighted rho |
 |---|---|---|
-| Trail | 214 | −0.041 |
-| Western Pleasure | 174 | −0.025 |
-| Hunter Under Saddle | 165 | +0.019 |
-| Horsemanship | 144 | +0.008 |
-| Showmanship | 143 | +0.038 |
-| Ranch Riding | 141 | −0.007 |
-| Ranch Trail | 107 | −0.029 |
-| Halter | 103 | +0.030 |
-| Hunt Seat Equitation | 101 | +0.020 |
-| Reining | 88 | −0.051 |
-| Western Riding | 70 | −0.043 |
-| Ranch Rail | 34 | −0.003 |
-| Roping | 33 | −0.083 |
-| Working Hunter | 31 | −0.012 |
-| Longe Line | 21 | +0.127 |
-| Hunter Hack | 20 | +0.087 |
-| Working Cow Horse | 18 | +0.034 |
-| Conformation | 13 | −0.077 |
-| Pole Bending | 12 | +0.111 |
-| Barrels | 12 | +0.094 |
-| Barrel Racing | 12 | +0.121 |
-| Western Rail | 11 | +0.006 |
-| Working Western Rail | 11 | +0.045 |
-| Cutting | 10 | −0.103 |
+| Western Riding | 36 | −0.112 |
+| Reining | 72 | −0.081 |
+| Ranch Riding | 83 | −0.078 |
+| Roping | 23 | −0.071 |
+| Ranch Trail | 47 | −0.062 |
+| Western Pleasure | 23 | −0.048 |
+| Hunt Seat Equitation | 19 | −0.047 |
+| Showmanship | 25 | −0.040 |
+| Barrels | 25 | −0.035 |
+| Working Hunter | 27 | −0.035 |
+| Halter | 55 | −0.014 |
+| Pole Bending | 27 | −0.011 |
+| Trail | 96 | −0.009 |
+| Horsemanship | 27 | +0.012 |
+| Hunter Under Saddle | 27 | **+0.095** |
 
-The old three-discipline story got messier with more data. **Horsemanship and Showmanship** — the two clear "later draws don't help" exceptions in the August cut — have converged on zero (+0.008 and +0.038, both barely off it), and **Hunter Under Saddle** flipped sign but stayed small (+0.019 vs −0.043 before). What survives is a split by *class type*: the largest negative figures now sit in cattle and speed-adjacent work (**Cutting −0.103, Roping −0.083, Reining −0.051, Western Riding −0.043, Trail −0.041**), while the positive ones are the timed speed events and Longe Line (**Barrel Racing +0.121, Pole Bending +0.111, Barrels +0.094, Longe Line +0.127**) — where going later means a chewed-up arena or a warmer clock, so the sign flips the other way.
+The late-draw edge is concentrated in the disciplines judged on **accumulated manoeuvre scores** — Western Riding, Reining, Ranch Riding, Ranch Trail — where a judge scoring fifteen riders in sequence is plausibly drifting as the class goes on. It is absent, and even reversed, in **Hunter Under Saddle and Horsemanship**, the two classes judged as a single go-round on overall impression. Barrels and Pole Bending sit near zero, which matters because those are the classes with the deepest fields: whatever is happening in the pattern classes is not a general "later is better" law.
 
 ---
 
 ## Methodology & caveats
 
 **How it's measured:**
-1. **Within-class percentile normalisation** — raw places are meaningless across classes of different sizes (6th of 8 is not 6th of 60), so each rider's outcome is `place_pct = (place − 1) / (n − 1)`; draws are normalised the same way.
-2. **Spearman's rho per class** — rank correlation between draw order and placing for every class with ≥ 10 riders (average ranks for ties; DQ and non-numeric rows excluded). 1,748 classes qualify today, up from 934 in August.
-3. **Pooled weighted mean + bootstrap CI** — class rhos pooled as a size-weighted mean; 95% interval from a 2,000-iteration bootstrap resampling classes with replacement (fixed seed, reproducible).
-4. **Draw terciles** — riders split into three equal groups by draw rank within each class.
-5. **First-goer test** — only classes where the first-drawn rider posted a numeric result count; the benchmark is the mean of 1/n over the same classes, i.e. the win probability the draw alone would predict.
+
+1. **The draw is the published draw sheet** — `class_draw_rider.draw_no`, which runs 1…field size across the entire field, joined to results on back number. This is the fix that made the rest possible; the earlier version's `class_placing.draw_no` is not a draw order.
+2. **Within-sheet percentile normalisation** — raw places are meaningless across sheets of different sizes, so each placed rider's outcome is `place_pct = (place − 1) / (field − 1)`, using the sheet's true field size.
+3. **Spearman's rho per sheet** — rank correlation between draw position and place percentile, average ranks for ties, for every sheet with ≥ 5 recorded placings.
+4. **Pooled weighted mean + bootstrap CI** — sheet rhos pooled as a size-weighted mean; 95% interval from a 2,000-iteration bootstrap resampling sheets with replacement (fixed seed, reproducible).
+5. **P(placed) by quarter-of-field** — the whole-field test, using every drawn rider, which the 15-placing cap cannot distort.
+6. **First-goer test** — only sheets where the first-drawn rider recorded a placing; the benchmark is the mean of 1/(placings recorded) over those sheets.
+
+**Filters applied to the 2,789 ingested draw sheets** (751 survive): a class name resolvable via the schedule, a field of at least 10, a rider list covering at least 95% of the declared field, no draw number beyond the field size, and at least one recorded placing. Each of those rejects a sheet where the draw range can't be trusted, and together they are why this cut covers a third of the ingested sheets rather than all of them.
 
 **Read before quoting:**
-- **Draw semantics vary by class type.** In some classes the draw is a random start order; in others it's a scheduled slot, and scratches/re-entries can shift it afterward. One pooled number averages over all of these.
-- **DQ rows are excluded** — only rows with a numeric place and a draw number enter the analysis, using the Combined Judges roll-up placing.
-- **The pooled effect is no longer distinguishable from zero** (−0.005, CI −0.018…+0.007). Only the last-vs-first tercile contrast still clears zero, at about 1.8 percentile points — far smaller than typical class-to-class variation.
-- **Doubling the data weakened the signal, and that's the useful lesson** — an effect that shrank toward zero as n grew was mostly small-sample optimism. Treat single-cut anomalies in your own results with the same suspicion.
-- **Per-class variation is the interesting part** — the pooled mean hides a lot of spread, and the histogram above is the honest picture.
+
+- **Draw semantics vary.** In some classes the draw is a random start order; in others it is a scheduled slot, and scratches and re-entries can shift it afterwards. One pooled number averages over all of these.
+- **The effect is small.** About 2.7 percentile points across the whole draw range, and 1.9 points of extra chance of placing in the deepest classes. It is not the difference between a ribbon and a drive home empty.
+- **Only 751 sheets are captured**, and they skew to shows that publish draws — Congress and the championship shows. Small shows are barely represented.
+- **Per-sheet variation is the interesting part.** Most sheets show little, but 12% sit at −0.4 or lower and 8% at +0.4 or higher. Whatever is going on is a property of particular classes, not of horse shows in general.
 
 ---
 
