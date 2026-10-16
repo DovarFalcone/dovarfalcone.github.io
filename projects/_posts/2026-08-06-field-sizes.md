@@ -1,27 +1,25 @@
 ---
 layout: post
 title: The Deepest Classes and Average Field Sizes
-subtitle: Where a placing means beating the most horses — and how big each discipline's fields really run
+subtitle: Where a placing means beating the most horses, and how big each discipline's classes really are
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]
 comments: true
 ---
 
-# The Deepest Classes and Average Field Sizes
+Placing in a 5-horse class isn't the same as placing in a 224-horse class. The biggest class in my database was scheduled for 226 entries. Across 72,316 classes with placings, 426,597 placings in all, the average class size by discipline runs from the seventies down to three.
 
-A placing in a 5-horse class isn't the same as a placing in a 224-horse class. The deepest class in the database ran **226 scheduled entries**, and across **72,316 placed classes** — **426,597 placings** in all — average field size differs enormously, from the seventies down to just three.
+This post lists the deepest classes and the average class size for each discipline. The database now also holds the published draw sheets, so for 2,549 classes I have two separate counts of how many horses were in the class. They disagree a lot more often than I expected.
 
-This page lists the deepest classes — where a placing means beating the most horses — and how big each discipline's fields run on average. It also does something the earlier cuts couldn't: the database now holds the **published draw sheets** as well as the show schedules, so for 2,549 classes there are two independent measures of "how many horses were in this class" — and they disagree far more often than you'd expect.
+*Numbers refreshed October 16, 2026.*
 
-*Analysis refreshed 16 October 2026 · computed fresh from the production database.*
-
-> **Updated 16 October 2026.** The corpus is now several times larger than the September cut, and — more importantly — the draw sheets are in. That matters because the two "field size" numbers in the data measure different things: `entrycount` comes from the **schedule** (how many entries the class was scheduled to have) while the draw sheet records **how many riders actually drew into that go**. For 1,746 of 2,549 classes the draw sheet is larger, occasionally by more than 100. The averages below use the schedule, because that's the only measure available for every class; the draw-sheet comparison is its own section, and it changes how the deepest-classes list should be read.
+> **Updated October 16, 2026.** The data is several times bigger than the September version, and the draw sheets are in. The two counts measure different things. The entry count comes from the show schedule, which is how many entries the class was scheduled to have. The draw sheet is how many riders actually drew into that go. For 1,746 of 2,549 classes the draw sheet is bigger, sometimes by more than 100. The averages below use the schedule, because it's the only count I have for every class. The draw-sheet comparison has its own section, and it changes how you should read the deepest-classes list.
 
 ---
 
 ## The deepest classes
 
-Two rankings, because the database holds two things. `Scheduled` is the entry count on the show's schedule; `Placed` is the number of riders who actually received a numeric placing — and as you'll see, those are very different numbers.
+There are two lists here because there are two counts. "Scheduled" is the entry count on the show schedule. "Placed" is how many riders got a placing, and those numbers are very different.
 
 **By scheduled entries:**
 
@@ -40,7 +38,7 @@ Two rankings, because the database holds two things. `Scheduled` is the entry co
 | 2024 Congress | Level 1 Ranch Trail Congress | Ranch Trail | 123 | 15 |
 | 2024 Redbud Spectacular | Junior Reining RB1 | Reining | 120 | 17 |
 
-**By the published draw sheet** — the number of riders who actually drew into the go:
+**By the published draw sheet**, meaning the number of riders who actually drew into the go:
 
 | Show | Class | Discipline | Drawn | Placed |
 |---|---|---|---|---|
@@ -55,18 +53,18 @@ Two rankings, because the database holds two things. `Scheduled` is the entry co
 | 2026 Congress | NRHA Open Reining Congress | Reining | 166 | — |
 | 2026 Congress | NRHA Novice Horse Level 1 — Open Congress | Reining | 158 | 15 |
 
-**Reining and Barrels** dominate both lists — they are the disciplines where a single class can hold 150+ horses. But note two things in the columns:
+Reining and Barrels fill both lists. Those are the disciplines where one class can hold 150 or more horses. Two things stand out in the columns:
 
-- **Most Congress classes publish 15 placings** regardless of how many entered. A 224-horse barrel race and a 15-horse local class both produce a 15-line result sheet. So "deepest class" and "deepest result list" are different rankings, and any per-placing statistic inherited from the result sheet carries that ceiling with it.
-- **The draw-sheet list is not the schedule list reordered.** The All Star Reining Stakes Derby runs four levels at once, so one 166-rider draw sheet covers classes whose schedules say 42, 57, 73 and 75. That is the structural quirk behind almost every large disagreement below.
+- **Most Congress classes publish 15 placings no matter how many entered.** A 224-horse barrel race and a 15-horse local class both produce a 15-line results sheet. So the deepest class and the longest results list aren't the same ranking, and anything calculated from the results sheet carries that limit.
+- **The draw-sheet list isn't just the schedule list reshuffled.** The All Star Reining Stakes Derby runs four levels together, so one 166-rider draw sheet covers classes whose schedules say 42, 57, 73, and 75. That explains almost every big disagreement below.
 
 ---
 
-## Average field size by discipline
+## Average class size by discipline
 
-Mean scheduled entries per class within each discipline. `Classes` is the count behind each figure — the small-`n` rows are noisy and shown only so you can see how much of the dataset is halter and pleasure:
+This is the average scheduled entries per class for each discipline. "Classes" is how many classes are behind each average. The rows with only a few dozen classes are less reliable, but I left them in so you can see how much of the data is halter and pleasure.
 
-| Discipline | Avg entries | Classes |
+| Discipline | Average entries | Classes |
 |---|---|---|
 | Barrels | **73.8** | 37 |
 | Working Western Rail | 51.5 | 34 |
@@ -98,71 +96,71 @@ Mean scheduled entries per class within each discipline. `Classes` is the count 
 | Pleasure Driving | 3.2 | 299 |
 | Jumping | 3.0 | 104 |
 
-<svg viewBox="0 0 560 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Average field size by discipline">
-  <line x1="150" y1="16" x2="150" y2="180" stroke="#999" stroke-width="1"/>
+<svg viewBox="0 0 560 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Average class size by discipline">
+  <line x1="150" y1="16" x2="150" y2="190" stroke="#9aa3ae" stroke-width="1"/>
   <g font-size="11">
-    <text x="140" y="36" text-anchor="end" fill="#555">Barrels</text>
+    <text x="140" y="39" text-anchor="end" fill="#c9ced6">Barrels</text>
     <rect x="150" y="26" width="160" height="16" fill="#6a9e78"/>
-    <text x="316" y="39" fill="#444">73.8</text>
-    <text x="140" y="60" text-anchor="end" fill="#555">Working Western Rail</text>
+    <text x="316" y="39" fill="#c9ced6">73.8</text>
+    <text x="140" y="63" text-anchor="end" fill="#c9ced6">Working Western Rail</text>
     <rect x="150" y="50" width="112" height="16" fill="#6a9e78"/>
-    <text x="268" y="63" fill="#444">51.5</text>
-    <text x="140" y="84" text-anchor="end" fill="#555">Reining</text>
+    <text x="268" y="63" fill="#c9ced6">51.5</text>
+    <text x="140" y="87" text-anchor="end" fill="#c9ced6">Reining</text>
     <rect x="150" y="74" width="33" height="16" fill="#6a9e78"/>
-    <text x="189" y="87" fill="#444">15.3</text>
-    <text x="140" y="108" text-anchor="end" fill="#555">Ranch Riding</text>
+    <text x="189" y="87" fill="#c9ced6">15.3</text>
+    <text x="140" y="111" text-anchor="end" fill="#c9ced6">Ranch Riding</text>
     <rect x="150" y="98" width="21" height="16" fill="#d0a65e"/>
-    <text x="177" y="111" fill="#444">9.8</text>
-    <text x="140" y="132" text-anchor="end" fill="#555">Trail</text>
+    <text x="177" y="111" fill="#c9ced6">9.8</text>
+    <text x="140" y="135" text-anchor="end" fill="#c9ced6">Trail</text>
     <rect x="150" y="122" width="19" height="16" fill="#d0a65e"/>
-    <text x="175" y="135" fill="#444">8.7</text>
-    <text x="140" y="156" text-anchor="end" fill="#555">Western Riding</text>
+    <text x="175" y="135" fill="#c9ced6">8.7</text>
+    <text x="140" y="159" text-anchor="end" fill="#c9ced6">Western Riding</text>
     <rect x="150" y="146" width="14" height="16" fill="#d0a65e"/>
-    <text x="170" y="159" fill="#444">6.6</text>
-    <text x="140" y="180" text-anchor="end" fill="#555">Halter</text>
+    <text x="170" y="159" fill="#c9ced6">6.6</text>
+    <text x="140" y="183" text-anchor="end" fill="#c9ced6">Halter</text>
     <rect x="150" y="170" width="11" height="16" fill="#d0a65e"/>
-    <text x="167" y="183" fill="#444">5.2</text>
+    <text x="167" y="183" fill="#c9ced6">5.2</text>
   </g>
-  <text x="150" y="202" fill="#777" font-size="11">Mean scheduled entries per class (green = deepest tiers, tan = mid-pack and smaller)</text>
+  <text x="150" y="206" fill="#9aa3ae" font-size="11">Average scheduled entries per class</text>
 </svg>
 
-The three-tier structure is clear, and it is much flatter than the earlier cuts of this page suggested:
+The spread is much flatter than earlier versions of this page showed.
 
-- **Speed events run deep** — Barrels (74) and Working Western Rail (52) are in a league of their own, with Equitation Over Fences and Cow Work next in the twenties.
-- **The pattern and rail classes sit at 6–10.** Trail, Showmanship, Horsemanship, Western Pleasure and Hunter Under Saddle — the disciplines with the *most* classes in the dataset — average fewer than ten horses each. The August version of this table showed these in the mid-teens; the number fell not because fields shrank but because the corpus grew by thousands of small local classes, which dominate by count.
-- **Halter is enormous in participation but tiny in field size** — **8,815 classes averaging 5.2 entries**, more classes than any other discipline. That's the structure of halter: hundreds of narrow divisions, few horses in each.
-- **The bottom is real too** — Pleasure Driving averages 3.2 entries and Jumping 3.0. A win there is worth having, but it isn't beating a field.
+- **A few disciplines run deep.** Barrels (74) and Working Western Rail (52) are well ahead of everything else, with Equitation Over Fences and Cow Work next at around 20.
+- **Most pattern and rail classes have 6 to 10 horses.** Trail, Showmanship, Horsemanship, Western Pleasure, and Hunter Under Saddle have the most classes in the data, and each averages under ten horses. The August version showed these in the mid-teens. The fields didn't shrink. The data grew by thousands of small local classes, and there are far more of those than big ones.
+- **Halter has the most classes and some of the smallest.** There are 8,815 halter classes averaging 5.2 entries, more classes than any other discipline. Halter is split into lots of narrow divisions with only a few horses in each.
+- **The bottom is small.** Pleasure Driving averages 3.2 entries and Jumping 3.0. A win there still counts, but you aren't beating much of a field.
 
 ---
 
 ## How many horses were actually in the class?
 
-The database now stores the **draw sheets** — the published starting order for each go, with a rider on every line. That gives a second, independent measure of field size, and it is not the same as the schedule's entrycount for the same class:
+The draw sheets list the starting order for each go, one rider per line. That's a second count of class size, and it often doesn't match the schedule's entry count for the same class:
 
-| Relationship | Classes |
+| How the two counts compare | Classes |
 |---|---|
-| Draw sheet exactly matches the schedule | 502 |
-| Draw sheet **larger** than the schedule | 1,746 |
-| Draw sheet **smaller** than the schedule | 301 |
+| Draw sheet matches the schedule exactly | 502 |
+| Draw sheet is **bigger** than the schedule | 1,746 |
+| Draw sheet is **smaller** than the schedule | 301 |
 
-The median absolute disagreement is **4 horses**, but the ninetieth percentile is **32** and the largest is **144**. The big ones are structural, not errors:
+The typical difference is 4 horses, but one in ten classes is off by 32 or more, and the biggest difference is 144. The big ones come from how shows are run, not from bad data:
 
-- **Drawn-together classes.** Four levels of the All Star Reining Stakes Derby share one 166-rider draw sheet while their schedules say 42, 57, 73 and 75. A draw sheet is a *go*, not a class.
-- **Co-sanctioned and combined divisions.** NRHA Novice Horse Level 2 — Open draws 158 against a scheduled 55. The schedule counts *this class*; the draw sheet counts *everyone in the arena*.
-- **Schedule entries are intentions.** A scheduled 173-entry reining futurity can draw 51 and place 15.
+- **Classes drawn together.** Four levels of the All Star Reining Stakes Derby share one 166-rider draw sheet while their schedules say 42, 57, 73, and 75. A draw sheet covers a go, not a class.
+- **Combined and co-sanctioned divisions.** The NRHA Novice Horse Level 2 — Open draws 158 against a scheduled 55. The schedule counts that one class. The draw sheet counts everyone riding in that go.
+- **Schedule entries are a plan.** A reining futurity scheduled for 173 entries can draw 51 and place 15.
 
-> **Read the two sections together.** "Deepest class" depends entirely on which of the three numbers you use — scheduled entries, drawn riders, or published placings — and they can differ by a factor of three. The safest statement about the sport's biggest class is the one where all three agree: the 4D Open Barrel Racing at Congress, scheduled 226, drawn **224**, with 15 placings published.
-
----
-
-## Methodology & caveats
-
-- Classes are those with at least one Combined Judges numeric placing (72,316 classes, 426,597 placings). The scheduled entrycount comes from the show schedule, deduped per class because the schedule holds duplicate rows for some classes. **Both rankings are restricted to classes that actually produced a placing** — the raw schedule also carries 8,549 non-class line items (stall blocks, parking permits, camping passes), and a few of those have larger "entry counts" than any real class. Ranking the schedule unfiltered puts a barn-stall block at 298 on top; that is a data-quality artefact, not a horse show class.
-- **40.2% of scheduled classes place fewer riders than they entered** (26,105 of 65,008), and **1,505 classes publish exactly 15 placings** — the scrape ceiling. `Placed` is therefore a floor on the field, never the field itself.
-- **The draw-sheet figures cover 2,549 draw sheets** (2,293 of the placed classes have one), the draws that were published and captured. They are a biased sample: big shows publish draws, small ones often don't.
-- **Averages depend on which classes are in the database.** Reining averages 15.3 here across 2,206 classes; it averaged 39.0 in the August version across 80. Same discipline, different sample — the change is which shows have been ingested, not the sport.
-- **"Deepest in the database" is not "deepest in the sport."** The database covers the shows I've ingested so far, currently dominated by Congress and the championship shows, not every show ever run.
+> **Read the two lists together.** Which class is the deepest depends on which count you use: scheduled entries, drawn riders, or placings. They can differ by a factor of three. The safest pick for the biggest class is the 4D Open Barrel Racing at Congress, which tops both the schedule and the draw: scheduled for 226, with 224 drawn and 15 placings published.
 
 ---
 
-*This is one of a series of data articles built on my equine-data results database — a personal AQHA show-results explorer that analyzes every class in the dataset.*
+## How I did it
+
+- **Which classes count.** I only used classes with at least one placing in the Combined Judges results: 72,316 classes and 426,597 placings. The entry count comes from the show schedule, with duplicate rows removed. I left out 8,549 schedule items that aren't classes, like stall blocks, parking permits, and camping passes. A few of those have bigger "entry counts" than any real class. Without that filter, a barn stall block with 298 tops the list.
+- **Placings undercount the field.** 40.2% of scheduled classes placed fewer riders than entered (26,105 of 65,008), and 1,505 classes list exactly 15 placings, which is my scraper's limit. The placed count is a minimum, never the full class.
+- **The draw sheets are a partial sample.** I have 2,549 draw sheets, and 2,293 of the placed classes have one. Big shows publish draws and small ones often don't.
+- **Averages depend on which shows are in the data.** Reining averages 15.3 here across 2,206 classes. In the August version it averaged 39.0 across 80. The sport didn't change. The shows I'd collected did.
+- **This is the deepest in my data, not in the sport.** The database covers the shows I've collected so far, mostly Congress and the championship shows, not every show ever run.
+
+---
+
+*This is one of a series of posts built on my equine-data results database, a personal AQHA show-results explorer that analyzes every class I've collected.*
