@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Judges Scorecard 🐴
+title: Judges Scorecard
 subtitle: Judge the class from the stands — learn AQHA scoring on your own terms
 category: Project
 tags: [Project, AQHA, Judging, Scorecard, Learning, Horse Show]
 comments: true
 ---
 
-# Judges Scorecard 🐴
+# Judges Scorecard
 
 I'm not a judge. I'm a spectator who sits in the stands and watches AQHA horse shows — Reining, Ranch Riding, Trail, Western Riding — and always wondered *how* they arrive at those numbers. What's the difference between a +1 and a +1.5? Why does that horse get a 5 for that maneuver when this one got a 0?
 

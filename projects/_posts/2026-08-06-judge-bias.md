@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Do Judges Favor Certain Horses? 🧑‍⚖️
+title: Do Judges Favor Certain Horses?
 subtitle: What bias actually looks like across 8,145 (judge, horse) pairs — where it shows up, and what it can teach us
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Judging, Equine]
