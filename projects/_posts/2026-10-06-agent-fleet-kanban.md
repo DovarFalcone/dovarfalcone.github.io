@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One Bot Per Domain — How My Agent Fleet Runs on a Kanban Board 🗂️
+title: One Bot Per Domain — How My Agent Fleet Runs on a Kanban Board
 subtitle: Four specialist profiles, an orchestrator, a dispatcher, and a review gate that nothing ships without
 category: Project
 tags: [AI, Agents, Hermes, Kanban, Automation, Workflow]

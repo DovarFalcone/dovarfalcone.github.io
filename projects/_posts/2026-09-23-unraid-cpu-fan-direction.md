@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Reversed CPU Fan Cost My Server 4°C 🌡️
+title: A Reversed CPU Fan Cost My Server 4°C
 subtitle: A 72-hour temperature chart, one wrong hunch about airflow, and the numbers that settled it
 category: Project
 tags: [Homelab, Unraid, Grafana, InfluxDB, Telegraf, Cooling, Data Analysis]

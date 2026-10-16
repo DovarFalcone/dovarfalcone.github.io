@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Where Pattern Classes Are Won — and Where They're Lost 📋
+title: Where Pattern Classes Are Won — and Where They're Lost
 subtitle: The maneuvers that separate placers 1–3 from the field, and the penalties that actually lose classes
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]

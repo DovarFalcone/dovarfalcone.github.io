@@ -59,13 +59,13 @@ layout: base
           </div>
           {% endif %}
         {% else %}
-          {{ content }}
+          {% include strip-leading-title.html content=content title=page.title %}
         {% endif %}
       </article>
 
       {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          <span>Tags:</span>
+        <div class="blog-tags post-footer-tags">
+          <span class="blog-tags-label">Tagged</span>
           {% for tag in page.tags %}
             <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
           {% endfor %}
@@ -87,12 +87,12 @@ layout: base
       <ul class="pagination blog-pager">
         {% if page.previous.url %}
         <li class="page-item previous">
-          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}">&larr; Previous Post</a>
+          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}"><span class="pager-label">&larr; Previous</span><span class="pager-title">{{ page.previous.title | strip_html }}</span></a>
         </li>
         {% endif %}
         {% if page.next.url %}
         <li class="page-item next">
-          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}">Next Post &rarr;</a>
+          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}"><span class="pager-label">Next &rarr;</span><span class="pager-title">{{ page.next.title | strip_html }}</span></a>
         </li>
         {% endif %}
       </ul>

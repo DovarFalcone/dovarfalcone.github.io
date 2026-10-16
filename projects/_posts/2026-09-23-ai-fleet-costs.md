@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My AI Fleet Cost $24.68 in Eight Weeks — Then I Starved It to Cents 🧾
+title: My AI Fleet Cost $24.68 in Eight Weeks — Then I Starved It to Cents
 subtitle: Measured spend from 927 agent sessions — where the money actually went, why the boring tasks now cost nothing, and the routing that got it there
 category: Project
 tags: [AI, Agents, Cost Optimization, Self-Hosting, Ollama, n8n, Homelab]
