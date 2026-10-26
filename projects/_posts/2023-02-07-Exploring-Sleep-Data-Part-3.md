@@ -10,7 +10,7 @@ category: Project
 tags: [Project, sleep]
 ---
 
-*Read [Part 2!](/2023-02-05-Exploring-Sleep-Data-Part-2/)*
+*Read [Part 2!](/2023-02-06-Exploring-Sleep-Data-Part-2/)*
 
 Analyzing Sleep with Google Location Data
 {: style="color:white; font-size: 200%; text-align: center;"}
@@ -38,6 +38,8 @@ Here is a line chart of the temperatures I experienced, generated using the data
 ![Weather Trends](/projects/assets/images/locationtemp.png)
 
 I then used my CSV to table script to upload the "weather_data.csv" file into my PostgreSQL database.
+
+*Read on in [Part 4!](/2026-10-26-Exploring-Sleep-Data-Part-4/)*
 
 ---
 
