@@ -1,52 +1,35 @@
 ---
 layout: post
-title: Judges Scorecard
-subtitle: Judge the class from the stands and learn how AQHA scoring works
+title: "Rosette: Offline Horse Show Scorecards"
+subtitle: "A scorecard app for judges, scribes, and judging teams that works with no signal"
 category: Project
-tags: [Project, AQHA, Judging, Scorecard, Learning, Horse Show]
+tags: [Project, AQHA, Judging, Scorecard, Horse Show]
 comments: true
 topic: horse-shows
 ---
 
-# Judges Scorecard
+[Rosette](https://rosette.maradara.com/) is a scorecard app for horse show judges, scribes, and judging teams. It started as Judges Scorecard, a tool I built because I sat in the stands at AQHA shows and wanted to know how the judges got to their numbers. Rosette is the version built for the people filling out the cards.
 
-I'm not a judge. I'm a spectator who sits in the stands and watches AQHA horse shows (Reining, Ranch Riding, Trail, Western Riding), and I always wondered *how* they arrive at those numbers. What's the difference between a +1 and a +1.5? Why does that horse get a 5 for that maneuver when this one got a 0?
+## Why Offline
 
-So I built **Judges Scorecard**, a tool that lets *anyone* score a class the way the officials do.
+Show barns and arenas are bad places to count on a cell signal. Rosette runs in the browser, saves everything on the device, and keeps working once it's loaded, even with no connection. Scorecards are stored in a local SQLite database (`sql-wasm`), so nothing needs an account or a server.
 
-## Why I Built It
+On a phone or tablet you can add it to the home screen and it opens full screen like a regular app.
 
-When you're watching a show, there's often a disconnect between what you *see* and what the judge *writes down*. You might think a horse was really nice, then watch them place mid-pack. Or think a maneuver was off, only to see them win.
+## Scoring
 
-This app lets you:
+Rosette uses the AQHA scoring system for pattern classes like Reining, Ranch Riding, Trail, and Western Riding:
 
-- **Pick a class type** (Reining, Ranch Riding, Trail, etc.) and score each maneuver yourself
-- **Apply real penalties.** The same penalty buttons officials use (0.5, 1, 2, 5 for Reining; 1, 3, 5, 10 for Ranch Riding; etc.)
-- **See the math.** It uses the official AQHA base-70 scale, where every maneuver is scored from −1.5 to +1.5
-- **Compare your placings.** After scoring all exhibitors, the app ranks them and shows how your leaderboard compares to the official results
+- Every run starts at 70.
+- Each maneuver gets a score from -1.5 to +1.5.
+- Penalties come off the total, and each class has its own penalty buttons. Reining uses 0.5, 1, 2, and 5. Ranch Riding uses 1, 3, 5, and 10.
 
-It's a learning tool. It's meant to help you *understand* what the judge is looking at, so the next time you're in the stands, you can follow along and learn the patterns.
+Add the exhibitors by back number, score each maneuver, apply penalties, and the app adds it up and ranks the class.
 
-## How It Works
+## The Rulebook
 
-1.  **Create a Class.** Choose the class type (Reining, Ranch Riding, Trail, etc.) and give it a name.
-2.  **Add Exhibitors.** Drop in back numbers (e.g., 127, 044). You can rename them to rider names if you want.
-3.  **Score Each Maneuver.** Go through each maneuver and assign a score from −1.5 to +1.5. Apply penalties as needed.
-4.  **See Placings.** Once everyone has been scored, the app ranks them by total score and shows your leaderboard.
-
-## Key Features
-
-- **Class-Type Penalty Profiles.** Each discipline has its own penalty buttons. Reining penalties are different from Ranch Riding, which are different from Trail.
-- **Base-70 AQHA Scale.** Every maneuver starts at 70 and moves up or down based on your scoring.
-- **Searchable Rulebook.** Built-in 2026 AQHA rulebook reference, filterable by class, so you can look up exactly what constitutes a "3-point penalty" or a "5-point penalty."
-- **Offline-First.** Works without internet. Your scorecards persist on your device.
+The full 2026 AQHA rulebook is built in and searchable. That's 2,739 rules across 42 chapters, covering all 29 judged class chapters plus the show rules and judges' rules. You can filter by class, so when a penalty call comes up you can look up the exact wording without leaving the scorecard. The rulebook is cached with the app, so search works offline too.
 
 ## Try It
 
-**[Open Judges Scorecard →](https://scorecard.maradara.com/)**
-
-No account needed. Just open the app, start a class, and start scoring.
-
----
-
-*Built for spectators, students, and anyone who wants to learn AQHA scoring from the stands.*
+[Open Rosette](https://rosette.maradara.com/). No account needed.
