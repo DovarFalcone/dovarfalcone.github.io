@@ -1,8 +1,8 @@
 # Apps listed on the home page. `writeup` is the post that explains each one.
-- name: Judges Scorecard
-  url: https://scorecard.maradara.com/
+- name: Rosette
+  url: https://rosette.maradara.com/
   writeup: /2026-07-29-judges-scorecard/
-  description: Score a horse show class from the stands and see how AQHA judging works.
+  description: Offline AQHA scorecards and a searchable rulebook for horse show judges, scribes, and judging teams.
 - name: Hevy-SL
   url: https://hevy-sl.streamlit.app/
   writeup: /2026-07-29-hevy-sl/
