@@ -26,9 +26,15 @@
   </div>
   {% endif %}
   <div class="page-header-body">
+    {%- if include.wide %}
+    <div class="wide-container">
+      <div>
+        <div>
+    {%- else %}
     <div class="container-md">
       <div class="row">
         <div class="{% if include.type == 'post' and page.category == 'Recipe' %}col-xl-10 offset-xl-1 col-lg-10 offset-lg-1{% else %}col-xl-8 offset-xl-2 col-lg-10 offset-lg-1{% endif %}">
+    {%- endif %}
           <div class="{{ include.type }}-heading">
             <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
             {% if page.subtitle %}
@@ -39,9 +45,12 @@
               <div class="post-meta-line">
                 <span class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time></span>
                 {% if page.category == 'Project' %}
-                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> <a href="{{ '/projects' | relative_url }}">Projects</a></span>
+                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> {%- assign topic = site.data.topics | where: "id", page.topic | first %}{% if topic %}<a href="{{ '/projects/' | relative_url }}#{{ topic.id }}">{{ topic.name }}</a>{% else %}<a href="{{ '/projects/' | relative_url }}">Projects</a>{% endif %}</span>
                 {% elsif page.category == 'Recipe' %}
-                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> <a href="{{ '/recipes' | relative_url }}">Recipes</a></span>
+                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> {%- assign course = site.data.courses | where: "id", page.course | first %}{% if course %}<a href="{{ '/recipes/' | relative_url }}#{{ course.id }}">{{ course.name }}</a>{% else %}<a href="{{ '/recipes/' | relative_url }}">Recipes</a>{% endif %}</span>
+                {%- if page.from %}
+                  <span class="post-meta"><span class="middot" aria-hidden="true">&middot;</span> From {{ page.from }}</span>
+                {%- endif %}
                 {% endif %}
                 {% if page.last-updated %}
                   <span class="post-meta">

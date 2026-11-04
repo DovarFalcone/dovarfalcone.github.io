@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Macaroni Salad
-subtitle: Peppered Up Macaroni Salad A Flavorful Twist on a Classic Side Dish
+subtitle: "Make a big batch and keep it chilled"
 category: Recipe
 thumbnail-img: /recipes/assets/images/macsalad.jpeg
 tags: [recipe, pasta, Denise, salad, favorite]
+course: sides
+from: "Denise"
 ---
 
 > Make in bulk for later

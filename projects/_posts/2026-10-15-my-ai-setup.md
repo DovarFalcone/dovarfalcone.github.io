@@ -11,6 +11,7 @@ redirect_from:
   - /2026-10-06-agent-fleet-kanban/
   - /2026-10-06-agent-memory-two-stores/
   - /2026-10-06-2026-10-06-agent-memory-two-stores/
+topic: homelab
 ---
 
 In July I set out to build an AI lab that ran entirely on my own workstation, on local models and free tiers. I wanted four things: privacy, no network latency, control of the whole stack down to the model weights, and no subscriptions.

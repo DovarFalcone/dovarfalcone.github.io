@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Slow Cooker Tangy Pork Chops
-subtitle: A delicious and easy to make Crockpot recipe for tangy pork chops
+subtitle: "Slow cooker pork chops, serves 4"
 category: Recipe
 thumbnail-img: /recipes/assets/images/tangypork.jpeg
 tags: [Main Dish, sweet, Pat Cole, pork, crockpot]
+course: mains
+from: "Pat Cole"
 ---
 
 {: .box-note}

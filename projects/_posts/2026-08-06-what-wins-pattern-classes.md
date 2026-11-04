@@ -5,6 +5,7 @@ subtitle: The maneuvers that separate the top three from the rest of the class, 
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]
 comments: true
+topic: horse-shows
 ---
 
 A pattern class comes down to a handful of maneuvers. I wanted to know which ones separate the top three from everyone else, and which ones cost riders the class through penalties.

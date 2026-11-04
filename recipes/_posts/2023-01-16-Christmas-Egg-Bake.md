@@ -5,6 +5,7 @@ subtitle: Best breakfast ever
 category: Recipe
 thumbnail-img: /recipes/assets/images/eggbake.jpeg
 tags: [recipe, favorite, Main Dish]
+course: breakfast
 ---
 
 > Cook Time: 1 Hour

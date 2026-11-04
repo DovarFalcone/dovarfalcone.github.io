@@ -8,6 +8,7 @@ comments: true
 thumbnail-img: /projects/assets/images/ai-cost-06-weekly-both-ledgers.png
 redirect_from:
   - /2026-09-23-ai-fleet-costs/
+topic: homelab
 ---
 
 Every model call my agents make is logged on my machine with its model, provider, task, token counts, and an estimated cost. So I don't have to guess what the [setup](/2026-10-15-my-ai-setup/) costs to run. These numbers run from late July to the morning of October 10. They're estimates from published per-token prices, not invoices, since providers don't return a per-call cost.

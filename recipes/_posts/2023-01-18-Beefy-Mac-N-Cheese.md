@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Beefy Macaroni and Cheese
-subtitle: A hearty and comforting dish that's perfect for a family dinner
+subtitle: "Feeds 8"
 category: Recipe
 thumbnail-img: /recipes/assets/images/beefymac.jpeg
 tags: [favorite, Main Dish, beef, Denise]
+course: mains
+from: "Denise"
 ---
 
 {: .box-note}

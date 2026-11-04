@@ -5,6 +5,8 @@ subtitle: Savory finger food to bring to a party.
 category: Recipe
 thumbnail-img: /recipes/assets/images/hamrollup.jpeg
 tags: [recipe, meat, pork, appetizer, Grammy, savory]
+course: appetizers
+from: "Grammy"
 ---
 
 ## Ingredients

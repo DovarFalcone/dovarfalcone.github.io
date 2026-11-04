@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Chicken Diane: Pan-Seared Chicken Breasts with Chive-Lemon Sauce"
-subtitle: A classic and elegant dish that is perfect for a special dinner or a weeknight meal
+title: "Chicken Diane"
+subtitle: "Pan-seared chicken breasts with a chive-lemon sauce"
 category: Recipe
 thumbnail-img: /recipes/assets/images/chickdiane.jpeg
-tags: [Main Dish, Chicken, Great American Recipes]
+tags: [Main Dish, chicken, Great American Recipes]
+course: mains
+from: "Great American Recipes"
 ---
 
 {: .box-note}

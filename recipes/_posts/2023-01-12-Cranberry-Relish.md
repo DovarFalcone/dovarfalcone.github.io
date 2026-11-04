@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Cranberry Relish
-subtitle: Crantastic Relish The Perfect Addition to Your Thanksgiving Spread
+subtitle: "Sweet enough for people who don't like cranberries"
 category: Recipe
 thumbnail-img: /recipes/assets/images/cranrelish.jpeg
 tags: [recipe, fruit, Denise, salad]
+course: sides
+from: "Denise"
 ---
 
 > A simple, sweet relish even the most cranberry adverse will love

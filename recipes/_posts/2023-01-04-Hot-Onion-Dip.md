@@ -5,6 +5,8 @@ subtitle: A fluffy and creamy onion dip. Also known as Onion Soufflé
 category: Recipe
 thumbnail-img: /recipes/assets/images/onionsouffle.jpeg
 tags: [recipe, creamy, vegetables, appetizer, Denise, savory, dip, snacks]
+course: appetizers
+from: "Denise"
 ---
 
 > Take a lactaid 

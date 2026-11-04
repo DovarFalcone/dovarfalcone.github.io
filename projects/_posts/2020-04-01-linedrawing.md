@@ -7,6 +7,7 @@ gh-repo: DovarFalcone/linedrawing
 gh-badge: [star, fork, follow]
 tags: [Project, Data, Image]
 comments: true
+topic: apps
 ---
 
 Line Drawing App is a web application that can transform images into a pencil-sketch-like line drawing. The application is built with Python and Streamlit.

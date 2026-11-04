@@ -1,0 +1,17 @@
+# Apps listed on the home page. `writeup` is the post that explains each one.
+- name: Judges Scorecard
+  url: https://scorecard.maradara.com/
+  writeup: /2026-07-29-judges-scorecard/
+  description: Score a horse show class from the stands and see how AQHA judging works.
+- name: Hevy-SL
+  url: https://hevy-sl.streamlit.app/
+  writeup: /2026-07-29-hevy-sl/
+  description: Upload a Hevy workout export and get estimated one-rep maxes and volume by muscle group.
+- name: Crossing the Line
+  url: https://dovarfalcone-linedrawing-line-iew33h.streamlit.app/
+  writeup: /2020-04-01-linedrawing/
+  description: Turns a photo into a pencil-sketch line drawing.
+- name: Beautiful Data Types
+  url: https://dovarfalcone-beautifulcharts-app-ps32ly.streamlit.app/
+  writeup: /2024-04-17-Exploring-Data-Types/
+  description: Generate statistical distributions and see what each one looks like.

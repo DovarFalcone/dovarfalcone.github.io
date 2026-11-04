@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "They're GOBS!"
-subtitle: Decadent and Decorative Drops of Deliciousness 
+subtitle: "Bubby's gobs, best with Easy Gob Icing"
 category: Recipe
 thumbnail-img: /recipes/assets/images/gobs.jpeg
-tags: [desert, favorite, Bubby, gob]
+tags: [dessert, favorite, Bubby, gob]
+course: desserts
+from: "Bubby"
 ---
 
 **Best Served With:**  [Easy Gob Icing](/2023-02-01-Easy-Gob-Icing/){:target="_blank"}

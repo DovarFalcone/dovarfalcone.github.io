@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Santa Fe Chicken
-subtitle: A flavorful and easy dish that will leave you feeling satisfied
+subtitle: "A one-pan weeknight dinner"
 category: Recipe
 thumbnail-img: /recipes/assets/images/chickenrice.jpeg
 tags: [recipe, savory, chicken, Mrs McMahon, Main Dish, favorite]
+course: mains
+from: "Mrs McMahon"
 ---
 
 {: .box-note}

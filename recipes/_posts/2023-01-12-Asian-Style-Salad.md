@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Asian Style Salad
-subtitle: Asian Fusion Salad A Fresh and Flavorful Blend of Eastern and Western Ingredients
+subtitle: "Serves 4, and goes best with Hoisin Burgers"
 category: Recipe
 thumbnail-img: /recipes/assets/images/asiansalad.jpeg
 tags: [recipe, Asian, Denise, salad, vegetables]
+course: sides
+from: "Denise"
 ---
 
 > Serves 4

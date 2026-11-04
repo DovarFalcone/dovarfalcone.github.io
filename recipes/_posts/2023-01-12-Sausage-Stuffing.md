@@ -1,15 +1,18 @@
 ---
 layout: post
 title: Sausage Stuffing
-subtitle: Sausagelicious Stuffing A Delicious and Savory Twist on a Classic Thanksgiving Dish
+subtitle: "Grammy's stuffing, serves 10"
 category: Recipe
 thumbnail-img: /recipes/assets/images/sausagestuffing.jpeg
 tags: [recipe, Grammy, side]
+course: sides
+from: "Grammy"
 ---
 
 > Serves 10
 
 ## Ingredients
+
 | Ingredient | Amount|
 | :------ |:--- |
 | Pepperidge Farm Herb Stuffing | 1 8oz Bag |

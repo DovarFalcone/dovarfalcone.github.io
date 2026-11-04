@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Baked Macaroni and Cheese
-subtitle: "Indulge in the Ultimate Comfort Food: Homemade Baked Macaroni and Cheese"
+subtitle: "About an hour from start to finish"
 category: Recipe
 thumbnail-img: /recipes/assets/images/bakedmac.jpeg
 tags: [recipe, pasta, savory, Main Dish, Stephen, favorite]
+course: mains
+from: "Stephen"
 ---
 
 > Cook Time: 1 hour

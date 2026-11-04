@@ -5,6 +5,7 @@ subtitle: Mostly no. Across 68,059 judge and horse pairings, strong bias shows u
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Judging, Equine]
 comments: true
+topic: horse-shows
 ---
 
 Judges mostly agree with each other. I wanted to know whether some judges place specific horses consistently better or worse than everyone else does, so I compared each judge's placings for a horse with how that horse placed under all judges.

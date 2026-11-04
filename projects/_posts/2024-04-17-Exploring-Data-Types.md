@@ -7,12 +7,13 @@ gh-repo: DovarFalcone/beautifulcharts
 gh-badge: [star, fork, follow]
 tags: [Project, Data, Charts]
 comments: true
+topic: apps
 ---
 
 # Data Visualization App
 
 ## Overview
-Understanding data is a fundamental skill in today's data-driven world, and this Streamlit app is designed to make learning and exploring data distributions both intuitive and engaging. Whether you're a student, data enthusiast, or professional, this app allows you to generate, visualize, and experiment with different statistical distributions in an interactive way. By leveraging Streamlit, Plotly, and NumPy, this app transforms abstract statistical concepts into visual insights, making learning both accessible and fun.
+This Streamlit app lets you pick a statistical distribution, plot it, and change the parameters to see how the shape moves. I built it with Streamlit, Plotly, and NumPy as a way to learn the distributions by playing with them instead of reading about them.
 
 ![DataVisOverview](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/projects/assets/images/DataVisOverview.png)
 

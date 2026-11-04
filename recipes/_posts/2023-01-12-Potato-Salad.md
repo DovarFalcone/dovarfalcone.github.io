@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Potato Salad
-subtitle: Potatolicious Salad A Classic Side Dish That's Always a Crowd-Pleaser
+subtitle: "Serves 10, with Denise's ranch swap"
 category: Recipe
 thumbnail-img: /recipes/assets/images/potatosalad.jpeg
 tags: [recipe, Denise, salad, vegetables, favorite]
+course: sides
+from: "Denise"
 ---
 
 > Serves 10, A classic dish to feed a party

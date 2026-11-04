@@ -5,6 +5,8 @@ subtitle: Touchdown!
 category: Recipe
 thumbnail-img: /recipes/assets/images/buffalochickendip.jpeg
 tags: [recipe, savory, chicken, snacks, Marisa Tipton, dip]
+course: appetizers
+from: "Marisa Tipton"
 ---
 
 # Buff Chick Dip

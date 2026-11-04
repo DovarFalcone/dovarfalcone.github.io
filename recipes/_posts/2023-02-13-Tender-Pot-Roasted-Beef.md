@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Tender Pot-Roasted Beef"
-subtitle: Tender and Juicy Pot Roast
+subtitle: "Serve it over buttered noodles"
 category: Recipe
 thumbnail-img: /recipes/assets/images/potroastbeef.jpeg
 tags: [Main Dish, beef]
+course: mains
 ---
 
 {: .box-note}

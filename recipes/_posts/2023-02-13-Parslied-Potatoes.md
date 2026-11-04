@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Parslied Potatoes"
-subtitle: Easy Everyday Cooking
+subtitle: "Best with ranch and a rib eye"
 category: Recipe
 thumbnail-img: /recipes/assets/images/parsliedpotatoes.jpeg
 tags: [favorite, vegetables]
+course: sides
 ---
 
 {: .box-note}

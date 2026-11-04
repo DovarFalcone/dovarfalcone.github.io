@@ -3,12 +3,11 @@ layout: page
 title: Resume
 subtitle: Oh the things I have done
 ---
-# PROFESSIONAL SUMMARY  
-Data Engineer and Analytics Professional with 5+ years of experience designing and implementing data warehouses, integration platforms, reporting solutions, and business intelligence systems. Experienced in building scalable ETL/ELT pipelines, dimensional data models, and cloud-based analytics solutions using Azure Databricks, SQL, Python, and Power BI. Proven ability to translate business requirements into robust technical solutions that improve operational efficiency, enhance decision-making, and deliver measurable business value. Strong background in data architecture, data governance, stakeholder engagement, and Agile development practices.
+# Summary
+Data engineer with 5+ years building data warehouses, ETL/ELT pipelines, dimensional models, and Power BI reporting, mostly in Azure Databricks, SQL, and Python. I turn what the business asks for into pipelines and reports people use. At Cargill, one order health report cut 95,000 emails and saved 6,630 hours a year, and a React audit app I led saved $1.5 million a year.
 
----
 
-# PROFESSIONAL EXPERIENCE
+# Experience
 
 ## Moog Space and Defense Group (Blacksburg, VA)
 **Data Engineer** (Remote)  
@@ -26,14 +25,14 @@ Data Engineer and Analytics Professional with 5+ years of experience designing a
 ## Cargill Food and Bio – Americas Data & Analytics (Wayzata, MN)  
 **Senior Consultant, Data Analytics & Reporting** (Remote)  
 **January 2025 – June 2025**  
-- Utilized the OpenAI API to implement an Agentic-RAG architecture. Training the AI on our code base to facilitate data analysis.
-- Migrated exiting reporting databases to Snowflake. Preforming App analysis to determine priority, and effort required. 
+- Used the OpenAI API to build an agentic RAG setup over our code base to help with data analysis.
+- Migrated existing reporting databases to Snowflake, performing app analysis to determine priority and effort. 
 - Built a Power BI model and report to monitor order health, providing insights never before available to customer service reps, reducing 95,000 emails, and saving 6,630 hours annually.
 
 **Senior Analytics & Data Process Analyst** (Remote)  
 **October 2023 – January 2025**  
-- Gathered Business Requirements into technical solutions, ensuring user adoption and data-driven decisions.
-- Created process playbooks for the product development lifecycle and guided Junior developers on best practices.
+- Turned business requirements into technical solutions, ensuring user adoption and data-driven decisions.
+- Created process playbooks for the product development lifecycle and guided junior developers on best practices.
 - Analyzed operational data from SAP to generate insights through Power BI dashboards and scalable warehousing solutions.
 - Using MFT, Shell Scripts, Orchestration tools, and SQL, led end-to-end data pipeline development, including data ingestion, UAT validation, and dashboard creation, improving forecasting accuracy visibility and reducing manual effort.
 - Managed Power BI deployment pipelines to support self-service analytics and parallel report development workflows.
@@ -67,9 +66,8 @@ Data Engineer and Analytics Professional with 5+ years of experience designing a
 **January 2019 – July 2020**  
 - Managed daily operations of equine facilities, ensuring smooth logistics and high standards of care.
 
----
 
-# SKILLS
+# Skills
 
 * **Data Engineering:** Azure Databricks, ETL/ELT Development, Data Integration, Data Warehousing, Data Modeling
 * **Programming & Query Languages:** SQL, Python, R, Power Query (M)
@@ -80,8 +78,7 @@ Data Engineer and Analytics Professional with 5+ years of experience designing a
 * **Project Delivery:** Agile Development, Requirements Gathering, UAT Testing, Technical Documentation
 * **Leadership & Collaboration:** Stakeholder Management, Change Management, Strategic Planning
 
----
 
-# EDUCATION  
+# Education
 **Bachelor of Science in Animal Science**  
 Penn State University, State College, PA (2014 – 2018)

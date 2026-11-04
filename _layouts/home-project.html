@@ -1,31 +1,56 @@
 ---
-layout: page
+layout: base
 ---
+{%- comment -%}
+  Projects index. Posts are grouped by their `topic:` front matter, in the
+  order of _data/topics.yml. A topic with `order: oldest` lists oldest first,
+  which suits a numbered series.
+{%- endcomment -%}
+{%- assign projects = site.posts | where: "category", "Project" -%}
 
-{{ content }}
+{% include header.html type="page" wide=true %}
 
-{% assign posts = paginator.posts | default: site.posts %}
+<main class="wide-container index-page" role="main">
+  {%- if content != "" %}
+  <div class="index-intro">{{ content }}</div>
+  {%- endif %}
 
-<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<ul class="posts-list list-unstyled" role="list">
-  {% for post in posts %}
-  {% if post.category=="Project" %}
-  {% include post-preview.html post=post %}
-  {% endif %}
-  {% endfor %}
-</ul>
+  <nav class="jump-nav" aria-label="Topics">
+    {%- for topic in site.data.topics %}
+    {%- assign topic_posts = projects | where: "topic", topic.id %}
+    {%- if topic_posts.size > 0 %}
+    <a href="#{{ topic.id }}">{{ topic.name }} <span class="count">{{ topic_posts.size }}</span></a>
+    {%- endif %}
+    {%- endfor %}
+  </nav>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pagination main-pager">
-  {% if paginator.previous_page %}
-  <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+  {%- for topic in site.data.topics %}
+  {%- assign topic_posts = projects | where: "topic", topic.id %}
+  {%- if topic_posts.size > 0 %}
+  {%- if topic.order == "oldest" %}{% assign topic_posts = topic_posts | reverse %}{% endif %}
+  <section class="topic-section" id="{{ topic.id }}" aria-labelledby="{{ topic.id }}-heading">
+    <div class="topic-head">
+      <h2 id="{{ topic.id }}-heading">{{ topic.name }}</h2>
+      <p class="topic-desc">{{ topic.description }}</p>
+    </div>
+    <ul class="entry-list" role="list">
+      {%- for post in topic_posts %}
+      {% include entry-row.html post=post %}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+
+  {%- assign loose = projects | where_exp: "p", "p.topic == nil" %}
+  {%- if loose.size > 0 %}
+  <section class="topic-section" id="other" aria-labelledby="other-heading">
+    <div class="topic-head"><h2 id="other-heading">Other</h2></div>
+    <ul class="entry-list" role="list">
+      {%- for post in loose %}
+      {% include entry-row.html post=post %}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</main>

@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Tricolor Coleslaw
-subtitle: Asian Fusion Salad A Fresh and Flavorful Blend of Eastern and Western Ingredients
+subtitle: "Red and green cabbage with a mustard dressing, serves 4"
 category: Recipe
 thumbnail-img: /recipes/assets/images/tricolorslaw.jpeg
 tags: [recipe, Denise, salad, vegetables]
+course: sides
+from: "Denise"
 ---
 
 > Serves 4

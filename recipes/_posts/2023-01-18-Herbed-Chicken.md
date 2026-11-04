@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Slow Cooker Herbed Chicken Breasts
-subtitle: A flavorful and simple recipe for tender and juicy herbed chicken
+subtitle: "Two hours in the slow cooker, serves 8"
 category: Recipe
 thumbnail-img: /recipes/assets/images/herbchick.jpeg
 tags: [Main Dish, chicken, Denise, crockpot]
+course: mains
+from: "Denise"
 ---
 
 {: .box-note}
