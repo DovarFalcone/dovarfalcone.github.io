@@ -5,6 +5,8 @@ subtitle: Creamy spinach dip that serves 4
 category: Recipe
 thumbnail-img: /recipes/assets/images/spinachdip.jpeg
 tags: [recipe, creamy, vegetables, appetizer, Grammy, savory, dip]
+course: appetizers
+from: "Grammy"
 ---
 
 ## Ingredients

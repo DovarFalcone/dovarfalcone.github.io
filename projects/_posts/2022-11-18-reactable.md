@@ -8,8 +8,9 @@ thumbnail-img: /assets/img/reactlogo.jpg
 share-img: /assets/img/bluebanner.jpg
 gh-repo: DovarFalcone/reactable
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [React]
 comments: true
+topic: apps
 ---
 
 Here is a link to to my reactable [site](https://dovarfalcone.github.io/reactable/){:target="_blank"}. 

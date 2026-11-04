@@ -8,6 +8,7 @@ gh-repo: dovarfalcone/google-takeout-location-parser
 gh-badge: [star, fork, follow]
 category: Project
 tags: [Project, sleep]
+topic: sleep
 ---
 
 *Read [Part 2!](/2023-02-06-Exploring-Sleep-Data-Part-2/)*

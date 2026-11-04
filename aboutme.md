@@ -12,10 +12,16 @@ My name is Dennis Furtkevic. I have the following qualities:
 
 What else do you need?
 
-![Brain](https://raw.githubusercontent.com/DovarFalcone/dovarfalcone.github.io/refs/heads/gh-pages/assets/img/BrainViz.png)
+![A brain drawn from data points](/assets/img/BrainViz.png)
 
-### My story
+### How I got here
 
-Welcome! I’m Dennis Furtkevic, and I’m fascinated by how data can help us better understand the world around us—whether that’s through analyzing patterns in data, tracking sleeping trends, or figuring out how to get the perfect cup of espresso. With expertise in Power BI, data pipelines, and systems like SAP and PostgreSQL, I love turning raw data into meaningful insights that drive business success. Outside of work, you can find me enjoying the company of my dogs or diving into my next tech project. If you’re looking to turn data into something extraordinary, I’d love to help make it happen!
+I have a degree in Animal Science from Penn State, and my first job out of school was supervising a horse facility at Select Breeders Services. From there I went to Cargill as a food safety and quality supervisor, where I ran a time series analysis on freezer operations to set quality control limits. That was the start of the data work.
 
-Check out my [Resume](https://furtkevic.com/resume/){:target="_blank"} while you're here.
+I spent the next few years at Cargill building SQL queries and Power BI reports on PostgreSQL and SAP data, first for food safety and then for the Americas analytics team. In June 2025 I moved to Moog Space and Defense as a data engineer, where I build pipelines in Azure Databricks.
+
+### Outside of work
+
+I'm usually with my dogs, pulling shots of espresso, or working on whatever ends up on this site next. Right now that's horse show data, my sleep, and a home server that never stops needing something.
+
+Check out my [resume](/resume/) while you're here.

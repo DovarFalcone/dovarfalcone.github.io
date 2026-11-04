@@ -5,6 +5,8 @@ subtitle: A Furtkevic family fall favorite
 category: Recipe
 thumbnail-img: /recipes/assets/images/chunkyapplesauce.jpeg
 tags: [recipe, sweet, fruit, snacks, Denise, savory, crockpot]
+course: sides
+from: "Denise"
 ---
 
 # Chonky Apple Sauce

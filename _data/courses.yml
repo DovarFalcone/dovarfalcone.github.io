@@ -1,0 +1,14 @@
+# Recipe courses, in the order they appear on the Recipes page.
+# Each recipe post sets `course:` to one of these ids.
+- id: mains
+  name: Main dishes
+- id: sides
+  name: Sides and salads
+- id: soups
+  name: Soups
+- id: appetizers
+  name: Appetizers and dips
+- id: breakfast
+  name: Breakfast
+- id: desserts
+  name: Desserts

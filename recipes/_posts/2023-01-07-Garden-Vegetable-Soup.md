@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Garden Vegetable Soup
-subtitle: "A delicious and healthy chicken broth-based vegetable soup that's perfect for any season"
+subtitle: "A hearty vegetable soup in chicken broth"
 category: Recipe
 thumbnail-img: /recipes/assets/images/vegetablesoup.jpeg
 tags: [recipe, vegetables, savory, soup, easy]
+course: soups
 ---
 
 > A hearty and healthy vegetable soup that's easy to make

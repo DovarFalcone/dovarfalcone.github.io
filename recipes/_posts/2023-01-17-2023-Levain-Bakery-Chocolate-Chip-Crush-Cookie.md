@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Levain Bakery Chocolate Chip Crush Cookies
-subtitle: A mouthwatering, copycat recipe for the famous Levain Bakery Chocolate Chip Cookies
+subtitle: "A copycat of the Levain Bakery cookie"
 category: Recipe
 thumbnail-img: /recipes/assets/images/chococookie.jpeg
 tags: [recipe, sweet, favorite, Lisa, cookie]
+course: desserts
+from: "Lisa"
 ---
 
 {: .box-note}

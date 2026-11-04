@@ -1,10 +1,11 @@
 ---
 layout: post
 title: French Onion Soup
-subtitle: A classic French dish
+subtitle: "Takes about 16 hours in the crockpot, so plan ahead"
 category: Recipe
 thumbnail-img: /recipes/assets/images/frenchonion.jpeg
 tags: [recipe, vegetables, savory, soup, crockpot]
+course: soups
 ---
 
 > This dish takes about 16 hours to cook. Plan ahead.

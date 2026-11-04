@@ -1,10 +1,12 @@
 ---
 layout: post
 title: White Bean and Sausage Rigatoni
-subtitle: A comforting and flavorful pasta dish that's perfect for a hearty dinner
+subtitle: "Pasta with white beans and sausage, serves 4"
 category: Recipe
 thumbnail-img: /recipes/assets/images/whitebeanrig.jpeg
 tags: [Main Dish, Denise, pasta, beans]
+course: mains
+from: "Denise"
 ---
 
 {: .box-note}

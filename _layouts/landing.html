@@ -1,0 +1,108 @@
+---
+layout: base
+---
+{%- comment -%}
+  Home page. The intro text comes from index.html; everything else is
+  built from posts, _data/topics.yml, _data/courses.yml and _data/apps.yml.
+{%- endcomment -%}
+{%- assign projects = site.posts | where: "category", "Project" -%}
+{%- assign recipes = site.posts | where: "category", "Recipe" -%}
+{%- assign date_format = "%b %-d, %Y" -%}
+
+<main class="home" role="main">
+  <div class="wide-container">
+
+    <section class="home-intro">
+      <h1 class="home-name">{{ page.title }}</h1>
+      <div class="home-bio">
+        {{ content }}
+      </div>
+      <ul class="home-links" role="list">
+        <li><a href="{{ '/resume/' | relative_url }}"><i class="fas fa-file-alt" aria-hidden="true"></i>Resume</a></li>
+        <li><a href="{{ '/aboutme/' | relative_url }}"><i class="fas fa-user" aria-hidden="true"></i>About me</a></li>
+        {%- if site.social-network-links.github %}
+        <li><a href="https://github.com/{{ site.social-network-links.github }}"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+        {%- endif %}
+        {%- if site.social-network-links.linkedin %}
+        <li><a href="https://linkedin.com/in/{{ site.social-network-links.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+        {%- endif %}
+        {%- if site.social-network-links.email %}
+        <li><a href="mailto:{{ site.social-network-links.email }}"><i class="fas fa-envelope" aria-hidden="true"></i>Email</a></li>
+        {%- endif %}
+      </ul>
+    </section>
+
+    <section class="home-section home-split" aria-label="Sections of this site">
+      <div class="home-panel">
+        <h2 class="home-panel-title"><a href="{{ '/projects/' | relative_url }}">Projects</a></h2>
+        <p class="home-panel-text">Write-ups on things I built for myself, with the data, the code, and what didn't work.</p>
+        <ul class="count-list" role="list">
+          {%- for topic in site.data.topics %}
+          {%- assign topic_posts = projects | where: "topic", topic.id %}
+          {%- if topic_posts.size > 0 and topic.id != "site" %}
+          <li><a href="{{ '/projects/' | relative_url }}#{{ topic.id }}">{{ topic.name }}</a><span class="count">{{ topic_posts.size }}</span></li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+        <a class="home-panel-link" href="{{ '/projects/' | relative_url }}">All {{ projects.size }} projects</a>
+      </div>
+
+      <div class="home-panel">
+        <h2 class="home-panel-title"><a href="{{ '/recipes/' | relative_url }}">Family recipes</a></h2>
+        <p class="home-panel-text">Recipes from Denise, Grammy, Bubby, and the rest of the family, sorted by course.</p>
+        <ul class="count-list" role="list">
+          {%- for course in site.data.courses %}
+          {%- assign course_posts = recipes | where: "course", course.id %}
+          {%- if course_posts.size > 0 %}
+          <li><a href="{{ '/recipes/' | relative_url }}#{{ course.id }}">{{ course.name }}</a><span class="count">{{ course_posts.size }}</span></li>
+          {%- endif %}
+          {%- endfor %}
+        </ul>
+        <a class="home-panel-link" href="{{ '/recipes/' | relative_url }}">All {{ recipes.size }} recipes</a>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="latest-heading">
+      <div class="section-head">
+        <h2 id="latest-heading">Latest projects</h2>
+        <a href="{{ '/projects/' | relative_url }}">View all</a>
+      </div>
+      <ul class="entry-list" role="list">
+        {%- for post in projects limit: 5 %}
+        {% include entry-row.html post=post %}
+        {%- endfor %}
+      </ul>
+    </section>
+
+    <section class="home-section" aria-labelledby="recipes-heading">
+      <div class="section-head">
+        <h2 id="recipes-heading">From the recipe box</h2>
+        <a href="{{ '/recipes/' | relative_url }}">View all</a>
+      </div>
+      <ul class="recipe-cards" role="list">
+        {%- for slug in page.featured-recipes %}
+        {%- assign recipe = recipes | where: "slug", slug | first %}
+        {%- if recipe %}
+        {% include recipe-card.html post=recipe %}
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+    </section>
+
+    <section class="home-section" aria-labelledby="apps-heading">
+      <div class="section-head">
+        <h2 id="apps-heading">Apps you can try</h2>
+      </div>
+      <ul class="app-list" role="list">
+        {%- for app in site.data.apps %}
+        <li class="app-item">
+          <h3 class="app-name"><a href="{{ app.url }}">{{ app.name }}</a></h3>
+          <p class="app-desc">{{ app.description }}</p>
+          <a class="app-writeup" href="{{ app.writeup | relative_url }}">Read the write-up</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+
+  </div>
+</main>

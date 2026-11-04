@@ -5,6 +5,7 @@ subtitle: Where a placing means beating the most horses, and how big each discip
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]
 comments: true
+topic: horse-shows
 ---
 
 Placing in a 5-horse class isn't the same as placing in a 224-horse class. The biggest class in my database was scheduled for 226 entries. Across 72,316 classes with placings, 426,597 placings in all, the average class size by discipline runs from the seventies down to three.
@@ -50,8 +51,8 @@ There are two lists here because there are two counts. "Scheduled" is the entry 
 | 2026 Congress | NRHA Intermediate Open Reining Congress | Reining | 166 | 16 |
 | 2026 Congress | NRHA Prime Time Open Reining Congress | Reining | 166 | 15 |
 | 2026 Congress | NRHA Limited Open Reining Congress | Reining | 166 | 18 |
-| 2026 Congress | NRHA Open Reining Congress | Reining | 166 | — |
-| 2026 Congress | NRHA Novice Horse Level 1 — Open Congress | Reining | 158 | 15 |
+| 2026 Congress | NRHA Open Reining Congress | Reining | 166 | n/a |
+| 2026 Congress | NRHA Novice Horse Level 1, Open Congress | Reining | 158 | 15 |
 
 Reining and Barrels fill both lists. Those are the disciplines where one class can hold 150 or more horses. Two things stand out in the columns:
 
@@ -146,7 +147,7 @@ The draw sheets list the starting order for each go, one rider per line. That's 
 The typical difference is 4 horses, but one in ten classes is off by 32 or more, and the biggest difference is 144. The big ones come from how shows are run, not from bad data:
 
 - **Classes drawn together.** Four levels of the All Star Reining Stakes Derby share one 166-rider draw sheet while their schedules say 42, 57, 73, and 75. A draw sheet covers a go, not a class.
-- **Combined and co-sanctioned divisions.** The NRHA Novice Horse Level 2 — Open draws 158 against a scheduled 55. The schedule counts that one class. The draw sheet counts everyone riding in that go.
+- **Combined and co-sanctioned divisions.** The NRHA Novice Horse Level 2 Open draws 158 against a scheduled 55. The schedule counts that one class. The draw sheet counts everyone riding in that go.
 - **Schedule entries are a plan.** A reining futurity scheduled for 173 entries can draw 51 and place 15.
 
 > **Read the two lists together.** Which class is the deepest depends on which count you use: scheduled entries, drawn riders, or placings. They can differ by a factor of three. The safest pick for the biggest class is the 4D Open Barrel Racing at Congress, which tops both the schedule and the draw: scheduled for 226, with 224 drawn and 15 placings published.

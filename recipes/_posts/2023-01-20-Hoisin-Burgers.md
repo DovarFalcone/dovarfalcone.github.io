@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Hoisin Burgers
-subtitle: A savory and delicious Asian-inspired burger recipe
+subtitle: "Known in the family as poisin burgers"
 category: Recipe
 thumbnail-img: /recipes/assets/images/hoisin.jpeg
-tags: [Main Dish, Asian, Denise, favorite, beef, poisin]
+tags: [Main Dish, Asian, Denise, favorite, beef]
+course: mains
+from: "Denise"
 ---
 
 {: .box-note}

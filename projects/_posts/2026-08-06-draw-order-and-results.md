@@ -5,6 +5,7 @@ subtitle: A little. Late draws do slightly better, and mostly in the biggest cla
 category: Project
 tags: [Project, AQHA, Data Analysis, Horse Show, Equine]
 comments: true
+topic: horse-shows
 ---
 
 Anyone who has shown a horse knows the feeling of drawing late in a big class and wondering if the judge already has the class pinned. I have enough results in my equine-data database now to check, and as of this update I have the published draw sheets themselves, so I can use the real starting order.

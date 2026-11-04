@@ -5,6 +5,8 @@ subtitle: A Phyllis Lynch favorite!
 category: Recipe
 thumbnail-img: /recipes/assets/images/beandip.jpeg
 tags: [recipe, dip, favorite, mexican, beans, Grammy, appetizer, savory]
+course: appetizers
+from: "Grammy"
 ---
 
 

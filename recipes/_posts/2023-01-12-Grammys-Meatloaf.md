@@ -1,15 +1,18 @@
 ---
 layout: post
 title: Grammy's Meatloaf
-subtitle: A Homemade Recipe Passed Down Through the Generations
+subtitle: "Passed down from Grammy, bacon optional"
 category: Recipe
 thumbnail-img: /recipes/assets/images/grammysmeatloaf.jpeg
 tags: [recipe, Grammy, Main Dish, meat]
+course: mains
+from: "Grammy"
 ---
 
 > Cook Time: 75 min
 
 ## Ingredients
+
 | Ingredient | Amount|
 | :------ |:--- |
 | Chopped Onion | 1/2 Cup |

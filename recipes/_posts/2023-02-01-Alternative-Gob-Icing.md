@@ -4,7 +4,9 @@ title: "Alternative Gob Icing"
 subtitle: NOT FOR USE IN WHOOPIE PIES
 category: Recipe
 thumbnail-img: /recipes/assets/images/gobalticing.jpeg
-tags: [desert, favorite, cake, Bubby, gob]
+tags: [dessert, favorite, cake, Bubby, gob]
+course: desserts
+from: "Bubby"
 ---
 
 **Compare With:**  [Easy Gob Icing](/2023-02-01-Easy-Gob-Icing/){:target="_blank"}

@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Cranberry Chicken Bake
-subtitle: "Savory and Sweet: A Cranberry Chicken Bake Recipe Perfect for Fall"
+subtitle: "Sweet and savory, serves 4"
 category: Recipe
 thumbnail-img: /recipes/assets/images/cranchick.jpeg
 tags: [recipe, savory, sweet, chicken, Aunt Connie, Main Dish]
+course: mains
+from: "Aunt Connie"
 ---
 
 {: .box-note}

@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Crunchy Chicken Roll-Up
-subtitle: A classic recipe for a flavorful and satisfying main dish
+subtitle: "Serves 4 to 6"
 category: Recipe
 thumbnail-img: /recipes/assets/images/crunchychick.jpeg
 tags: [recipe, chicken, Denise, Main Dish]
+course: mains
+from: "Denise"
 ---
 
 {: .box-note}

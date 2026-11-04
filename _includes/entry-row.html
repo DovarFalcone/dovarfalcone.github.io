@@ -1,0 +1,18 @@
+{%- comment -%}
+  One row in a list of posts: date, title, subtitle, and a small thumbnail when the post has one.
+  Used on the home page and the Projects page.
+{%- endcomment -%}
+{%- assign post = include.post -%}
+{%- assign thumb = post.thumbnail-img | default: "" -%}
+<li class="entry{% if thumb != '' %} has-thumb{% endif %}">
+  <time class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+  <div class="entry-body">
+    <h3 class="entry-title"><a href="{{ post.url | relative_url }}">{{ post.title | strip_html }}</a></h3>
+    {%- if post.subtitle %}
+    <p class="entry-subtitle">{{ post.subtitle | strip_html }}</p>
+    {%- endif %}
+  </div>
+  {%- if thumb != '' %}
+  <a class="entry-thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ thumb | relative_url }}" alt="" loading="lazy"></a>
+  {%- endif %}
+</li>

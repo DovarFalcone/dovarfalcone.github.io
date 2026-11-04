@@ -5,6 +5,8 @@ subtitle: Light breakfast that serves 4
 category: Recipe
 thumbnail-img: /recipes/assets/images/peachcrepe.jpeg
 tags: [recipe, fruit, snacks, Denise, sweet]
+course: breakfast
+from: "Denise"
 ---
 
 > A favorite kid breakfast, but be warned, they will want to eat five of them

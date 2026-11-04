@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Furtkevic
+title: Dennis Furtkevic
 
 # Your name to show in the footer
 author: Dennis Furtkevic
@@ -22,27 +22,23 @@ author: Dennis Furtkevic
 navbar-links:
   Projects: "projects"
   Recipes: "recipes"
+  About: "aboutme"
+  Resume: "resume"
+
+# Link groups shown in the footer
+footer-links:
+  Site:
+    - Home: ""
+    - Projects: "projects"
+    - Recipes: "recipes"
+    - Tags: "tags"
   About:
     - About me: "aboutme"
     - Resume: "resume"
-  Tags: "tags"
-
-# Extra link groups shown in the footer
-footer-links:
-  Site:
-    - Projects: "projects"
-    - Recipes: "recipes"
-    - About me: "aboutme"
-    - Resume: "resume"
-    - Tags: "tags"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-    - Learn React: "https://reactjs.org/"
-    - Author's home: "https://www.psu.edu/"
+    - RSS feed: "feed.xml"
 
 # One line under the site name in the footer
-footer-tagline: "Data projects, home-lab notes, and family recipes by Dennis Furtkevic."
+footer-tagline: "Data projects, home lab notes, and family recipes."
 
 ################
 # --- Logo --- #
@@ -112,7 +108,10 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "Furtkevic.com"
+url-pretty: "furtkevic.com"
+
+# Hide the "Built with Beautiful Jekyll" credit in the footer
+remove-ads: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -127,7 +126,7 @@ feed_show_tags: true
 post_search: true
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
-edit_page_button: true
+edit_page_button: false
 
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
@@ -135,7 +134,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "furtekvic,website,dennis,data,datafurtkevic,datadennis,dennis,cargill,visual"
+keywords: "Dennis Furtkevic,data engineer,Power BI,Databricks,data projects,family recipes"
 
 ######################################
 # --- Colours / background image --- #
@@ -269,7 +268,6 @@ timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
 
 kramdown:
   input: GFM

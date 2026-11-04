@@ -6,7 +6,8 @@ category: Recipe
 cover-img: /recipes/assets/images/cookiebanner.jpeg
 thumbnail-img: /recipes/assets/images/stockcookie.jpeg
 share-img: /recipes/assets/images/stockcookie.jpeg
-tags: [recipe, test, chocolate, cookie]
+tags: [recipe, chocolate, cookie]
+course: desserts
 ---
 
 > This is an example of a simple chocolate chip cookie recipe provided for the purpose of explaining how to write a recipe in Markdown. Some things that make sense in notes like this one are #hashtags for categorizing recipes and website URLs for pointing to where a recipe came from.

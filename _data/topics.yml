@@ -1,0 +1,18 @@
+# Project topics, in the order they appear on the Projects page and home page.
+# Each project post sets `topic:` to one of these ids.
+- id: horse-shows
+  name: Horse show data
+  description: I pull AQHA and NSBA show results into my own database. These posts ask the questions people argue about at the rail, like whether the draw matters, whether judges have favorites, and where pattern classes are won.
+- id: sleep
+  name: Sleep data
+  order: oldest
+  description: I've used a CPAP machine since October 2022. This series pulls the data off my Resvent iBreeze, cleans it up, and lines it up against where I slept and what the weather was doing.
+- id: homelab
+  name: Home lab
+  description: My Unraid server runs Jellyfin, a monitoring stack, and my AI agents. These posts cover what broke, what it costs, and what the telemetry showed.
+- id: apps
+  name: Apps and charts
+  description: Small apps and visualizations, mostly Python and Streamlit. A few are early experiments from when I was learning the tools.
+- id: site
+  name: Site notes
+  description: Updates about this site.

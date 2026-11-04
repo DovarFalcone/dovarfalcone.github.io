@@ -5,6 +5,7 @@ subtitle: A fun take on baked potatoes
 category: Recipe
 thumbnail-img: /recipes/assets/images/slicedbakedpotatoes.jpeg
 tags: [side, vegetables]
+course: sides
 ---
 
 {: .box-note}

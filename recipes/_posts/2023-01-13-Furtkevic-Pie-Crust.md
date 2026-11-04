@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Furtkevic Pie Crust
-subtitle: "Heirloom Pie Crust: A Family Secret Recipe for the Perfectly flaky crust"
+subtitle: "The family pie crust, made from scratch"
 category: Recipe
 thumbnail-img: /recipes/assets/images/furtkeviccrust.jpeg
-tags: [Deserts, Bill, favorite]
+tags: [dessert, Bill, favorite]
+course: desserts
+from: "Bill"
 ---
 
 > I made it from scratch!

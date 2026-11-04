@@ -84,18 +84,40 @@ layout: base
         {% include social-share.html %}
       {% endif %}
 
-      <ul class="pagination blog-pager">
-        {% if page.previous.url %}
-        <li class="page-item previous">
-          <a class="page-link" href="{{ page.previous.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title | strip_html | xml_escape}}"><span class="pager-label">&larr; Previous</span><span class="pager-title">{{ page.previous.title | strip_html }}</span></a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="page-item next">
-          <a class="page-link" href="{{ page.next.url | relative_url }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title | strip_html | xml_escape}}"><span class="pager-label">Next &rarr;</span><span class="pager-title">{{ page.next.title | strip_html }}</span></a>
-        </li>
-        {% endif %}
-      </ul>
+      {%- comment -%} Related posts: same topic for projects, same course for recipes. {%- endcomment -%}
+      {%- if page.category == 'Project' and page.topic %}
+        {%- assign related = site.posts | where: "category", "Project" | where: "topic", page.topic | where_exp: "p", "p.url != page.url" %}
+        {%- assign topic = site.data.topics | where: "id", page.topic | first %}
+        {%- if related.size > 0 %}
+        <section class="related" aria-labelledby="related-heading">
+          <div class="section-head">
+            <h2 id="related-heading">More in {{ topic.name | default: "this topic" }}</h2>
+            <a href="{{ '/projects/' | relative_url }}#{{ page.topic }}">All {{ related.size | plus: 1 }}</a>
+          </div>
+          <ul class="entry-list" role="list">
+            {%- for post in related limit: 4 %}
+            {% include entry-row.html post=post %}
+            {%- endfor %}
+          </ul>
+        </section>
+        {%- endif %}
+      {%- elsif page.category == 'Recipe' and page.course %}
+        {%- assign related = site.posts | where: "category", "Recipe" | where: "course", page.course | where_exp: "p", "p.url != page.url" %}
+        {%- assign course = site.data.courses | where: "id", page.course | first %}
+        {%- if related.size > 0 %}
+        <section class="related" aria-labelledby="related-heading">
+          <div class="section-head">
+            <h2 id="related-heading">More {{ course.name | downcase }}</h2>
+            <a href="{{ '/recipes/' | relative_url }}#{{ page.course }}">View all</a>
+          </div>
+          <ul class="recipe-cards" role="list">
+            {%- for post in related limit: 4 %}
+            {% include recipe-card.html post=post %}
+            {%- endfor %}
+          </ul>
+        </section>
+        {%- endif %}
+      {%- endif %}
       {% include comments.html %}
     </div>
   </div>

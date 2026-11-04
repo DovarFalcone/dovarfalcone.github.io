@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Potato Bacon Soup
-subtitle: A delicious meaty soup
+subtitle: "A hearty family favorite"
 category: Recipe
 thumbnail-img: /recipes/assets/images/potatobacon.jpeg
 tags: [recipe, vegetables, meat, savory, soup, favorite]
+course: soups
 ---
 
 > A hearty family favorite

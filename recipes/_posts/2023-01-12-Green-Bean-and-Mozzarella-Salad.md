@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Green Bean and Mozzarella Salad
-subtitle: "Green Bean-y Goodness: A Salad That Will Leave You Mozztivated to Eat Your Veggies"
+subtitle: "Best served cold on a warm day"
 category: Recipe
 thumbnail-img: /recipes/assets/images/greenbeanmozz.jpeg
 tags: [recipe, vegetables, Denise, salad]
+course: sides
+from: "Denise"
 ---
 
 > Best served cold on a warm day

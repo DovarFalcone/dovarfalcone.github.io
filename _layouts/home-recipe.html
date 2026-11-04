@@ -1,31 +1,82 @@
 ---
-layout: page
+layout: base
 ---
+{%- comment -%}
+  Recipes index. Recipes are grouped by their `course:` front matter, in the
+  order of _data/courses.yml. The filter box hides cards that don't match.
+{%- endcomment -%}
+{%- assign recipes = site.posts | where: "category", "Recipe" | sort: "title" -%}
 
-{{ content }}
+{% include header.html type="page" wide=true %}
 
-{% assign posts = paginator.posts | default: site.posts %}
+<main class="wide-container index-page" role="main">
+  {%- if content != "" %}
+  <div class="index-intro">{{ content }}</div>
+  {%- endif %}
 
-<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<ul class="posts-list list-unstyled posts-grid" role="list">
-  {% for post in posts %}
-  {% if post.category=="Recipe" %}
-  {% include post-preview.html post=post grid=true %}
-  {% endif %}
-  {% endfor %}
-</ul>
+  <div class="recipe-tools">
+    <nav class="jump-nav" aria-label="Courses">
+      {%- for course in site.data.courses %}
+      {%- assign course_posts = recipes | where: "course", course.id %}
+      {%- if course_posts.size > 0 %}
+      <a href="#{{ course.id }}">{{ course.name }} <span class="count">{{ course_posts.size }}</span></a>
+      {%- endif %}
+      {%- endfor %}
+    </nav>
+    <div class="recipe-filter">
+      <label for="recipe-filter-input">Find a recipe</label>
+      <input type="search" id="recipe-filter-input" placeholder="Name or family member" autocomplete="off">
+    </div>
+  </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pagination main-pager">
-  {% if paginator.previous_page %}
-  <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+  {%- for course in site.data.courses %}
+  {%- assign course_posts = recipes | where: "course", course.id %}
+  {%- if course_posts.size > 0 %}
+  <section class="course-section" id="{{ course.id }}" aria-labelledby="{{ course.id }}-heading">
+    <h2 id="{{ course.id }}-heading">{{ course.name }}</h2>
+    <ul class="recipe-cards" role="list">
+      {%- for post in course_posts %}
+      {% include recipe-card.html post=post %}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+
+  {%- assign loose = recipes | where_exp: "p", "p.course == nil" %}
+  {%- if loose.size > 0 %}
+  <section class="course-section" id="other" aria-labelledby="other-heading">
+    <h2 id="other-heading">Other</h2>
+    <ul class="recipe-cards" role="list">
+      {%- for post in loose %}
+      {% include recipe-card.html post=post %}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
+  <p class="recipe-filter-empty" hidden>No recipes match that search.</p>
+</main>
+
+<script>
+  (function () {
+    var input = document.getElementById('recipe-filter-input');
+    if (!input) return;
+    var cards = document.querySelectorAll('.course-section .recipe-card');
+    var sections = document.querySelectorAll('.course-section');
+    var empty = document.querySelector('.recipe-filter-empty');
+    input.addEventListener('input', function () {
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      cards.forEach(function (card) {
+        var match = !q || card.getAttribute('data-title').indexOf(q) !== -1;
+        card.hidden = !match;
+        if (match) shown++;
+      });
+      sections.forEach(function (section) {
+        section.hidden = !section.querySelector('.recipe-card:not([hidden])');
+      });
+      empty.hidden = shown !== 0;
+    });
+  })();
+</script>
