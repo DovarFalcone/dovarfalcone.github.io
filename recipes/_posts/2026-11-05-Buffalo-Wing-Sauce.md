@@ -3,6 +3,7 @@ layout: post
 title: Buffalo Wing Sauce
 subtitle: Five minutes, one pot, gone by halftime
 category: Recipe
+thumbnail-img: /recipes/assets/images/buffalowingsauce.jpeg
 tags: [recipe, sauce, savory, wings, spicy, Allrecipes]
 course: appetizers
 from: "Allrecipes"
