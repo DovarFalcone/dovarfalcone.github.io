@@ -3,6 +3,7 @@ layout: post
 title: Thanksgiving Roast Turkey
 subtitle: Butter on the skin, butter under the skin, butter in the pan
 category: Recipe
+thumbnail-img: /recipes/assets/images/roastturkey.jpeg
 tags: [Main Dish, turkey, Thanksgiving, holiday]
 course: mains
 from: "Dennis"
@@ -31,8 +32,6 @@ from: "Dennis"
 | Paprika | 1 tsp |
 | Vegetable Broth | 4 Cups, plus more as needed |
 | Butter, for the pan | 4 tbsp |
-
-The seasoning is a starting point. Use whatever mix you like on poultry.
 
 ## Before You Start
 
